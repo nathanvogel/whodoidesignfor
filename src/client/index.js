@@ -1,13 +1,13 @@
-import "babel-polyfill";
-import React from "react";
-import { render } from "react-dom";
-import { AppContainer } from "react-hot-loader";
-import Root from "./Root";
-import resetStyles from "./meyer-reset.css";
-import normalizeStyles from "./normalize.css";
-import rootCss from "./root-css.css";
+import 'babel-polyfill';
+import React from 'react';
+import { render } from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import Root from './Root';
+import './meyer-reset.css';
+import './normalize.css';
+import './root-css.css';
 
-const root = document.querySelector("#root");
+const root = document.querySelector('#root');
 
 const mount = RootComponent => {
   render(
@@ -19,9 +19,9 @@ const mount = RootComponent => {
 };
 
 if (module.hot) {
-  module.hot.accept("./Root", () => {
+  module.hot.accept('./Root', () => {
     // eslint-disable-next-line global-require,import/newline-after-import
-    const RootComponent = require("./Root").default;
+    const RootComponent = require('./Root').default;
     mount(RootComponent);
   });
 }
