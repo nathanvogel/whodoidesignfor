@@ -1,0 +1,37 @@
+@import "../../shared-styles/variables";
+
+.ThoughtsSection {
+  height: 100vh;
+  // max-width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.verticalAlign {
+  position: relative;
+  top: 50%;
+  padding-left: 32px;
+  transform: translateY(-66%);
+  overflow: hidden;
+}
+
+.ThoughtsSection p {
+  font-family: monospace;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.ThoughtsSection p:nth-child(1) {
+  font-size: 24px;
+}
+
+.ThoughtsSection p:nth-child(2) {
+  font-size: 42px;
+}
+
+.ThoughtsSection p:nth-child(3) {
+  font-size: 70px;
+}

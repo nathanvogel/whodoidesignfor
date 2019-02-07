@@ -1,8 +1,8 @@
 import React from "react";
 import ScrollMagic from "scrollmagic";
-import { TweenLite, TimelineMax, TweenMax, Power0, Expo } from "gsap";
+import { TweenMax } from "gsap";
 import "animation.gsap";
-import "debug.addIndicators";
+// import "debug.addIndicators";
 import styles from "./styles.scss";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 
@@ -10,7 +10,7 @@ class TitleSection extends React.Component {
   constructor() {
     super();
     this.ref_main = React.createRef();
-    this.ref_wrapper = React.createRef();
+    this.ref_scroll_container = React.createRef();
     this.refs_h1 = [];
 
     this.titles = [
@@ -26,18 +26,18 @@ class TitleSection extends React.Component {
       this.refs_h1.push(React.createRef());
     }
 
-    this.sectionDuration = 50;
+    this.sectionDuration = 36;
   }
 
   componentDidMount() {
     // Pin the scene for a while
     new ScrollMagic.Scene({
-      triggerElement: this.ref_wrapper.current,
+      triggerElement: this.ref_scroll_container.current,
       triggerHook: 0,
       duration: `${this.sectionDuration}%`,
     })
       .setPin(this.ref_main.current)
-      .addIndicators({ name: "pin 1" }) // add indicators (requires plugin)
+      // .addIndicators({ name: "pin 1" }) // add indicators (requires plugin)
       .addTo(window.controller);
 
     // Fade in-out all titles
@@ -51,11 +51,11 @@ class TitleSection extends React.Component {
       })
         .on("start", e => {
           if (e.scrollDirection === "PAUSED") return;
-          TweenMax.to(header, 0.3, {
+          TweenMax.to(header, 0.25, {
             opacity: e.scrollDirection === "FORWARD" ? 1 : 0,
           });
         })
-        .addIndicators({ name: `fadein ${i}` })
+        // .addIndicators({ name: `fadein ${i}` })
         .addTo(window.controller);
       linkSceneToOffset(sceneIn, 50 + i * 5);
 
@@ -65,28 +65,26 @@ class TitleSection extends React.Component {
       })
         .on("start", e => {
           if (e.scrollDirection === "PAUSED") return;
-          TweenMax.to(header, 0.3, {
+          TweenMax.to(header, 0.7, {
             // y: e.scrollDirection === "FORWARD" ? -100 : 0,
             opacity: e.scrollDirection === "FORWARD" ? 0 : 1,
           });
         })
-        .addIndicators({ name: `fadeout ${i}`, indent: 150 })
+        // .addIndicators({ name: `fadeout ${i}`, indent: 150 })
         .addTo(window.controller);
       linkSceneToOffset(sceneOut, 55 + i * 5);
     }
 
     // Intro animation
-    TweenMax.fromTo(
-      this.refs_h1[0].current,
-      1.8,
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        delay: 1.2,
-      }
-    );
+    // only if the user didn't already scroll (page refresh).
+    if (window.scrollY === 0) {
+      TweenMax.fromTo(
+        this.refs_h1[0].current,
+        1.1,
+        { opacity: 0 },
+        { opacity: 1, delay: 1.2 }
+      );
+    }
   }
 
   render() {
@@ -100,7 +98,7 @@ class TitleSection extends React.Component {
     }
 
     return (
-      <div ref={this.ref_wrapper}>
+      <div ref={this.ref_scroll_container}>
         <div className={styles.TitleSection} ref={this.ref_main}>
           <div className={styles.TitleList}>{titles_h1}</div>
         </div>
