@@ -4,15 +4,19 @@ import { TweenLite, TimelineMax, TweenMax, Power0, Expo } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
+import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
+
+const vhToPx = pc => {
+  console.log(pc, (window.innerHeight * pc) / 100);
+  return (window.innerHeight * pc) / 100;
+};
 
 class TitleSection extends React.Component {
   constructor() {
     super();
     this.ref_main = React.createRef();
     this.ref_wrapper = React.createRef();
-    // this.ref_h1 = React.createRef();
     this.refs_h1 = [];
-    this.refs_triggers = [];
 
     this.titles = [
       "Who do I design for?",
@@ -25,26 +29,17 @@ class TitleSection extends React.Component {
 
     for (let i = 0; i < this.titles.length; i += 1) {
       this.refs_h1.push(React.createRef());
-      this.refs_triggers.push(React.createRef());
     }
 
     this.sectionDuration = 50;
   }
 
   componentDidMount() {
-    // const parallaxTl = new TimelineMax();
-    // parallaxTl.to(
-    //   this.ref_h1.current,
-    //   2,
-    //   { opacity: 0, ease: Power0.easeNone },
-    //   0
-    // );
-
     // Pin the scene for a while
     new ScrollMagic.Scene({
       triggerElement: this.ref_wrapper.current,
       triggerHook: 0,
-      duration: `${this.sectionDuration + 20}%`,
+      duration: `${this.sectionDuration}%`,
     })
       .setPin(this.ref_main.current)
       .addIndicators({ name: "pin 1" }) // add indicators (requires plugin)
@@ -53,71 +48,58 @@ class TitleSection extends React.Component {
     // Fade in-out all titles
     for (let i = 0; i < this.titles.length; i += 1) {
       const header = this.refs_h1[i].current;
-      new ScrollMagic.Scene({
-        triggerElement: this.refs_triggers[i].current,
-        triggerHook: 1,
+      const sceneIn = new ScrollMagic.Scene({
+        triggerElement: this.ref_main.current,
+        triggerHook: 0.5,
+        reverse: i !== 0, // The first one has a special intro animation.
       })
         .on("start", e => {
-          console.log("in start ", e.scrollDirection);
+          if (e.scrollDirection === "PAUSED") return;
           TweenMax.to(header, 0.3, {
-            // y: e.scrollDirection === "FORWARD" ? 0 : -100,
             opacity: e.scrollDirection === "FORWARD" ? 1 : 0,
           });
         })
-        // .setTween(tweenIn)
         .addIndicators({ name: `fadein ${i}` })
         .addTo(window.controller);
-      new ScrollMagic.Scene({
-        triggerElement: this.refs_triggers[i].current,
-        triggerHook: 0.9075,
+      linkSceneToOffset(sceneIn, 50 + i * 5);
+
+      const sceneOut = new ScrollMagic.Scene({
+        triggerElement: this.ref_main.current,
+        triggerHook: 0.5,
       })
         .on("start", e => {
-          console.log("out start", e.scrollDirection);
+          if (e.scrollDirection === "PAUSED") return;
           TweenMax.to(header, 0.3, {
             // y: e.scrollDirection === "FORWARD" ? -100 : 0,
             opacity: e.scrollDirection === "FORWARD" ? 0 : 1,
           });
         })
-        // .setTween(tweenOut)
-        .addIndicators({ name: `fadeout ${i}`, indent: 200 })
+        .addIndicators({ name: `fadeout ${i}`, indent: 150 })
         .addTo(window.controller);
+      linkSceneToOffset(sceneOut, 55 + i * 5);
     }
 
     // Intro animation
     TweenMax.fromTo(
       this.refs_h1[0].current,
-      1.3,
+      1.8,
       {
         opacity: 0,
       },
       {
         opacity: 1,
+        delay: 1.2,
       }
     );
   }
 
   render() {
     const titles_h1 = [];
-    const titles_triggers = [];
-    const triggerInterval = this.sectionDuration / this.titles.length;
     for (let i = 0; i < this.titles.length; i += 1) {
       titles_h1.push(
         <h1 ref={this.refs_h1[i]} key={`h1-${i}`}>
           {this.titles[i]}
         </h1>
-      );
-      titles_triggers.push(
-        <span
-          className={styles.Trigger}
-          ref={this.refs_triggers[i]}
-          key={`trig-${i}`}
-          style={{
-            transform: `translateY(${-(this.titles.length - i) *
-              triggerInterval +
-              0 -
-              20}vh)`,
-          }}
-        />
       );
     }
 
@@ -126,7 +108,6 @@ class TitleSection extends React.Component {
         <div className={styles.TitleSection} ref={this.ref_main}>
           <div className={styles.TitleList}>{titles_h1}</div>
         </div>
-        {titles_triggers}
       </div>
     );
   }
