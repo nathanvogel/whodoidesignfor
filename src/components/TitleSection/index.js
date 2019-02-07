@@ -6,11 +6,6 @@ import "debug.addIndicators";
 import styles from "./styles.scss";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 
-const vhToPx = pc => {
-  console.log(pc, (window.innerHeight * pc) / 100);
-  return (window.innerHeight * pc) / 100;
-};
-
 class TitleSection extends React.Component {
   constructor() {
     super();

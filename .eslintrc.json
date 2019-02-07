@@ -11,6 +11,7 @@
     "no-unused-vars": [0],
     "import/no-unresolved": "off",
     "prettier/prettier": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "class-methods-use-this": "off"
   }
 }
