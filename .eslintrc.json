@@ -6,6 +6,8 @@
   "plugins": [],
 
   "rules": {
-    "react/prefer-stateless-function": [0]
+    "react/prefer-stateless-function": [0],
+    "import/no-unresolved": [1],
+    "no-unused-vars": [0]
   }
 }
