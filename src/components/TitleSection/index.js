@@ -48,10 +48,11 @@ class TitleSection extends React.Component {
     // Fade in-out all titles
     for (let i = 0; i < this.titles.length; i += 1) {
       const header = this.refs_h1[i].current;
+
       const sceneIn = new ScrollMagic.Scene({
         triggerElement: this.ref_main.current,
         triggerHook: 0.5,
-        reverse: i !== 0, // The first one has a special intro animation.
+        reverse: i !== 0, // The first one should stay when going back up.
       })
         .on("start", e => {
           if (e.scrollDirection === "PAUSED") return;
