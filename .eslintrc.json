@@ -1,14 +1,11 @@
 {
-  "extends": [
-    "eslint-config-kyt"
-  ],
+  "extends": ["eslint-config-kyt"],
 
-  "env": {
-  },
+  "env": {},
 
-  "plugins": [
-  ],
+  "plugins": [],
 
   "rules": {
+    "react/prefer-stateless-function": [0]
   }
 }
