@@ -2,7 +2,7 @@ import React from "react";
 import ScrollMagic from "scrollmagic";
 import { TweenMax, Linear, Sine } from "gsap";
 import "animation.gsap";
-import "debug.addIndicators";
+// import "debug.addIndicators";
 import styles from "./styles.scss";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 
@@ -14,6 +14,7 @@ class ThoughtsSection extends React.Component {
     this.ref_big = React.createRef();
     this.ref_pin_container = React.createRef();
     this.ref_pin_content = React.createRef();
+    this.ref_dummy_pusher = React.createRef();
 
     this.sectionDuration = 200;
   }
@@ -23,10 +24,18 @@ class ThoughtsSection extends React.Component {
     new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
-      duration: `${this.sectionDuration + 10}%`,
+      duration: `${this.sectionDuration + 140}%`,
     })
-      .setPin(this.ref_pin_content.current)
-      .addIndicators({ name: "pin 2", indent: 150 })
+      .setPin(this.ref_pin_content.current, { pushFollowers: false })
+      // .addIndicators({ name: "pin 2", indent: 150 })
+      .addTo(window.controller);
+    new ScrollMagic.Scene({
+      triggerElement: this.ref_pin_container.current,
+      triggerHook: 0,
+      duration: `${this.sectionDuration}%`,
+    })
+      .setPin(this.ref_dummy_pusher.current, { pushFollowers: true })
+      // .addIndicators({ name: "pin 2", indent: 150 })
       .addTo(window.controller);
 
     const x = -3700 + window.innerWidth;
@@ -43,7 +52,7 @@ class ThoughtsSection extends React.Component {
           x: distances[i],
           ease: Sine.easeInOut,
         })
-        .addIndicators({ name: "hori tween" })
+        // .addIndicators({ name: "hori tween" })
         .addTo(window.controller);
     }
   }
@@ -65,6 +74,7 @@ class ThoughtsSection extends React.Component {
             </div>
           </div>
         </div>
+        <div ref={this.ref_dummy_pusher} />
       </div>
     );
   }
