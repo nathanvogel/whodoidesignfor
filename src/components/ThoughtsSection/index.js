@@ -4,7 +4,6 @@ import { TweenMax, Linear, Sine } from "gsap";
 import "animation.gsap";
 // import "debug.addIndicators";
 import styles from "./styles.scss";
-import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 
 class ThoughtsSection extends React.Component {
   constructor() {

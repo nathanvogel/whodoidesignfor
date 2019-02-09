@@ -56,16 +56,25 @@
 
 .ViewLine {
   position: absolute;
-  left: 21px;
-  right: 170px;
+  left: 19px;
+  right: 164px;
   top: 349px;
+  height: 10px;
+  overflow: hidden;
+  // border: 1px dashed #df2323;
+}
+
+.ViewLine svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .Target {
   position: absolute;
   width: 225.86px;
   height: 225.86px;
-  left: 619px;
+  right: 51.14px;
   top: 236.14px;
 }
 
