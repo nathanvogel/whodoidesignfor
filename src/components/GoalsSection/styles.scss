@@ -1,20 +1,28 @@
 @import "../../shared-styles/variables";
 
+// We need the section to impose its black background on the whole width.
 .GoalsSection {
   height: 100vh;
   background-color: black;
-  max-width: $content-width;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: $padding;
+  width: 100%;
 }
 
-.GoalsSection p {
-  font-family: monospace;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  white-space: nowrap;
-  overflow: visible;
+// We need a centerer object that adds padding, but if the content is
+// absolutely positionned as a direct child, it won't respect the padding.
+.GoalsSection .Padder {
+  max-width: $content-width;
+  padding: $padding;
+  margin: 0 auto;
+}
+
+// So we relatively position a children of the padding element, so that the
+// children respect the margin/padding box for their positioning.
+.GoalsSection .GoalsScene {
+  position: relative;
+  // With position: absolute children, it seems there's no way to make the
+  // children dictate the size of the parents, so we can hardcode a minimum
+  // one here
+  min-height: 500px;
 }
 
 .GoalsSection .TopGradient {
@@ -38,4 +46,37 @@
   left: 0px;
   width: 100%;
   height: 40%;
+}
+
+.Stickman {
+  position: absolute;
+  left: 0px;
+  top: 339px;
+}
+
+.ViewLine {
+  position: absolute;
+  left: 21px;
+  right: 170px;
+  top: 349px;
+}
+
+.Target {
+  position: absolute;
+  width: 225.86px;
+  height: 225.86px;
+  left: 619px;
+  top: 236.14px;
+}
+
+.Quarter {
+  position: absolute;
+  left: calc(50% - 387px / 2 - 116.5px);
+  top: 54px;
+}
+
+.Truth {
+  position: absolute;
+  left: calc(50% - 390px / 2 - 115px);
+  top: 364px;
 }

@@ -1,4 +1,4 @@
-@import '../../shared-styles/variables';
+@import "../../shared-styles/variables";
 
 /*
 .header {
@@ -39,4 +39,13 @@
 .nextSection {
   background-color: #555;
   height: 100vh;
+}
+
+/*
+ * Generic styles for all contained components
+ */
+
+* {
+  // Make stuff calculate their padding after calculating the size.
+  box-sizing: border-box;
 }

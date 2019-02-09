@@ -32,7 +32,7 @@ class ThoughtsSection extends React.Component {
     new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
-      duration: `${this.sectionDuration}%`,
+      duration: `${this.sectionDuration + 15}%`,
     })
       .setPin(this.ref_dummy_pusher.current, { pushFollowers: true })
       // .addIndicators({ name: "pin 2", indent: 150 })
@@ -59,7 +59,7 @@ class ThoughtsSection extends React.Component {
 
   render() {
     return (
-      <div ref={this.ref_pin_container}>
+      <section ref={this.ref_pin_container}>
         <div ref={this.ref_pin_content}>
           <div className={styles.ThoughtsSection}>
             <div className={styles.verticalAlign}>
@@ -75,7 +75,7 @@ class ThoughtsSection extends React.Component {
           </div>
         </div>
         <div ref={this.ref_dummy_pusher} />
-      </div>
+      </section>
     );
   }
 }

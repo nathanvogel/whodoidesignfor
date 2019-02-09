@@ -18,7 +18,7 @@ class App extends React.Component {
         <TitleSection />
         <ThoughtsSection />
         <GoalsSection />
-        <div className={styles.nextSection}>Hey!</div>
+        <section className={styles.nextSection}>Hey!</section>
       </div>
     );
   }

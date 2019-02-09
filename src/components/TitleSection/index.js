@@ -98,11 +98,11 @@ class TitleSection extends React.Component {
     }
 
     return (
-      <div ref={this.ref_scroll_container}>
+      <section ref={this.ref_scroll_container}>
         <div className={styles.TitleSection} ref={this.ref_main}>
           <div className={styles.TitleList}>{titles_h1}</div>
         </div>
-      </div>
+      </section>
     );
   }
 }
