@@ -62,7 +62,9 @@ module.exports = {
     );
 
     // Exclude inline.svg from url-loader
-    const urlLoader = appConfig.module.rules.find(loader => loader.loader === "file-loader");
+    const urlLoader = appConfig.module.rules.find(
+      loader => loader.loader === "file-loader"
+    );
     urlLoader.test = /\.jpe?g$|\.gif$|\.png$|\.eot$|\.ttf$|\.woff$|\.woff2$|^(?!.*\.inline\.svg$).*\.svg$/; // eslint-disable-line max-len
 
     // Create a new loader to handle inline.svg files and pass the same options
@@ -76,11 +78,14 @@ module.exports = {
         },
         {
           loader: "react-svg-loader",
-          query: {
-            es5: false,
+          options: {
             svgo: {
               pretty: true,
-              plugins: [{ removeStyleElement: true }],
+              plugins: [
+                {
+                  cleanupIDs: false,
+                },
+              ],
             },
           },
         },
