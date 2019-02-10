@@ -2,7 +2,7 @@ import React from "react";
 import ScrollMagic from "scrollmagic";
 import { TweenMax, Linear, Back } from "gsap";
 import "animation.gsap";
-import "debug.addIndicators";
+// import "debug.addIndicators";
 import styles from "./styles.scss";
 import Stickman from "../../images/goals-stickman.inline.svg";
 import Target from "../../images/goals-target.inline.svg";
@@ -42,7 +42,7 @@ class GoalsSection extends React.Component {
       duration: `25%`,
     })
       .setTween(viewLineTween)
-      .addIndicators({ name: "viewline" })
+      // .addIndicators({ name: "viewline" })
       .addTo(window.controller);
     linkSceneToOffset(viewLineScene, 10);
 
@@ -56,7 +56,7 @@ class GoalsSection extends React.Component {
       duration: `25%`,
     })
       .setTween(truthAppearTween)
-      .addIndicators({ name: "truth text" })
+      // .addIndicators({ name: "truth text" })
       .addTo(window.controller);
     linkSceneToOffset(truthAppearScene, 10);
 
@@ -71,7 +71,7 @@ class GoalsSection extends React.Component {
       duration: 0,
     })
       .setTween(targetTextTween)
-      .addIndicators({ name: "Target Text" })
+      // .addIndicators({ name: "Target Text" })
       .addTo(window.controller);
     linkSceneToOffset(targetTextScene, 35);
   }
