@@ -1,0 +1,22 @@
+<svg width="192" height="292" viewBox="0 0 192 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="stickman.inline">
+<g id="goals">
+<path id="legs_goals" d="M50.4833 238.19L50.4834 180.874L23.3691 137.902L92.6275 165.702L96.5 220.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_goals" d="M23 138.058L32.5 66.5L36 43" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_goals" d="M58.321 127.772L18.1325 112.239L9 78.5242L31.9702 65.3496L47.5 66.5L70.4907 98.904L107 105.696" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_goals" d="M57.9992 30.1906C57.9992 43.5507 48.3256 54.3812 36.3926 54.3812C24.4597 54.3812 14.7861 43.5507 14.7861 30.1906C14.7861 16.8305 24.4597 6 36.3926 6C48.3256 6 57.9992 16.8305 57.9992 30.1906Z" fill="#C0C0C0"/>
+</g>
+<g id="shareholders">
+<path id="legs_shareholders" d="M36 267L43.6531 185.912L92.1224 156.891L144.844 185.912L161 267" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_shareholders" d="M93 156.891L94 66L93 46" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_shareholders" d="M43.6602 140L46 102.233L70.4998 69.75L92 66L114.5 69.75L144.5 105L126 140" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_shareholders" d="M117 29C117 41.7025 106.031 52 92.5 52C78.969 52 68 41.7025 68 29C68 16.2975 78.969 6 92.5 6C106.031 6 117 16.2975 117 29Z" fill="#C0C0C0"/>
+</g>
+<g id="default">
+<path id="legs" d="M64.5 279.5L70 217L92.1224 156.891L118 217L124 279.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk" d="M93 156.891L91 66.5L93 46" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms" d="M57.5 147L64 110L78 76L92 66L106.5 76L119.5 110L126 147" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head" d="M117 28C117 42.3594 106.031 54 92.5 54C78.969 54 68 42.3594 68 28C68 13.6406 78.969 2 92.5 2C106.031 2 117 13.6406 117 28Z" fill="#C0C0C0"/>
+</g>
+</g>
+</svg>

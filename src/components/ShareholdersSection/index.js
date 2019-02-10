@@ -1,15 +1,14 @@
 import React from "react";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, TimelineMax, Linear, Back } from "gsap";
+import { TweenMax, Linear, Back } from "gsap";
 import "animation.gsap";
 // import "debug.addIndicators";
 import styles from "./styles.scss";
-import Stickman from "../../images/default-stickman.inline.svg";
+import Stickman from "../../images/goals-stickman.inline.svg";
 import Target from "../../images/goals-target.inline.svg";
 import ViewLine from "../../images/goals-viewline.inline.svg";
 import TargetText from "../../images/goals-q4-text.inline.svg";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
-import { getStickmanTimeline } from "../../utils/get-svg";
 
 class GoalsSection extends React.Component {
   constructor() {
@@ -19,8 +18,6 @@ class GoalsSection extends React.Component {
     this.ref_viewline = React.createRef();
     this.ref_truth = React.createRef();
 
-    // A unique ID so that GSAP can find it and its children
-    this.stickmanId = "GoalsSectionStickman";
     this.sectionDuration = 50;
   }
 
@@ -63,7 +60,7 @@ class GoalsSection extends React.Component {
       .addTo(window.controller);
     linkSceneToOffset(truthAppearScene, 10);
 
-    // Q4 target text appear
+    // console.log(this.ref_targettext);
     const targetTextTween = TweenMax.from("#goals-q4-text\\.inline", 0.3, {
       y: -150,
       ease: Back.easeOut,
@@ -77,18 +74,6 @@ class GoalsSection extends React.Component {
       // .addIndicators({ name: "Target Text" })
       .addTo(window.controller);
     linkSceneToOffset(targetTextScene, 35);
-
-    // Stickman transition.
-    const tl = getStickmanTimeline(this.stickmanId, 1, "goals", "shareholders");
-    const stickTestScene = new ScrollMagic.Scene({
-      triggerElement: this.ref_pin_container.current,
-      triggerHook: 0.0,
-      duration: 0,
-    })
-      .setTween(tl)
-      // .addIndicators({ name: "Target Text" })
-      .addTo(window.controller);
-    linkSceneToOffset(stickTestScene, 35);
   }
 
   render() {
@@ -103,7 +88,7 @@ class GoalsSection extends React.Component {
               <div className={styles.ViewLine}>
                 <ViewLine />
               </div>
-              <Stickman id={this.stickmanId} className={styles.Stickman} />
+              <Stickman className={styles.Stickman} />
               <span className={styles.Truth} ref={this.ref_truth}>
                 I was designing for business goals.
               </span>

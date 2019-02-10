@@ -5,6 +5,7 @@ import styles from "./styles.scss";
 import TitleSection from "../TitleSection";
 import ThoughtsSection from "../ThoughtsSection";
 import GoalsSection from "../GoalsSection";
+import Stickman from "../../images/stickman.inline.svg";
 
 // This line makes sure plugins aren't tree-shacked out of the bundle.
 // https://greensock.com/docs/NPMUsage
@@ -24,6 +25,7 @@ class App extends React.Component {
         <ThoughtsSection />
         <GoalsSection />
         <section className={styles.nextSection}>Hey!</section>
+        <Stickman style={{ display: "block" }} />
       </div>
     );
   }

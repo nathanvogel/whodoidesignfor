@@ -1,7 +1,7 @@
 @import "../../shared-styles/variables";
 
 // We need the section to impose its black background on the whole width.
-.GoalsSection {
+.ShareholdersSection {
   height: 100vh;
   background-color: black;
   width: 100%;
@@ -9,7 +9,7 @@
 
 // We need a centerer object that adds padding, but if the content is
 // absolutely positionned as a direct child, it won't respect the padding.
-.GoalsSection .Padder {
+.ShareholdersSection .Padder {
   max-width: $content-width;
   padding: $padding;
   margin: 0 auto;
@@ -23,7 +23,7 @@
 
 // So we relatively position a children of the padding element, so that the
 // children respect the margin/padding box for their positioning.
-.GoalsSection .GoalsScene {
+.ShareholdersSection .ShareholdersScene {
   position: relative;
   // With position: absolute children, it seems there's no way to make the
   // children dictate the size of the parents, so we can hardcode a minimum
@@ -34,35 +34,10 @@
   transform: translateY(-8vh);
 }
 
-.GoalsSection .TopGradient {
-  // A smoother gradient than the default one with no easing.
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.008) 13%,
-    rgba(0, 0, 0, 0.024) 20%,
-    rgba(0, 0, 0, 0.051) 27%,
-    rgba(0, 0, 0, 0.086) 33%,
-    rgba(0, 0, 0, 0.181) 44%,
-    rgba(0, 0, 0, 0.302) 55%,
-    rgba(0, 0, 0, 0.404) 62%,
-    rgba(0, 0, 0, 0.737) 82%,
-    rgba(0, 0, 0, 0.878) 91%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  position: absolute;
-  bottom: 99%;
-  left: 0px;
-  width: 100%;
-  height: 70%;
-}
-
 .Stickman {
   position: absolute;
-  width: 89.42px;
-  height: 136px;
-  left: -4px;
-  top: 178px;
+  left: 0px;
+  top: 181px;
 }
 
 .ViewLine {

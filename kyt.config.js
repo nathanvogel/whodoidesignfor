@@ -82,9 +82,9 @@ module.exports = {
             svgo: {
               pretty: true,
               plugins: [
-                {
-                  cleanupIDs: false,
-                },
+                { cleanupIDs: false },
+                { convertPathData: false },
+                { convertShapeToPath: { convertArcs: true } },
               ],
             },
           },
