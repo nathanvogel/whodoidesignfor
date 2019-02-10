@@ -13,6 +13,12 @@
   max-width: $content-width;
   padding: $padding;
   margin: 0 auto;
+
+  // Use flexbox to center vertically (not super important)
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 // So we relatively position a children of the padding element, so that the
@@ -22,7 +28,10 @@
   // With position: absolute children, it seems there's no way to make the
   // children dictate the size of the parents, so we can hardcode a minimum
   // one here
-  min-height: 500px;
+  min-height: 400px;
+
+  // Since the parent center this div, bring it back up a little bit.
+  transform: translateY(-8vh);
 }
 
 .GoalsSection .TopGradient {
@@ -42,23 +51,23 @@
     rgba(0, 0, 0, 1) 100%
   );
   position: absolute;
-  bottom: 100%;
+  bottom: 99%;
   left: 0px;
   width: 100%;
-  height: 40%;
+  height: 70%;
 }
 
 .Stickman {
   position: absolute;
   left: 0px;
-  top: 339px;
+  top: 181px;
 }
 
 .ViewLine {
   position: absolute;
   left: 19px;
-  right: 164px;
-  top: 349px;
+  right: 135px;
+  top: 191px;
   height: 10px;
   overflow: hidden;
   // border: 1px dashed #df2323;
@@ -74,18 +83,32 @@
   position: absolute;
   width: 225.86px;
   height: 225.86px;
-  right: 51.14px;
-  top: 236.14px;
+  right: 21px;
+  top: 80px;
 }
 
-.Quarter {
+.TargetText {
   position: absolute;
-  left: calc(50% - 387px / 2 - 116.5px);
-  top: 54px;
+  width: 226px;
+  right: 21px;
+  top: 329px;
+  overflow: visible;
 }
 
 .Truth {
   position: absolute;
-  left: calc(50% - 390px / 2 - 115px);
-  top: 364px;
+  left: 100px;
+  top: 138px;
+  max-width: 52%;
+  font-family: $font-family-typewriter;
+  font-size: $font-size-small;
+  color: white;
+}
+
+// Lower the text on small screen
+@media (max-width: 700px) {
+  .Truth {
+    top: 400px;
+    left: 0px;
+  }
 }

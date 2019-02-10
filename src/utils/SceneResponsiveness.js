@@ -9,8 +9,8 @@ function unlinkScene(scene) {
   }
 }
 
-function vhToPx(pc) {
-  return (window.innerHeight * pc) / 100;
+function vhToPx(vh) {
+  return (window.innerHeight * vh) / 100;
 }
 
 function linkSceneToOffset(scene, vhOffset) {
