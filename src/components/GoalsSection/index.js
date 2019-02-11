@@ -2,7 +2,7 @@ import React from "react";
 import ScrollMagic from "scrollmagic";
 import { TweenMax, TimelineMax, Linear, Back } from "gsap";
 import "animation.gsap";
-// import "debug.addIndicators";
+import "debug.addIndicators";
 import styles from "./styles.scss";
 import Stickman from "../../images/default-stickman.inline.svg";
 import Target from "../../images/goals-target.inline.svg";
@@ -21,7 +21,7 @@ class GoalsSection extends React.Component {
 
     // A unique ID so that GSAP can find it and its children
     this.stickmanId = "GoalsSectionStickman";
-    this.sectionDuration = 50;
+    this.sectionDuration = 60;
   }
 
   componentDidMount() {
@@ -29,10 +29,10 @@ class GoalsSection extends React.Component {
     new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
-      duration: `${this.sectionDuration + 10}%`,
+      duration: `${this.sectionDuration}%`,
     })
       .setPin(this.ref_pin_content.current)
-      // .addIndicators({ name: "pin goals", indent: 150 })
+      .addIndicators({ name: "pin goals", indent: 150 })
       .addTo(window.controller);
 
     const viewLineTween = TweenMax.from("#goals-viewline\\.inline", 1, {
@@ -79,16 +79,35 @@ class GoalsSection extends React.Component {
     linkSceneToOffset(targetTextScene, 35);
 
     // Stickman transition.
-    const tl = getStickmanTimeline(this.stickmanId, 1, "goals", "shareholders");
+    const stickman = `#${this.stickmanId}`;
+    const ease = undefined;
+    const tl = getStickmanTimeline(
+      this.stickmanId,
+      1,
+      ease,
+      "goals",
+      "shareholders"
+    );
+    tl.to(stickman, 1, { scale: 192 / 89.42 }, 0);
     const stickTestScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0.0,
-      duration: 0,
+      duration: "30%",
     })
       .setTween(tl)
-      // .addIndicators({ name: "Target Text" })
+      .addIndicators({ name: "Stickman anim" })
       .addTo(window.controller);
-    linkSceneToOffset(stickTestScene, 35);
+    linkSceneToOffset(stickTestScene, 40);
+
+    // Pin the scene
+    // new ScrollMagic.Scene({
+    //   triggerElement: this.ref_pin_container.current,
+    //   triggerHook: 0,
+    //   duration: `${this.sectionDuration + 100}%`,
+    // })
+    //   .setPin(`${stickman}  svg`, { pushFollowers: false })
+    //   .addIndicators({ name: "Pin stickman", indent: 150 })
+    //   .addTo(window.controller);
   }
 
   render() {
