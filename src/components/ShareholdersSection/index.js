@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, Linear, Back } from "gsap";
+import { TweenMax, Linear } from "gsap";
 import "animation.gsap";
 // import "debug.addIndicators";
 import styles from "./styles.scss";

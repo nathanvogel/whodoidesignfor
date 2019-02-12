@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, TimelineMax, TweenLite, Linear, Back } from "gsap";
+import { TweenMax, Linear, Back } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
@@ -93,55 +93,6 @@ class GoalsSection extends React.Component {
         pinScene
       );
     }, 2000);
-
-    // Stickman transition.
-    // const stickman = `#${this.stickmanId}`;
-    // const ease = undefined;
-    // const tl = getStickmanTimeline(
-    //   this.stickmanId,
-    //   1,
-    //   ease,
-    //   "goals",
-    //   "shareholders"
-    // );
-    // tl.to(stickman, 1, { scale: 192 / 89.42 }, 0);
-    // const stickTestScene = new ScrollMagic.Scene({
-    //   triggerElement: this.ref_pin_container.current,
-    //   triggerHook: 0.0,
-    //   duration: "80%",
-    // })
-    //   .setTween(tl)
-    //   .addIndicators({ name: "Stickman anim" })
-    //   .addTo(window.controller);
-    // linkSceneToOffset(stickTestScene, this.sectionDuration);
-
-    // Pin the scene
-    // new ScrollMagic.Scene({
-    //   triggerElement: this.ref_pin_container.current,
-    //   triggerHook: 0,
-    //   duration: `${this.sectionDuration + 100}%`,
-    // })
-    //   .setPin(stickman, { pushFollowers: false })
-    //   .addIndicators({ name: "Pin stickman", indent: 150 })
-    //   .addTo(window.controller);
-
-    // var transitionTween;
-    // const mainStickman = document.getElementById("main-stickman");
-    // const localStickman = document.getElementById(this.stickmanId);
-    // pinScene.on("leave", event => {
-    //     console.log("unpinning");
-    //     console.log(event);
-    // });
-    //
-    // pinScene.on("enter", event => {
-    //   // if (transitionTween) {
-    //   //   tl.remove(transitionTween);
-    //   //   transitionTween = 0;
-    //   // }
-    //   console.log("Destroying transition tween");
-    //   mainStickman.style.visibility = "hidden";
-    //   TweenLite.killTweensOf(mainStickman);
-    // });
   }
 
   hideMainStickman() {}

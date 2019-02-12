@@ -13,6 +13,7 @@
     "prettier/prettier": "off",
     "camelcase": "off",
     "class-methods-use-this": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "no-console": "off"
   }
 }

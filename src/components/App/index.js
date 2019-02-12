@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollMagic from "scrollmagic";
 import { TextPlugin } from "gsap/all";
-import { TimelineLite, TweenLite, Linear } from "gsap";
+import { TweenLite, Linear } from "gsap";
 import styles from "./styles.scss";
 import TitleSection from "../TitleSection";
 import ThoughtsSection from "../ThoughtsSection";
@@ -20,7 +20,6 @@ class App extends React.Component {
     super();
     const controller = new ScrollMagic.Controller();
     window.controller = controller;
-    this.mainStickman;
     this.setupTransition = this.setupTransition.bind(this);
 
     this.transitions = {
@@ -52,9 +51,10 @@ class App extends React.Component {
     this.updateTransition(t);
   }
 
-  updateTransition(t) {
+  updateTransition(t, event) {
     if (typeof t === "string") {
       t = this.transitions[t];
+      console.log("update from ", event);
     }
 
     if (!t.inPinScene) {
@@ -66,11 +66,17 @@ class App extends React.Component {
       return;
     }
 
+    console.log("Updating transition");
+
     // Calculate from / to positions, it's just the absolute difference.
     const inRect = t.inStickman.getBoundingClientRect();
     const outRect = t.outStickman.getBoundingClientRect();
-    const inTop = inRect.top + window.scrollY + t.inPinScene.duration();
-    const outTop = outRect.top + window.scrollY;
+    const pxToFinalInTop =
+      (1 - t.inPinScene.progress()) * t.inPinScene.duration();
+    const pxToStartingOutTop =
+      -t.outPinScene.progress() * t.outPinScene.duration();
+    const inTop = inRect.top + window.scrollY + pxToFinalInTop;
+    const outTop = outRect.top + window.scrollY + pxToStartingOutTop;
     const inLeft = inRect.left;
     const outLeft = outRect.left;
     const inScale = inRect.width / this.originalWidth;
@@ -80,14 +86,13 @@ class App extends React.Component {
     const sceneDuration = t.outPinScene.scrollOffset() - sceneStart;
     const sceneOffset = t.inPinScene.duration();
 
-    console.log(inLeft);
-    // console.log(
-    //   `Going from ${inRect.top} + ${
-    //     window.scrollY
-    //   } + ${t.inPinScene.duration()} = ${inTop} to ${outRect.top} + ${
-    //     window.scrollY
-    //   }`
-    // );
+    console.log(
+      `Going from ${inRect.top} + ${
+        window.scrollY
+      } + ${pxToFinalInTop} = ${inTop} to ${outRect.top} + ${
+        window.scrollY
+      } + ${pxToStartingOutTop} = ${outTop}`
+    );
 
     // Build the animation timeline.
     if (!t.tl) {
@@ -100,47 +105,39 @@ class App extends React.Component {
       );
     }
 
-    if (!t.tweenY) {
-      t.tweenY = TweenLite.fromTo(
-        this.mainStickman,
-        1,
-        { y: inTop },
-        { y: outTop }
-      );
-      t.tl.add(t.tweenY, 0);
-    } else {
-      t.tweenY.vars.startAt.y = inTop;
-      t.tweenY.vars.y = outTop;
-      t.tweenY.invalidate();
+    // Y transition,
+    // It's the most suspect to changes because of DOM ScrolLMagic weirdness.
+    if (t.tweenY) {
+      console.log("killing tween");
+      t.tweenY.kill();
     }
+    t.tweenY = TweenLite.fromTo(
+      this.mainStickman,
+      1,
+      { y: inTop },
+      { y: outTop }
+    );
+    t.tl.add(t.tweenY, 0);
 
-    if (!t.tweenX) {
-      t.tweenX = TweenLite.fromTo(
-        this.mainStickman,
-        1,
-        { x: inLeft },
-        { x: outLeft }
-      );
-      t.tl.add(t.tweenX, 0);
-    } else {
-      t.tweenX.vars.startAt.x = inLeft;
-      t.tweenX.vars.x = outLeft;
-      t.tweenX.invalidate();
-    }
+    // X transition, might not need to be recreated on every event.
+    if (t.tweenX) t.tweenX.kill();
+    t.tweenX = TweenLite.fromTo(
+      this.mainStickman,
+      1,
+      { x: inLeft },
+      { x: outLeft }
+    );
+    t.tl.add(t.tweenX, 0);
 
-    if (!t.tweenScale) {
-      t.tweenScale = TweenLite.fromTo(
-        this.mainStickman,
-        1,
-        { scale: inScale },
-        { scale: outScale }
-      );
-      t.tl.add(t.tweenScale, 0);
-    } else {
-      t.tweenY.vars.startAt.scale = inScale;
-      t.tweenY.vars.scale = outScale;
-      t.tweenY.invalidate();
-    }
+    // Scale transition, same
+    if (t.tweenScale) t.tweenScale.kill();
+    t.tweenScale = TweenLite.fromTo(
+      this.mainStickman,
+      1,
+      { scale: inScale },
+      { scale: outScale }
+    );
+    t.tl.add(t.tweenScale, 0);
 
     // Build the scene
     if (!t.scene) {
@@ -154,39 +151,23 @@ class App extends React.Component {
         .addIndicators({ name: "STICKMAN transition" })
         .addTo(window.controller);
 
-      t.scene.on("enter", event => {
+      t.scene.on("enter", _event => {
         // Substitute stickmans
         t.inStickman.style.visibility = "hidden";
         t.outStickman.style.visibility = "hidden";
         this.mainStickman.style.visibility = "visible";
       });
-      t.scene.on("leave", event => {
+      t.scene.on("leave", _event => {
         // Substitute stickmans
         t.inStickman.style.visibility = "visible";
         t.outStickman.style.visibility = "visible";
         this.mainStickman.style.visibility = "hidden";
-
-        console.log("Destroying...");
-        // TweenLite.killTweensOf(mainStickman);
       });
     } else {
       t.scene.duration(sceneDuration);
       t.scene.offset(sceneOffset);
     }
   }
-
-  // setupTransitionEnd() {
-  //
-  //       pinScene.on("enter", event => {
-  //         // if (transitionTween) {
-  //         //   tl.remove(transitionTween);
-  //         //   transitionTween = 0;
-  //         // }
-  //         console.log("Destroying transition tween");
-  //         mainStickman.style.visibility = "hidden";
-  //         TweenLite.killTweensOf(mainStickman);
-  //       });
-  // }
 
   render() {
     return (
