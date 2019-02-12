@@ -191,7 +191,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="main-root-content">
+      <div className={styles.MainRootContent}>
         <TitleSection />
         <ThoughtsSection />
         <GoalsSection setupTransition={this.setupTransition} />

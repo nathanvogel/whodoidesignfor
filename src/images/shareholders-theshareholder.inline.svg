@@ -1,0 +1,39 @@
+<svg width="426" height="644" viewBox="0 0 426 644" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="shareholder-theshareholder.inline.svg">
+<path id="Vector" d="M0 0C92.6087 196.72 118.306 526.313 110.76 644H308.424C311.511 525.278 336.478 169.801 426 0C296.348 74.5466 113.188 67.299 0 0Z" fill="url(#paint0_linear)"/>
+<g id="Group">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="92" y="198" width="97" height="71">
+<path id="Vector_2" d="M188.333 228.519C163.551 221.784 113.875 207.435 93.124 199.326C97.1927 213.111 116.316 249.197 144.391 263.794C172.465 278.39 183.451 247.981 188.333 228.519Z" fill="#FFF7F7" stroke="black"/>
+</mask>
+<g mask="url(#mask0)">
+<rect id="Rectangle 2" x="68.2861" y="184.838" width="140.744" height="105.558" fill="#FFC2C2"/>
+<path id="Vector 3" d="M110.718 213.814L97.2646 228.303L107.614 282.117L189.369 289.361L177.986 259.349L171.776 253.14H166.602L164.532 245.896L161.428 249L156.253 243.826L154.183 234.512L144.869 236.582L141.765 239.686L138.66 231.407L131.416 234.512V228.303H120.032L110.718 213.814Z" fill="url(#paint1_linear)" stroke="#EF0202"/>
+<path id="Vector 4" d="M150.042 254.175C145.903 242.584 143.488 219.679 142.798 209.675L160.391 213.814C158.666 232.097 153.147 234.512 150.042 254.175Z" fill="black"/>
+</g>
+</g>
+<g id="Group 2">
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="237" y="198" width="97" height="71">
+<path id="Vector_3" d="M238.005 228.465C262.788 221.656 312.464 207.152 333.215 198.954C329.146 212.89 310.023 249.368 281.948 264.124C253.874 278.879 242.888 248.139 238.005 228.465Z" fill="#FFF7F7" stroke="black"/>
+</mask>
+<g mask="url(#mask1)">
+<rect id="Rectangle 2_2" x="217.309" y="186.4" width="140.744" height="106.707" fill="#C2FFCF"/>
+<path id="Vector 3.1" d="M315.622 219.877L342.529 213.6L315.622 282.646L233.866 289.969L245.25 259.631L251.459 253.354L255.854 255.424L258.704 246.031L261.808 249.169L266.983 243.939L269.052 234.523L274.227 239.754L278.904 251.972L284.576 231.385L291.82 234.523V228.246L308.378 234.523L315.622 219.877Z" fill="url(#paint2_linear)" stroke="#2EE400"/>
+<path id="Vector 4.1" d="M269.053 254.4C273.192 242.683 275.607 219.529 276.297 209.416L258.704 213.6C260.429 232.082 265.948 234.523 269.053 254.4Z" fill="black"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="213" y1="49.6977" x2="218.73" y2="643.999" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-color="#292929"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="157.288" y1="238.651" x2="142.8" y2="268.663" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CD000C" stop-opacity="0.71"/>
+<stop offset="1" stop-color="#FF000F" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="265.948" y1="238.708" x2="280.692" y2="268.921" gradientUnits="userSpaceOnUse">
+<stop stop-color="#66CD00" stop-opacity="0.71"/>
+<stop offset="1" stop-color="#14FF00" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
