@@ -82,9 +82,15 @@ class App extends React.Component {
     const inScale = inRect.width / this.originalWidth;
     const outScale = outRect.width / this.originalWidth;
 
-    const sceneStart = t.inPinScene.scrollOffset() + t.inPinScene.duration();
-    const sceneDuration = t.outPinScene.scrollOffset() - sceneStart;
+    const sceneDuration =
+      t.outPinScene.scrollOffset() -
+      t.inPinScene.scrollOffset() -
+      t.inPinScene.duration();
     const sceneOffset = t.inPinScene.duration();
+
+    console.log(
+      `Duration: ${t.outPinScene.scrollOffset()} - ${t.inPinScene.scrollOffset()} - ${t.inPinScene.duration()} = ${sceneDuration}`
+    );
 
     console.log(
       `Going from ${inRect.top} + ${
@@ -164,7 +170,11 @@ class App extends React.Component {
         this.mainStickman.style.visibility = "hidden";
       });
     } else {
-      t.scene.duration(sceneDuration);
+      if (sceneDuration < 0) {
+        console.warn("SceneDuration is < zero!", sceneDuration);
+      } else {
+        t.scene.duration(sceneDuration);
+      }
       t.scene.offset(sceneOffset);
     }
   }
