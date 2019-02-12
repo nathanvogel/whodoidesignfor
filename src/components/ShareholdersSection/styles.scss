@@ -1,5 +1,7 @@
 @import "../../shared-styles/variables";
 
+$scene-height: 550px;
+
 // We need the section to impose its black background on the whole width.
 .ShareholdersSection {
   height: 100vh;
@@ -28,10 +30,10 @@
   // With position: absolute children, it seems there's no way to make the
   // children dictate the size of the parents, so we can hardcode a minimum
   // one here
-  min-height: 550px;
+  min-height: $scene-height;
 
   // Since the parent center this div, bring it back up a little bit.
-  transform: translateY(-8vh);
+  transform: translateY(-$center-upper);
 }
 
 .Stickman {
@@ -71,10 +73,31 @@
   top: 457px;
   left: 0px;
   width: 100%;
-  height: calc(100vh - 457px);
+  // Calculate the table height in the scene to really hide the evil.
+  // + take into account the centering offset of the scene
+  // + account for scene centering
+  // + 1px for some reason, probably rounding
+  height: calc(
+    #{$scene-height} - 457px + #{$center-upper} + (100vh - #{$scene-height}) / 2 +
+      1px
+  );
   background-color: black;
   border-top: white solid 2px;
 }
+
+// .TableBottom {
+//   position: relative;
+//   bottom: -$padding;
+//   // top: $padding;
+//   left: 0px;
+//   // top: 457px;
+//   // left: 0px;
+//   width: 100%;
+//   height: 25%;
+//   // height: calc(100vh - 457px);
+//   background-color: blue;
+//   // border-top: white solid 2px;
+// }
 
 .Creations {
   position: absolute;

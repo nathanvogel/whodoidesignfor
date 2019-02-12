@@ -20,7 +20,7 @@ class ShareholdersSection extends React.Component {
     this.ref_theshareholder = React.createRef();
     this.ref_table = React.createRef();
 
-    this.sectionDuration = 50;
+    this.sectionDuration = 80;
     this.stickmanId = "ShareholdersStickman";
     this.shareholderId = "TheShareholder";
   }
@@ -30,7 +30,7 @@ class ShareholdersSection extends React.Component {
     const pinScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
-      duration: `${this.sectionDuration + 10}%`,
+      duration: `${this.sectionDuration}%`,
     })
       .setPin(this.ref_pin_content.current)
       // .addIndicators({ name: "pin goals", indent: 150 })
