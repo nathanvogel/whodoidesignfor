@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, TimelineMax, Linear, Back } from "gsap";
+import { TweenMax, TimelineMax, TweenLite, Linear, Back } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
@@ -9,7 +10,7 @@ import Target from "../../images/goals-target.inline.svg";
 import ViewLine from "../../images/goals-viewline.inline.svg";
 import TargetText from "../../images/goals-q4-text.inline.svg";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
-import { getStickmanTimeline } from "../../utils/get-svg";
+import { setStickmanPose } from "../../utils/get-svg";
 
 class GoalsSection extends React.Component {
   constructor() {
@@ -18,6 +19,7 @@ class GoalsSection extends React.Component {
     this.ref_pin_content = React.createRef();
     this.ref_viewline = React.createRef();
     this.ref_truth = React.createRef();
+    this.ref_stickman_container = React.createRef();
 
     // A unique ID so that GSAP can find it and its children
     this.stickmanId = "GoalsSectionStickman";
@@ -26,12 +28,12 @@ class GoalsSection extends React.Component {
 
   componentDidMount() {
     // Pin the scene
-    new ScrollMagic.Scene({
+    const pinScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
       duration: `${this.sectionDuration}%`,
     })
-      .setPin(this.ref_pin_content.current)
+      .setPin(this.ref_pin_content.current, { pushFollowers: true })
       .addIndicators({ name: "pin goals", indent: 150 })
       .addTo(window.controller);
 
@@ -78,26 +80,40 @@ class GoalsSection extends React.Component {
       .addTo(window.controller);
     linkSceneToOffset(targetTextScene, 35);
 
+    setStickmanPose(this.stickmanId, "goals");
+
+    setTimeout(() => {
+      console.log(
+        `offset ${pinScene.scrollOffset()} + ${pinScene.offset()} + ${pinScene.duration()}`
+      );
+      this.props.setupTransition(
+        "goalsToShareholders",
+        "in",
+        document.getElementById(this.stickmanId),
+        pinScene
+      );
+    }, 2000);
+
     // Stickman transition.
-    const stickman = `#${this.stickmanId}`;
-    const ease = undefined;
-    const tl = getStickmanTimeline(
-      this.stickmanId,
-      1,
-      ease,
-      "goals",
-      "shareholders"
-    );
-    tl.to(stickman, 1, { scale: 192 / 89.42 }, 0);
-    const stickTestScene = new ScrollMagic.Scene({
-      triggerElement: this.ref_pin_container.current,
-      triggerHook: 0.0,
-      duration: "30%",
-    })
-      .setTween(tl)
-      .addIndicators({ name: "Stickman anim" })
-      .addTo(window.controller);
-    linkSceneToOffset(stickTestScene, 40);
+    // const stickman = `#${this.stickmanId}`;
+    // const ease = undefined;
+    // const tl = getStickmanTimeline(
+    //   this.stickmanId,
+    //   1,
+    //   ease,
+    //   "goals",
+    //   "shareholders"
+    // );
+    // tl.to(stickman, 1, { scale: 192 / 89.42 }, 0);
+    // const stickTestScene = new ScrollMagic.Scene({
+    //   triggerElement: this.ref_pin_container.current,
+    //   triggerHook: 0.0,
+    //   duration: "80%",
+    // })
+    //   .setTween(tl)
+    //   .addIndicators({ name: "Stickman anim" })
+    //   .addTo(window.controller);
+    // linkSceneToOffset(stickTestScene, this.sectionDuration);
 
     // Pin the scene
     // new ScrollMagic.Scene({
@@ -105,10 +121,32 @@ class GoalsSection extends React.Component {
     //   triggerHook: 0,
     //   duration: `${this.sectionDuration + 100}%`,
     // })
-    //   .setPin(`${stickman}  svg`, { pushFollowers: false })
+    //   .setPin(stickman, { pushFollowers: false })
     //   .addIndicators({ name: "Pin stickman", indent: 150 })
     //   .addTo(window.controller);
+
+    // var transitionTween;
+    // const mainStickman = document.getElementById("main-stickman");
+    // const localStickman = document.getElementById(this.stickmanId);
+    // pinScene.on("leave", event => {
+    //     console.log("unpinning");
+    //     console.log(event);
+    // });
+    //
+    // pinScene.on("enter", event => {
+    //   // if (transitionTween) {
+    //   //   tl.remove(transitionTween);
+    //   //   transitionTween = 0;
+    //   // }
+    //   console.log("Destroying transition tween");
+    //   mainStickman.style.visibility = "hidden";
+    //   TweenLite.killTweensOf(mainStickman);
+    // });
   }
+
+  hideMainStickman() {}
+
+  transitionStickmanToNext() {}
 
   render() {
     return (
@@ -122,7 +160,12 @@ class GoalsSection extends React.Component {
               <div className={styles.ViewLine}>
                 <ViewLine />
               </div>
-              <Stickman id={this.stickmanId} className={styles.Stickman} />
+              <div
+                ref={this.ref_stickman_container}
+                className={styles.StickmanContainer}
+              >
+                <Stickman id={this.stickmanId} className={styles.Stickman} />
+              </div>
               <span className={styles.Truth} ref={this.ref_truth}>
                 I was designing for business goals.
               </span>
@@ -133,5 +176,9 @@ class GoalsSection extends React.Component {
     );
   }
 }
+
+GoalsSection.propTypes = {
+  setupTransition: PropTypes.func,
+};
 
 export default GoalsSection;

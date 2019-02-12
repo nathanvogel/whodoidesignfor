@@ -49,12 +49,21 @@ function getAllPaths(parentId, childIds, variant1, variant2) {
   return results;
 }
 
+const limbs = ["legs", "arms", "head", "trunk"];
+
+function setStickmanPose(stickmanId, variant) {
+  for (let i = 0; i < limbs.length; i += 1) {
+    const path = getPath("stickman\\.inline", limbs[i], variant);
+    const targetLimb = document.querySelector(`#${stickmanId} #${limbs[i]}`);
+    targetLimb.setAttribute("d", path);
+  }
+}
+
 /**
  * @returns {TimelineLite} A GSAP timeline configured with the animation and
  *    the given parameters.
  */
 function getStickmanTimeline(stickmanId, duration, easing, variant1, variant2) {
-  const limbs = ["legs", "arms", "head", "trunk"];
   const paths = getAllPaths("stickman\\.inline", limbs, variant1, variant2);
   const tl = new TimelineLite();
   for (let i = 0; i < limbs.length; i += 1) {
@@ -69,4 +78,10 @@ function getStickmanTimeline(stickmanId, duration, easing, variant1, variant2) {
   return tl;
 }
 
-export { getStickmanTimeline, getAllPaths, getVariantPaths, getPath };
+export {
+  getStickmanTimeline,
+  setStickmanPose,
+  getAllPaths,
+  getVariantPaths,
+  getPath,
+};

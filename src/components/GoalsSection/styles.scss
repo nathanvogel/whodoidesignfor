@@ -58,9 +58,12 @@
 }
 
 .Stickman {
-  position: absolute;
   width: 89.42px;
   height: 136px;
+}
+
+.StickmanContainer {
+  position: absolute;
   left: -4px;
   top: 178px;
 }

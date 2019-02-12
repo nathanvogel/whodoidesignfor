@@ -3,7 +3,7 @@
 // We need the section to impose its black background on the whole width.
 .ShareholdersSection {
   height: 100vh;
-  background-color: black;
+  background-color: #222;
   width: 100%;
 }
 
@@ -40,38 +40,6 @@
   top: 181px;
 }
 
-.ViewLine {
-  position: absolute;
-  left: 19px;
-  right: 135px;
-  top: 191px;
-  height: 10px;
-  overflow: hidden;
-  // border: 1px dashed #df2323;
-}
-
-.ViewLine svg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.Target {
-  position: absolute;
-  width: 225.86px;
-  height: 225.86px;
-  right: 21px;
-  top: 80px;
-}
-
-.TargetText {
-  position: absolute;
-  width: 226px;
-  right: 21px;
-  top: 329px;
-  overflow: visible;
-}
-
 .Truth {
   position: absolute;
   left: 100px;
@@ -80,12 +48,4 @@
   font-family: $font-family-typewriter;
   font-size: $font-size-small;
   color: white;
-}
-
-// Lower the text on small screen
-@media (max-width: 700px) {
-  .Truth {
-    top: 400px;
-    left: 0px;
-  }
 }

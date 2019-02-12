@@ -49,3 +49,10 @@
   // Make stuff calculate their padding after calculating the size.
   box-sizing: border-box;
 }
+
+.MainStickman {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform-origin: top left;
+}
