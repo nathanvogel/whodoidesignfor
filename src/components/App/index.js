@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollMagic from "scrollmagic";
+// import "debug.addIndicators";
 import { TextPlugin } from "gsap/all";
 import { TweenLite, Linear } from "gsap";
 import styles from "./styles.scss";
@@ -21,6 +22,7 @@ class App extends React.Component {
     const controller = new ScrollMagic.Controller();
     window.controller = controller;
     this.setupTransition = this.setupTransition.bind(this);
+    this.updateTransition = this.updateTransition.bind(this);
 
     this.transitions = {
       goalsToShareholders: {
@@ -34,6 +36,10 @@ class App extends React.Component {
     console.log("App mounted");
     this.mainStickman = document.getElementById("main-stickman");
     this.originalWidth = this.mainStickman.getBoundingClientRect().width;
+
+    Object.keys(this.transitions).forEach(key => {
+      this.updateTransition(key);
+    });
   }
 
   setupTransition(tId, inOut, stickman, scene) {
@@ -63,6 +69,10 @@ class App extends React.Component {
     }
     if (!t.outPinScene) {
       console.log("Missing outPinScene, not updating yet");
+      return;
+    }
+    if (!this.mainStickman) {
+      console.log("Missing mainStickman, not updating yet");
       return;
     }
 
@@ -154,7 +164,7 @@ class App extends React.Component {
         offset: sceneOffset,
       })
         .setTween(t.tl)
-        .addIndicators({ name: "STICKMAN transition" })
+        // .addIndicators({ name: "STICKMAN transition" })
         .addTo(window.controller);
 
       t.scene.on("enter", _event => {

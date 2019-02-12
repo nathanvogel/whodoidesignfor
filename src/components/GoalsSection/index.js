@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ScrollMagic from "scrollmagic";
 import { TweenMax, Linear, Back } from "gsap";
 import "animation.gsap";
-import "debug.addIndicators";
+// import "debug.addIndicators";
 import styles from "./styles.scss";
 import Stickman from "../../images/default-stickman.inline.svg";
 import Target from "../../images/goals-target.inline.svg";
@@ -34,7 +34,7 @@ class GoalsSection extends React.Component {
       duration: `${this.sectionDuration}%`,
     })
       .setPin(this.ref_pin_content.current, { pushFollowers: true })
-      .addIndicators({ name: "pin goals", indent: 150 })
+      // .addIndicators({ name: "pin goals", indent: 150 })
       .addTo(window.controller);
 
     const viewLineTween = TweenMax.from("#goals-viewline\\.inline", 1, {
@@ -80,19 +80,14 @@ class GoalsSection extends React.Component {
       .addTo(window.controller);
     linkSceneToOffset(targetTextScene, 35);
 
+    // Stickman transition
     setStickmanPose(this.stickmanId, "goals");
-
-    setTimeout(() => {
-      console.log(
-        `offset ${pinScene.scrollOffset()} + ${pinScene.offset()} + ${pinScene.duration()}`
-      );
-      this.props.setupTransition(
-        "goalsToShareholders",
-        "in",
-        document.getElementById(this.stickmanId),
-        pinScene
-      );
-    }, 2000);
+    this.props.setupTransition(
+      "goalsToShareholders",
+      "in",
+      document.getElementById(this.stickmanId),
+      pinScene
+    );
   }
 
   hideMainStickman() {}

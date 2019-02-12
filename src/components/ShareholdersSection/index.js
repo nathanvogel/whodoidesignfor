@@ -45,15 +45,14 @@ class ShareholdersSection extends React.Component {
       .addTo(window.controller);
     linkSceneToOffset(truthAppearScene, 10);
 
+    // Stickman transition
     setStickmanPose(this.stickmanId, "shareholders");
-    setTimeout(() => {
-      this.props.setupTransition(
-        "goalsToShareholders",
-        "out",
-        document.getElementById(this.stickmanId),
-        pinScene
-      );
-    }, 1000);
+    this.props.setupTransition(
+      "goalsToShareholders",
+      "out",
+      document.getElementById(this.stickmanId),
+      pinScene
+    );
   }
 
   render() {
