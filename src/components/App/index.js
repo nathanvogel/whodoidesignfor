@@ -36,9 +36,9 @@ class App extends React.Component {
     console.log("App mounted");
     this.mainStickman = document.getElementById("main-stickman");
     this.originalWidth = this.mainStickman.getBoundingClientRect().width;
-
-    Object.keys(this.transitions).forEach(key => {
-      this.updateTransition(key);
+    this.updateAlltransitions();
+    window.addEventListener("resize", e => {
+      this.updateAlltransitions();
     });
   }
 
@@ -55,6 +55,12 @@ class App extends React.Component {
     }
 
     this.updateTransition(t);
+  }
+
+  updateAlltransitions() {
+    Object.keys(this.transitions).forEach(key => {
+      this.updateTransition(key);
+    });
   }
 
   updateTransition(t, event) {
