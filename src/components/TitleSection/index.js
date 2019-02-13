@@ -26,7 +26,7 @@ class TitleSection extends React.Component {
       this.refs_h1.push(React.createRef());
     }
 
-    this.sectionDuration = 36;
+    this.sectionDuration = 30;
   }
 
   componentDidMount() {
