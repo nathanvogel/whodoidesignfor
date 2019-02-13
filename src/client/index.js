@@ -7,6 +7,11 @@ import "./meyer-reset.css";
 import "./normalize.css";
 import "./root-css.css";
 
+// Possible smoothscroll solutions:
+// - Smooth Scrollbar
+//    https://github.com/janpaepke/ScrollMagic/issues/652
+// - Bad: Nicescroll, touchpad scroll is not nice.
+
 const root = document.querySelector("#root");
 
 const mount = RootComponent => {

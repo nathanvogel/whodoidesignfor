@@ -1,5 +1,6 @@
-<svg width="192" height="292" viewBox="0 0 192 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="192" height="294" viewBox="0 0 192 294" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="stickman.inline">
+<rect width="192" height="292" fill="white"/>
 <g id="goals">
 <path id="legs_goals" d="M50.4833 238.19L50.4834 180.874L23.3691 137.902L92.6275 165.702L96.5 220.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="trunk_goals" d="M23 138.058L32.5 66.5L36 43" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -17,6 +18,12 @@
 <path id="trunk" d="M93 156.891L91 66.5L93 46" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="arms" d="M57.5 147L64 110L78 76L92 66L106.5 76L119.5 110L126 147" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="head" d="M117 28C117 42.3594 106.031 54 92.5 54C78.969 54 68 42.3594 68 28C68 13.6406 78.969 2 92.5 2C106.031 2 117 13.6406 117 28Z" fill="#C0C0C0"/>
+</g>
+<g id="constraints">
+<path id="legs_constraints" d="M11 289L50 238L74.6225 174L79.5 234.109L45.5 289" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_constraints" d="M75 173.5L83.5 91L93 68" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_constraints" d="M187 101L132 108.5L78 98L84.5 88L96 81L142.5 85.5L187 61" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_constraints" d="M127.359 57.8651C121.448 70.9515 106.66 77.045 94.3285 71.4752C81.997 65.9054 76.792 50.7815 82.7028 37.6951C88.6136 24.6087 103.402 18.5152 115.733 24.085C128.065 29.6548 133.27 44.7786 127.359 57.8651Z" fill="#C0C0C0"/>
 </g>
 </g>
 </svg>

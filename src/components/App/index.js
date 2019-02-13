@@ -2,12 +2,13 @@ import React from "react";
 import ScrollMagic from "scrollmagic";
 // import "debug.addIndicators";
 import { TextPlugin } from "gsap/all";
-import { TweenLite, Linear } from "gsap";
+import { TweenLite, Linear, Power3 } from "gsap";
 import styles from "./styles.scss";
 import TitleSection from "../TitleSection";
 import ThoughtsSection from "../ThoughtsSection";
 import GoalsSection from "../GoalsSection";
 import ShareholdersSection from "../ShareholdersSection";
+import ConstraintsSection from "../ConstraintsSection";
 import Stickman from "../../images/stickman.inline.svg";
 import AnimatedStickman from "../../images/default-stickman.inline.svg";
 import { getStickmanTimeline } from "../../utils/get-svg";
@@ -28,6 +29,12 @@ class App extends React.Component {
       goalsToShareholders: {
         inPose: "goals",
         outPose: "shareholders",
+        easing: Linear.easeNone,
+      },
+      shareholdersToConstraints: {
+        inPose: "shareholders",
+        outPose: "constraints",
+        easing: Power3.easeIn,
       },
     };
   }
@@ -121,7 +128,7 @@ class App extends React.Component {
       t.tl = getStickmanTimeline(
         this.mainStickman.id,
         1,
-        Linear.easeNone,
+        t.easing,
         t.inPose,
         t.outPose
       );
@@ -137,7 +144,7 @@ class App extends React.Component {
       this.mainStickman,
       1,
       { y: inTop },
-      { y: outTop }
+      { y: outTop, ease: t.easing }
     );
     t.tl.add(t.tweenY, 0);
 
@@ -147,7 +154,7 @@ class App extends React.Component {
       this.mainStickman,
       1,
       { x: inLeft },
-      { x: outLeft }
+      { x: outLeft, ease: t.easing }
     );
     t.tl.add(t.tweenX, 0);
 
@@ -157,7 +164,7 @@ class App extends React.Component {
       this.mainStickman,
       1,
       { scale: inScale },
-      { scale: outScale }
+      { scale: outScale, ease: t.easing }
     );
     t.tl.add(t.tweenScale, 0);
 
@@ -202,6 +209,7 @@ class App extends React.Component {
         <ThoughtsSection />
         <GoalsSection setupTransition={this.setupTransition} />
         <ShareholdersSection setupTransition={this.setupTransition} />
+        <ConstraintsSection setupTransition={this.setupTransition} />
         <section className={styles.nextSection}>Hey!</section>
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />

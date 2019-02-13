@@ -1,0 +1,74 @@
+@import "../../shared-styles/variables";
+
+$scene-height: 550px;
+
+// We need the section to impose its black background on the whole width.
+.ConstraintsSection {
+  height: 100vh;
+  background-color: #000;
+  width: 100%;
+  padding-top: $padding;
+}
+
+// We need a centerer object that adds padding, but if the content is
+// absolutely positionned as a direct child, it won't respect the padding.
+// .ConstraintsSection .Padder {
+//   max-width: $content-width;
+//   padding: $padding;
+//   margin: 0 auto;
+//   // The shareholder and stickman can overflow, also the table.
+//   overflow: hidden;
+//
+//   // Use flexbox to center vertically (not super important)
+//   // height: 100vh;
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+// }
+
+// So we relatively position a children of the padding element, so that the
+// children respect the margin/padding box for their positioning.
+// .ConstraintsSection .ShareholdersScene {
+//   position: relative;
+//   // With position: absolute children, it seems there's no way to make the
+//   // children dictate the size of the parents, so we can hardcode a minimum
+//   // one here
+//   min-height: $scene-height;
+//
+//   // Since the parent center this div, bring it back up a little bit.
+//   transform: translateY(-$center-upper);
+// }
+
+// Small equilibrium to improve layout for extreme ratio.
+$font-size-part1: calc(6.3vw - 0.3vh);
+// Proportionnal to the height, to fill until ~the bottom of the screen.
+$font-size-part2: 10vh;
+
+.Stickman {
+  position: absolute;
+  bottom: 0px;
+  right: calc(#{$font-size-part2} * 0.8);
+  max-height: 70%;
+}
+
+.TruthPart1,
+.TruthPart2 {
+  text-align: left;
+  font-family: $font-family-typewriter;
+  color: white;
+}
+
+.TruthPart1 {
+  font-size: $font-size-part1;
+}
+
+.TruthPart2 {
+  position: absolute;
+  // Align to the Part1 baseline
+  bottom: calc(100% - #{$font-size-part1} - #{$padding});
+  // Use % to account for the scrollbar.
+  left: calc(100% - #{$font-size-part2});
+  font-size: $font-size-part2;
+  transform-origin: bottom left;
+  // transform: rotate(90deg);
+}
