@@ -3,6 +3,7 @@ const path = require("path");
 
 module.exports = {
   reactHotLoader: true,
+  clientURL: "http://172.22.22.54:3001",
   debug: false,
   hasServer: false,
   modifyWebpackConfig: (config, options) => {
@@ -20,6 +21,12 @@ module.exports = {
         })
       );
     }
+
+    // console.log(config);
+    // console.log("===================");
+    // console.log("===================");
+    // console.log("===================");
+    // console.log(options);
 
     config.resolve.alias = {
       TweenLite: path.resolve(
