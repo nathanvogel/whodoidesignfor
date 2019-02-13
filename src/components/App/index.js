@@ -41,7 +41,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log("App mounted");
     this.mainStickman = document.getElementById("main-stickman");
     this.originalWidth = this.mainStickman.getBoundingClientRect().width;
     this.updateAlltransitions();
@@ -49,20 +48,24 @@ class App extends React.Component {
       "resize",
       debounce(e => {
         this.updateAlltransitions();
-      }, 32)
+      }, 120)
     );
   }
 
   setupTransition(tId, inOut, stickman, scene) {
     const t = this.transitions[tId];
+    const debouncedUpdate = debounce(
+      this.updateTransition.bind(this, tId),
+      120
+    );
     if (inOut === "out") {
       t.outStickman = stickman;
       t.outPinScene = scene;
-      t.outPinScene.on("shift", this.updateTransition.bind(this, tId));
+      t.outPinScene.on("shift", debouncedUpdate);
     } else if (inOut === "in") {
       t.inStickman = stickman;
       t.inPinScene = scene;
-      t.inPinScene.on("shift", this.updateTransition.bind(this, tId));
+      t.inPinScene.on("shift", debouncedUpdate);
     }
 
     this.updateTransition(t);
@@ -77,7 +80,7 @@ class App extends React.Component {
   updateTransition(t, event) {
     if (typeof t === "string") {
       t = this.transitions[t];
-      console.log("update from ", event);
+      // console.log("update from ", event);
     }
 
     if (!t.inPinScene) {
@@ -93,7 +96,7 @@ class App extends React.Component {
       return;
     }
 
-    console.log("Updating transition");
+    console.warn("Updating transition");
 
     // Calculate from / to positions, it's just the absolute difference.
     const inRect = t.inStickman.getBoundingClientRect();
@@ -115,17 +118,17 @@ class App extends React.Component {
       t.inPinScene.duration();
     const sceneOffset = t.inPinScene.duration();
 
-    console.log(
-      `Duration: ${t.outPinScene.scrollOffset()} - ${t.inPinScene.scrollOffset()} - ${t.inPinScene.duration()} = ${sceneDuration}`
-    );
+    // console.log(
+    //   `Duration: ${t.outPinScene.scrollOffset()} - ${t.inPinScene.scrollOffset()} - ${t.inPinScene.duration()} = ${sceneDuration}`
+    // );
 
-    console.log(
-      `Going from ${inRect.top} + ${
-        window.scrollY
-      } + ${pxToFinalInTop} = ${inTop} to ${outRect.top} + ${
-        window.scrollY
-      } + ${pxToStartingOutTop} = ${outTop}`
-    );
+    // console.log(
+    //   `Going from ${inRect.top} + ${
+    //     window.scrollY
+    //   } + ${pxToFinalInTop} = ${inTop} to ${outRect.top} + ${
+    //     window.scrollY
+    //   } + ${pxToStartingOutTop} = ${outTop}`
+    // );
 
     // Build the animation timeline.
     if (!t.tl) {
@@ -141,7 +144,6 @@ class App extends React.Component {
     // Y transition,
     // It's the most suspect to changes because of DOM ScrolLMagic weirdness.
     if (t.tweenY) {
-      console.log("killing tween");
       t.tweenY.kill();
     }
     t.tweenY = TweenLite.fromTo(
