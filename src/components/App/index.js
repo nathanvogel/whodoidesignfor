@@ -1,4 +1,5 @@
 import React from "react";
+import { debounce } from "lodash";
 import ScrollMagic from "scrollmagic";
 // import "debug.addIndicators";
 import { TextPlugin } from "gsap/all";
@@ -44,9 +45,12 @@ class App extends React.Component {
     this.mainStickman = document.getElementById("main-stickman");
     this.originalWidth = this.mainStickman.getBoundingClientRect().width;
     this.updateAlltransitions();
-    window.addEventListener("resize", e => {
-      this.updateAlltransitions();
-    });
+    window.addEventListener(
+      "resize",
+      debounce(e => {
+        this.updateAlltransitions();
+      }, 32)
+    );
   }
 
   setupTransition(tId, inOut, stickman, scene) {

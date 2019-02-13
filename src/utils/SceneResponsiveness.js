@@ -1,3 +1,7 @@
+import { debounce } from "lodash";
+
+console.log(debounce);
+
 const scenes = [];
 const offsets = [];
 
@@ -23,10 +27,13 @@ function linkSceneToOffset(scene, vhOffset) {
   });
 }
 
-window.addEventListener("resize", e => {
-  for (let i = 0; i < scenes.length; i += 1) {
-    scenes[i].offset(vhToPx(offsets[i]));
-  }
-});
+window.addEventListener(
+  "resize",
+  debounce(e => {
+    for (let i = 0; i < scenes.length; i += 1) {
+      scenes[i].offset(vhToPx(offsets[i]));
+    }
+  }, 33) // don't execute more often than every two frames
+);
 
 export { linkSceneToOffset, unlinkScene };
