@@ -6,10 +6,12 @@ import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
 import Stickman from "../../images/default-stickman.inline.svg";
+import Hat from "../../images/construction-hat.inline.svg";
+import Pixels from "../../images/pixels.inline.svg";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 import { setStickmanPose } from "../../utils/get-svg";
 
-class ConstraintsSection extends React.Component {
+class PusherSection extends React.Component {
   constructor() {
     super();
     this.ref_pin_container = React.createRef();
@@ -17,7 +19,9 @@ class ConstraintsSection extends React.Component {
     this.ref_truth = React.createRef();
 
     this.sectionDuration = 35;
-    this.stickmanId = "ConstraintsStickman";
+    this.stickmanId = "PusherStickman";
+    this.pixelsId = "PusherPixelBlocks";
+    this.hatId = "ConstructionHat";
   }
 
   componentDidMount() {
@@ -31,33 +35,27 @@ class ConstraintsSection extends React.Component {
       // .addIndicators({ name: "pin goals", indent: 150 })
       .addTo(window.controller);
 
-    // Text truth
-    const truthScene = new ScrollMagic.Scene({
+    const hatScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
-      triggerHook: 0.6,
-      duration: "60%",
+      triggerHook: 0.1,
+      duration: "20%",
     })
       .setTween(
-        TweenMax.to(this.ref_truth.current, 0.5, {
-          rotation: 90,
-          ease: Power3.easeIn,
+        TweenMax.from(`#${this.hatId}`, 1, {
+          rotation: 540,
+          y: "-=100vh",
+          opacity: 0,
+          ease: Power3.easeOut,
         })
       )
-      // .addIndicators({ name: "rotation" })
+      // .addIndicators({ name: "hat" })
       .addTo(window.controller);
-    // linkSceneToOffset(truthScene, 10);
 
     // Stickman transition
-    setStickmanPose(this.stickmanId, "constraints");
-    this.props.setupTransition(
-      "shareholdersToConstraints",
-      "out",
-      document.getElementById(this.stickmanId),
-      pinScene
-    );
+    setStickmanPose(this.stickmanId, "pusher");
     this.props.setupTransition(
       "constraintsToPusher",
-      "in",
+      "out",
       document.getElementById(this.stickmanId),
       pinScene
     );
@@ -66,14 +64,14 @@ class ConstraintsSection extends React.Component {
   render() {
     return (
       <section ref={this.ref_pin_container}>
-        <div className={styles.ConstraintsSection} ref={this.ref_pin_content}>
-          <div className={styles.Padder}>
+        <div className={styles.PusherSection} ref={this.ref_pin_content}>
+          <div className={styles.GraphicsWrapper}>
+            <Pixels id={this.pixelsId} className={styles.Pixels} />
             <Stickman id={this.stickmanId} className={styles.Stickman} />
-            <div className={styles.Table} ref={this.ref_table} />
-            <span className={styles.TruthPart1}>The digital has infinite </span>
-            <div className={styles.TruthPart2} ref={this.ref_truth}>
-              constraints.
-            </div>
+            <Hat id={this.hatId} className={styles.Hat} />
+          </div>
+          <div className={styles.Padder}>
+            <div className={styles.Title}>Pixel pushers</div>
           </div>
         </div>
       </section>
@@ -81,8 +79,8 @@ class ConstraintsSection extends React.Component {
   }
 }
 
-ConstraintsSection.propTypes = {
+PusherSection.propTypes = {
   setupTransition: PropTypes.func,
 };
 
-export default ConstraintsSection;
+export default PusherSection;

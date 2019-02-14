@@ -10,6 +10,7 @@ import ThoughtsSection from "../ThoughtsSection";
 import GoalsSection from "../GoalsSection";
 import ShareholdersSection from "../ShareholdersSection";
 import ConstraintsSection from "../ConstraintsSection";
+import PusherSection from "../PusherSection";
 import Stickman from "../../images/stickman.inline.svg";
 import AnimatedStickman from "../../images/default-stickman.inline.svg";
 import { getStickmanTimeline } from "../../utils/get-svg";
@@ -36,6 +37,11 @@ class App extends React.Component {
         inPose: "shareholders",
         outPose: "constraints",
         easing: Power3.easeIn,
+      },
+      constraintsToPusher: {
+        inPose: "constraints",
+        outPose: "pusher",
+        easing: Power3.easeInOut,
       },
     };
   }
@@ -96,7 +102,7 @@ class App extends React.Component {
       return;
     }
 
-    console.warn("Updating transition");
+    // console.log("Updating transition");
 
     // Calculate from / to positions, it's just the absolute difference.
     const inRect = t.inStickman.getBoundingClientRect();
@@ -216,6 +222,7 @@ class App extends React.Component {
         <GoalsSection setupTransition={this.setupTransition} />
         <ShareholdersSection setupTransition={this.setupTransition} />
         <ConstraintsSection setupTransition={this.setupTransition} />
+        <PusherSection setupTransition={this.setupTransition} />
         <section className={styles.nextSection}>Hey!</section>
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />

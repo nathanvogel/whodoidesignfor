@@ -1,7 +1,5 @@
 import { debounce } from "lodash";
 
-console.log(debounce);
-
 const scenes = [];
 const offsets = [];
 
