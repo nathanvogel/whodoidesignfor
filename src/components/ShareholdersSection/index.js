@@ -20,7 +20,7 @@ class ShareholdersSection extends React.Component {
     this.ref_theshareholder = React.createRef();
     this.ref_table = React.createRef();
 
-    this.sectionDuration = 110;
+    this.sectionDuration = 90;
     this.stickmanId = "ShareholdersStickman";
     this.shareholderId = "TheShareholder";
   }
@@ -92,11 +92,19 @@ class ShareholdersSection extends React.Component {
     linkSceneToOffset(tableSceneOut, this.sectionDuration - 6);
 
     // Text truth IN
+    this.ref_truth.current.style.opacity = 0;
     const truthScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
     })
-      .setTween(TweenMax.from(this.ref_truth.current, 0.2, { opacity: 0 }))
+      // .setTween(TweenMax.from(this.ref_truth.current, 0.2, { opacity: 0 }))
+      .on("start", e => {
+        if (e.scrollDirection === "PAUSED") return;
+        TweenMax.to(this.ref_truth.current, 0.2, {
+          opacity: e.scrollDirection === "FORWARD" ? 1 : 0,
+        });
+      })
+      // .addIndicators({ name: "fade in" })
       .addTo(window.controller);
     linkSceneToOffset(truthScene, 40);
     // Text truth OUT
@@ -104,7 +112,14 @@ class ShareholdersSection extends React.Component {
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
     })
-      .setTween(TweenMax.to(this.ref_truth.current, 0.2, { opacity: 0 }))
+      .on("start", e => {
+        if (e.scrollDirection === "PAUSED") return;
+        TweenMax.to(this.ref_truth.current, 0.2, {
+          // y: e.scrollDirection === "FORWARD" ? -100 : 0,
+          opacity: e.scrollDirection === "FORWARD" ? 0 : 1,
+        });
+      })
+      // .addIndicators({ name: "fadeout" })
       .addTo(window.controller);
     linkSceneToOffset(truthSceneOut, this.sectionDuration - 8);
 
