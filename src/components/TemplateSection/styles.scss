@@ -1,0 +1,52 @@
+@import "../../shared-styles/variables";
+
+// We need the section to impose its black background on the whole width.
+.TemplateSection {
+  height: 100vh;
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+}
+
+.TemplateSection .Padder {
+  max-width: $content-width;
+  padding: $padding;
+  margin: 0 auto;
+  // The shareholder and stickman can overflow, also the table.
+  overflow: hidden;
+
+  // Use flexbox to center vertically (not super important)
+  // height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+.Template {
+  width: 100%;
+  max-height: 50vh;
+  margin: 0 auto;
+}
+
+.Stickman {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 100px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.Title {
+  width: 100%;
+  text-align: left;
+  font-family: $font-family-typewriter;
+  color: white;
+  font-size: $font-size-name-title;
+  padding-top: $padding;
+  // Set a positionning to appear above other positionned elements
+  // (in the DOM order)
+  position: relative;
+}

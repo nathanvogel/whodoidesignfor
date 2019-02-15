@@ -1,3 +1,5 @@
+// The Array is static, so it's okay to use the index as a key.
+/* eslint-disable react/no-array-index-key */
 import React from "react";
 import ScrollMagic from "scrollmagic";
 import { TweenMax, Linear } from "gsap";
@@ -14,7 +16,6 @@ class PatternsSection extends React.Component {
     super();
     this.ref_pin_container = React.createRef();
     this.ref_pin_content = React.createRef();
-    this.ref_truth = React.createRef();
 
     for (let i = 0; i < words.length; i += 1) {
       const row = words[i];
@@ -37,7 +38,7 @@ class PatternsSection extends React.Component {
         duration: "150%",
       })
         .setTween(tween)
-        .addIndicators({ name: rowId })
+        // .addIndicators({ name: rowId })
         .addTo(window.controller);
     }
   }
@@ -46,16 +47,22 @@ class PatternsSection extends React.Component {
     return (
       <section ref={this.ref_pin_container}>
         <div className={styles.PatternsSection} ref={this.ref_pin_content}>
-          <div className={styles.Padder}>
-            <div className={styles.Title}>Pattern pickers.</div>
-          </div>
-          {words.map((row, index) => (
-            <div id={`${ROW_ID_PREFIX}${index}`} className={styles.PatternRow}>
-              {row.map(word => (
-                <span className={styles.Pattern}>{word}</span>
+          {words.map((row, rIndex) => (
+            <div
+              id={`${ROW_ID_PREFIX}${rIndex}`}
+              key={`${ROW_ID_PREFIX}${rIndex}`}
+              className={styles.PatternRow}
+            >
+              {row.map((word, wIndex) => (
+                <span className={styles.Pattern} key={wIndex}>
+                  {word}
+                </span>
               ))}
             </div>
           ))}
+          <div className={styles.Padder}>
+            <div className={styles.Title}>Pattern pickers.</div>
+          </div>
         </div>
       </section>
     );
