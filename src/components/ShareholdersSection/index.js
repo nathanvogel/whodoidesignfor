@@ -20,7 +20,7 @@ class ShareholdersSection extends React.Component {
     this.ref_theshareholder = React.createRef();
     this.ref_table = React.createRef();
 
-    this.sectionDuration = 90;
+    this.sectionDuration = 100;
     this.stickmanId = "ShareholdersStickman";
     this.shareholderId = "TheShareholder";
   }
@@ -45,7 +45,7 @@ class ShareholdersSection extends React.Component {
       .setTween(TweenMax.from(`#${this.shareholderId}`, 1, { y: "100vh" }))
       // .addIndicators({ name: "TheShareholder" })
       .addTo(window.controller);
-    linkSceneToOffset(shareholderScene, 10);
+    linkSceneToOffset(shareholderScene, 18);
     // TheShareholder OUT
     const shareholderSceneOut = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
@@ -55,7 +55,7 @@ class ShareholdersSection extends React.Component {
       .setTween(TweenMax.to(`#${this.shareholderId}`, 1, { y: "100vh" }))
       // .addIndicators({ name: "TheShareholder Out" })
       .addTo(window.controller);
-    linkSceneToOffset(shareholderSceneOut, this.sectionDuration - 12);
+    linkSceneToOffset(shareholderSceneOut, this.sectionDuration - 15);
 
     // Table IN
     new ScrollMagic.Scene({
@@ -70,7 +70,7 @@ class ShareholdersSection extends React.Component {
     const tableSceneOut = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
-      duration: "12%",
+      duration: "15%",
     })
       .setTween(TweenMax.to(this.ref_table.current, 1, { x: "-100vw" }))
       // .addIndicators({ name: "table out" })
