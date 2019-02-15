@@ -36,20 +36,6 @@ class ShareholdersSection extends React.Component {
       // .addIndicators({ name: "pin goals", indent: 150 })
       .addTo(window.controller);
 
-    // const truthAppearTween = TweenMax.from(this.ref_truth.current, 1, {
-    //   text: "",
-    //   ease: Linear.easeNone,
-    // });
-    // const truthAppearScene = new ScrollMagic.Scene({
-    //   triggerElement: this.ref_pin_container.current,
-    //   triggerHook: 0.0,
-    //   duration: `25%`,
-    // })
-    //   .setTween(truthAppearTween)
-    //   // .addIndicators({ name: "truth text" })
-    //   .addTo(window.controller);
-    // linkSceneToOffset(truthAppearScene, 10);
-
     // TheShareholder IN
     const shareholderScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,

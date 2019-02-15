@@ -11,6 +11,7 @@ import GoalsSection from "../GoalsSection";
 import ShareholdersSection from "../ShareholdersSection";
 import ConstraintsSection from "../ConstraintsSection";
 import PusherSection from "../PusherSection";
+import PatternsSection from "../PatternsSection";
 import Stickman from "../../images/stickman.inline.svg";
 import AnimatedStickman from "../../images/default-stickman.inline.svg";
 import { getStickmanTimeline } from "../../utils/get-svg";
@@ -223,6 +224,7 @@ class App extends React.Component {
         <ShareholdersSection setupTransition={this.setupTransition} />
         <ConstraintsSection setupTransition={this.setupTransition} />
         <PusherSection setupTransition={this.setupTransition} />
+        <PatternsSection />
         <section className={styles.nextSection}>Hey!</section>
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />

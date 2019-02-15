@@ -71,7 +71,7 @@ class PusherSection extends React.Component {
             <Hat id={this.hatId} className={styles.Hat} />
           </div>
           <div className={styles.Padder}>
-            <div className={styles.Title}>Pixel pushers</div>
+            <div className={styles.Title}>Pixel pushers.</div>
           </div>
         </div>
       </section>

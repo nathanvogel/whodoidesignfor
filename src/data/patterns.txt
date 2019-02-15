@@ -1,0 +1,41 @@
+
+Forms
+WYSIWYG
+Calendar picker
+Input prompt
+Wizard
+Completeness meter
+Inline help box
+
+Menus
+Home link
+Accordion menu
+Toasts
+Snackbars
+Navigation tabs
+Dropdown menu
+
+Breadcrumbs
+Modal
+Carousel
+Cards
+Tag cloud
+Pagination
+Thumbnail
+
+
+Infinite scrolling
+Dashboard
+Pull to refresh
+Collectible achievements
+Tables
+Footer
+Header
+
+Alternating row colors
+Slideshow
+Gallery
+Image zoom
+Leaderboard
+Testimonials
+Invite friends

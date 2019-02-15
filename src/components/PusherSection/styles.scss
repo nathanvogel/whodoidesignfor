@@ -1,7 +1,5 @@
 @import "../../shared-styles/variables";
 
-$scene-height: 550px;
-
 // We need the section to impose its black background on the whole width.
 .PusherSection {
   height: 100vh;
@@ -36,7 +34,7 @@ $scene-height: 550px;
   text-align: right;
   font-family: $font-family-typewriter;
   color: white;
-  font-size: 64px;
+  font-size: $font-size-name-title;
   // Set a positionning to appear above other positionned elements
   // (in the DOM order)
   position: relative;
