@@ -44,7 +44,7 @@ $scene-height: 550px;
 // Small equilibrium to improve layout for extreme ratio.
 $font-size-part1: calc(6.3vw - 0.3vh);
 // Proportionnal to the height, to fill until ~the bottom of the screen.
-$font-size-part2: 10vh;
+$font-size-part2: 11vh;
 
 .Stickman {
   position: absolute;
