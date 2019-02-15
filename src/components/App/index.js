@@ -48,7 +48,7 @@ class App extends React.Component {
       pusherToTemplate: {
         inPose: "pusher",
         outPose: "template_falling",
-        easing: Power1.easeIn,
+        easing: Linear.easeNone,
       },
     };
   }

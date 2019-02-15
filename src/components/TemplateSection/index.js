@@ -17,16 +17,15 @@ class TemplateSection extends React.Component {
     this.ref_pin_content = React.createRef();
     this.ref_truth = React.createRef();
 
-    this.sectionDuration = 35;
     this.stickmanId = "TemplateStickman";
   }
 
   componentDidMount() {
-    // Pin the scene
+    // Pin the scene, just to give a scene to setupTransition
     const pinScene = new ScrollMagic.Scene({
       triggerElement: this.ref_pin_container.current,
       triggerHook: 0,
-      duration: `${this.sectionDuration}%`,
+      duration: 0.1,
     })
       .setPin(this.ref_pin_content.current)
       // .addIndicators({ name: "pin goals", indent: 150 })
