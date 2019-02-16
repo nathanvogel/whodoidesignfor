@@ -1,21 +1,111 @@
 /* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable react/no-array-index-key */
 
 import React from "react";
 import ScrollMagic from "scrollmagic";
 import { TweenMax, Linear, TimelineLite } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
+import { debounce } from "lodash";
 import styles from "./styles.scss";
 import sStyles from "../../shared-styles/styles.scss";
+import variables from "../../shared-styles/variables.scss";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
+
+const lines = [
+  "I design for users.",
+  "I design for my company.",
+  "I design for my client.",
+  "I design for my own pleasure.",
+  "I design for my creative freedom.",
+  "I design for my ego.",
+  "I design for dribbble rebounds.",
+  "I design for instagram likes.",
+  "I design for money.",
+  "I design for numbers.",
+  "I design for humans.",
+  "I design for life-critical operations.",
+  "I design for reputation.",
+  "I design for non-profits.",
+  "I design for defense contractors.",
+  "I design for open-source.",
+  "I design for HR.",
+  "I design for art. ",
+];
 
 class RenunciationSection extends React.Component {
   constructor() {
     super();
     this.ref_section = React.createRef();
+    this.refs_lines = [];
+    for (let i = 0; i < lines.length; i += 1) {
+      this.refs_lines.push(React.createRef());
+    }
+
+    this.scenesIn = [];
+    this.scenesOut = [];
   }
 
-  componentDidMount() {}
+  getLineHeight() {
+    // Hard code offset values, because the browser takes some time to
+    // render it correctly, so on didMount we don't know yet the final size
+    // of the lines.
+    const breakPoint = parseInt(variables.breakpointHandeld, 10);
+    const smallDevice = window.innerWidth < breakPoint;
+    return smallDevice ? 30 : 45;
+  }
+
+  componentDidMount() {
+    const lineHeight = this.getLineHeight();
+
+    // Fade in-out all lines
+    for (let i = 0; i < this.refs_lines.length; i += 1) {
+      const line = this.refs_lines[i].current;
+      // const lineHeight = line.getBoundingClientRect().height;
+
+      const sceneIn = new ScrollMagic.Scene({
+        triggerElement: line,
+        triggerHook: 0.5,
+        // reverse: i !== 0, // The first one should stay when going back up.
+      })
+        .on("start", e => {
+          if (e.scrollDirection === "PAUSED") return;
+          TweenMax.to(line, 0.25, {
+            opacity: e.scrollDirection === "FORWARD" ? 1 : 0,
+          });
+        })
+        // .addIndicators({ name: `fadein ${i}` })
+        .addTo(window.controller);
+      this.scenesIn.push(sceneIn);
+
+      const sceneOut = new ScrollMagic.Scene({
+        triggerElement: line,
+        triggerHook: 0.5,
+        offset: lineHeight,
+      })
+        .on("start", e => {
+          if (e.scrollDirection === "PAUSED") return;
+          TweenMax.to(line, 0.7, {
+            // y: e.scrollDirection === "FORWARD" ? -100 : 0,
+            opacity: e.scrollDirection === "FORWARD" ? 0 : 1,
+          });
+        })
+        // .addIndicators({ name: `fadeout ${i}`, indent: 150 })
+        .addTo(window.controller);
+      this.scenesOut.push(sceneOut);
+    }
+
+    // Make the scene offsets "responsive".
+    window.addEventListener(
+      "resize",
+      debounce(_event => {
+        const h = this.getLineHeight();
+        for (let i = 0; i < this.scenesOut.length; i += 1) {
+          this.scenesOut[i].offset(h);
+        }
+      }, 120)
+    );
+  }
 
   render() {
     return (
@@ -27,6 +117,17 @@ class RenunciationSection extends React.Component {
             process and mastering the digital medium doesn’t matter, simply
             because:
           </p>
+          <div className={styles.LineGroup}>
+            {lines.map((line, index) => (
+              <p
+                key={`line-${index}`}
+                ref={this.refs_lines[index]}
+                className={`${sStyles.UtopianText}`}
+              >
+                {line}
+              </p>
+            ))}
+          </div>
         </div>
         <div className={sStyles.RightBigColumnPadder}>
           <p className={`${sStyles.UtopianText}`}>

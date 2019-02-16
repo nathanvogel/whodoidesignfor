@@ -21,3 +21,12 @@ iframe {
   margin-top: $padding;
   margin-bottom: $padding;
 }
+
+.LineGroup {
+  margin-top: $padding;
+  margin-bottom: $padding;
+}
+
+.LineGroup p {
+  opacity: 0;
+}

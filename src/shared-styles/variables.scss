@@ -17,3 +17,7 @@ $font-size-small-s: 16px;
 // Pixel pusher / Pattern picker / Template filler.
 $font-size-name-title: 64px;
 $font-size-name-title-s: 36px;
+
+:export {
+  breakpointHandeld: $breakpoint-handheld;
+}
