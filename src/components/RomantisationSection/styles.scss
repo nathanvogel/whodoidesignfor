@@ -43,7 +43,11 @@ $separation-height: 30vh;
   padding-top: $separation-height;
   padding-bottom: $separation-height;
   color: #000;
-  background-color: #fff;
+  // Center vertically
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // Videos
