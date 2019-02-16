@@ -3,9 +3,9 @@ import React from "react";
 import { render } from "react-dom";
 import { AppContainer } from "react-hot-loader";
 import App from "../components/App";
-import "./meyer-reset.css";
-import "./normalize.css";
-import "./root-css.css";
+// import "./meyer-reset.css";
+// import "./normalize.css";
+// import "./root-css.css";
 
 // Possible smoothscroll solutions:
 // - Smooth Scrollbar

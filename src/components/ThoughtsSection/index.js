@@ -62,14 +62,16 @@ class ThoughtsSection extends React.Component {
         <div ref={this.ref_pin_content}>
           <div className={styles.ThoughtsSection}>
             <div className={styles.verticalAlign}>
-              <p ref={this.ref_small}>I thought I was designing for users.</p>
-              <p ref={this.ref_medium}>
+              <div className={styles.Sentence} ref={this.ref_small}>
+                I thought I was designing for users.
+              </div>
+              <div className={styles.Sentence} ref={this.ref_medium}>
                 I thought my role was to delight users.
-              </p>
-              <p ref={this.ref_big}>
+              </div>
+              <div className={styles.Sentence} ref={this.ref_big}>
                 I thought the most versatile media ever invented would offer me
                 infinite freedom.
-              </p>
+              </div>
             </div>
           </div>
         </div>

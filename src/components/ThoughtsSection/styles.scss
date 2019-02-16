@@ -16,22 +16,22 @@
   overflow: hidden;
 }
 
-.ThoughtsSection p {
-  font-family: monospace;
+.Sentence {
+  font-family: $font-family-typewriter;
   margin-top: 32px;
   margin-bottom: 32px;
   white-space: nowrap;
   overflow: visible;
 }
 
-.ThoughtsSection p:nth-child(1) {
+.ThoughtsSection .Sentence:nth-child(1) {
   font-size: $font-size-small;
 }
 
-.ThoughtsSection p:nth-child(2) {
+.ThoughtsSection .Sentence:nth-child(2) {
   font-size: 42px;
 }
 
-.ThoughtsSection p:nth-child(3) {
+.ThoughtsSection .Sentence:nth-child(3) {
   font-size: 70px;
 }

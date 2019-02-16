@@ -16,3 +16,46 @@
     font-size: $font-size-name-title-s;
   }
 }
+
+.Padder {
+  max-width: $content-width;
+  padding: $padding;
+  margin: 0 auto;
+}
+
+.LeftBigColumnPadder {
+  max-width: $content-width;
+  padding: $padding $padding-for-small-column $padding $padding;
+  margin: 0 auto;
+}
+
+.RightBigColumnPadder {
+  max-width: $content-width;
+  padding: $padding $padding $padding $padding-for-small-column;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $breakpoint-handheld) {
+  .RightBigColumnPadder {
+    padding: $padding;
+  }
+  .LeftBigColumnPadder {
+    padding: $padding;
+  }
+}
+
+p {
+  font-size: $font-size-small;
+  line-height: 1.9;
+  font-family: $font-family-typewriter;
+}
+
+@media screen and (max-width: $breakpoint-handheld) {
+  p {
+    font-size: $font-size-small-s;
+  }
+}
+
+.UtopianText {
+  font-family: $font-family-utopia;
+}
