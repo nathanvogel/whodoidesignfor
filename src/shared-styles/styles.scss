@@ -11,8 +11,8 @@
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-handheld) {
   .NameTitle {
-    font-size: $font-size-name-title-small;
+    font-size: $font-size-name-title-s;
   }
 }

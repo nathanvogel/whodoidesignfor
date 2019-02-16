@@ -1,0 +1,52 @@
+@import "../../shared-styles/variables";
+
+.RomantisationSection {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.RomantisationSection .Padder {
+  max-width: $content-width;
+  padding: $padding;
+  margin: 0 auto;
+}
+
+.Text {
+  font-size: $font-size-small;
+  font-family: $font-family-typewriter;
+}
+
+@media screen and (max-width: $breakpoint-handheld) {
+  .Text {
+    font-size: $font-size-small-s;
+  }
+}
+
+.Text .Quote {
+  font-family: $font-family-quote;
+}
+
+.WebComVideo {
+  margin-top: 10vh;
+  width: 100%;
+  max-width: 100%;
+  max-height: 70vh;
+  margin-bottom: 30vh;
+}
+
+.PaintStrikethroughVideo {
+  width: 100%;
+  max-width: 100%;
+  max-height: 40vh;
+  margin-bottom: 0px;
+  transform: scale(1.11);
+}
+
+.PaintPeopleVideo {
+  width: 100%;
+  max-width: 100%;
+  max-height: 40vh;
+}

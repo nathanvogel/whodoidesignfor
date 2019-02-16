@@ -1,7 +1,15 @@
 $content-width: 960px;
 $padding: 32px;
-$font-family-typewriter: "Courier", "Courier New", monospace;
-$font-size-small: 22px;
-$font-size-name-title: 64px;
-$font-size-name-title-small: 36px;
 $center-upper: 8vh;
+$breakpoint-handheld: 768px;
+
+$font-family-typewriter: "Latin Modern Mono", "Courier", "Courier New",
+  monospace;
+$font-family-quote: "SangBleu Republic", "Times New Roman", serif;
+
+$font-size-small: 24px;
+$font-size-small-s: 16px;
+
+// Pixel pusher / Pattern picker / Template filler.
+$font-size-name-title: 64px;
+$font-size-name-title-s: 36px;

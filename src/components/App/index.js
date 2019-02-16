@@ -13,6 +13,7 @@ import ConstraintsSection from "../ConstraintsSection";
 import PusherSection from "../PusherSection";
 import PatternsSection from "../PatternsSection";
 import TemplateSection from "../TemplateSection";
+import RomantisationSection from "../RomantisationSection";
 import Stickman from "../../images/stickman.inline.svg";
 import AnimatedStickman from "../../images/default-stickman.inline.svg";
 import { getStickmanTimeline } from "../../utils/get-svg";
@@ -233,6 +234,7 @@ class App extends React.Component {
         <PusherSection setupTransition={this.setupTransition} />
         <PatternsSection />
         <TemplateSection setupTransition={this.setupTransition} />
+        <RomantisationSection />
         <section className={styles.nextSection}>Hey!</section>
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />
