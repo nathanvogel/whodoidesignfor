@@ -8,6 +8,8 @@
   padding-bottom: $section-padding;
   // To be able to position the gradient.
   position: relative;
+  // To leave some space for the gradient.
+  margin-top: 40vh;
 }
 
 .EvenThat {
@@ -29,4 +31,30 @@ iframe {
 
 .LineGroup p {
   opacity: 0;
+}
+
+.ImageGroup {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.CommentImage {
+  // display block to allow margin collapsing;
+  display: block;
+  margin-top: $padding;
+  margin-bottom: $padding;
+  width: 100%;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: $breakpoint-handheld) {
+  .ImageGroup .CommentImage:nth-child(1) {
+    // transform: translateX(calc(-#{$small-column-width} * 0));
+  }
+  .ImageGroup .CommentImage:nth-child(2) {
+    transform: translateX(calc(-#{$small-column-width}));
+  }
+  .ImageGroup .CommentImage:nth-child(3) {
+    transform: translateX(calc(-#{$small-column-width} * 0.6));
+  }
 }
