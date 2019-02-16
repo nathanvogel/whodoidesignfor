@@ -6,8 +6,8 @@ $separation-height: 30vh;
   background-color: #fff;
   width: 100%;
   overflow: hidden;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
 }
 
 .Quote {
@@ -33,13 +33,13 @@ $separation-height: 30vh;
 }
 
 .AndIll {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .TakeBack {
   font-size: 15vw;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   padding-top: $separation-height;
   padding-bottom: $separation-height;
   color: #000;

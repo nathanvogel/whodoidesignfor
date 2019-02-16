@@ -5,6 +5,7 @@ import { TweenMax, Linear, Back } from "gsap";
 import "animation.gsap";
 // import "debug.addIndicators";
 import styles from "./styles.scss";
+import sStyles from "../../shared-styles/styles.scss";
 import Stickman from "../../images/default-stickman.inline.svg";
 import Target from "../../images/goals-target.inline.svg";
 import ViewLine from "../../images/goals-viewline.inline.svg";
@@ -98,7 +99,7 @@ class GoalsSection extends React.Component {
     return (
       <section ref={this.ref_pin_container}>
         <div className={styles.GoalsSection} ref={this.ref_pin_content}>
-          <div className={styles.TopGradient} />
+          <div className={sStyles.TopGradient} />
           <div className={styles.Padder}>
             <div className={styles.GoalsScene}>
               <TargetText className={styles.TargetText} />

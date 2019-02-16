@@ -1,0 +1,23 @@
+@import "../../shared-styles/variables";
+
+.RenunciationSection {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  // To be able to position the gradient.
+  position: relative;
+}
+
+.EvenThat {
+  // font-weight: 600;
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+  max-height: 80vh;
+  margin-top: $padding;
+  margin-bottom: $padding;
+}

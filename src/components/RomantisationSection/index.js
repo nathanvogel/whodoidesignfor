@@ -12,13 +12,10 @@ import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 class RomantisationSection extends React.Component {
   constructor() {
     super();
-    this.ref_pin_container = React.createRef();
     this.ref_section = React.createRef();
-
     this.ref_video_webcom = React.createRef();
     this.ref_video_strikethrough = React.createRef();
     this.ref_video_people = React.createRef();
-
     this.ref_take_back = React.createRef();
   }
 

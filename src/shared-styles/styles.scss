@@ -1,5 +1,7 @@
 @import "./variables";
 
+// === PUSHER / PICKER / FILLER ===
+
 .NameTitle {
   width: 100%;
   text-align: left;
@@ -17,32 +19,36 @@
   }
 }
 
+// === PADDING ===
+
 .Padder {
   max-width: $content-width;
-  padding: $padding;
+  padding: 0px $padding 0px $padding;
   margin: 0 auto;
 }
 
 .LeftBigColumnPadder {
   max-width: $content-width;
-  padding: $padding $padding-for-small-column $padding $padding;
-  margin: 0 auto;
+  padding: 0px $padding-for-small-column 0px $padding;
+  margin: $padding auto;
 }
 
 .RightBigColumnPadder {
   max-width: $content-width;
-  padding: $padding $padding $padding $padding-for-small-column;
-  margin: 0 auto;
+  padding: 0px $padding 0px $padding-for-small-column;
+  margin: $padding auto;
 }
 
 @media screen and (max-width: $breakpoint-handheld) {
   .RightBigColumnPadder {
-    padding: $padding;
+    padding: 0px $padding 0px $padding;
   }
   .LeftBigColumnPadder {
-    padding: $padding;
+    padding: 0px $padding 0px $padding;
   }
 }
+
+// === TEXT STYLES ===
 
 p {
   font-size: $font-size-small;
@@ -58,4 +64,29 @@ p {
 
 .UtopianText {
   font-family: $font-family-utopia;
+}
+
+// === GRADIENTS ===
+
+.TopGradient {
+  // A smoother gradient than the default one with no easing.
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.008) 13%,
+    rgba(0, 0, 0, 0.024) 20%,
+    rgba(0, 0, 0, 0.051) 27%,
+    rgba(0, 0, 0, 0.086) 33%,
+    rgba(0, 0, 0, 0.181) 44%,
+    rgba(0, 0, 0, 0.302) 55%,
+    rgba(0, 0, 0, 0.404) 62%,
+    rgba(0, 0, 0, 0.737) 82%,
+    rgba(0, 0, 0, 0.878) 91%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  bottom: calc(100% - 1px);
+  left: 0px;
+  width: 100%;
+  height: 70vh;
 }

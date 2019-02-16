@@ -14,6 +14,7 @@ import PusherSection from "../PusherSection";
 import PatternsSection from "../PatternsSection";
 import TemplateSection from "../TemplateSection";
 import RomantisationSection from "../RomantisationSection";
+import RenunciationSection from "../RenunciationSection";
 import Stickman from "../../images/stickman.inline.svg";
 import AnimatedStickman from "../../images/default-stickman.inline.svg";
 import { getStickmanTimeline } from "../../utils/get-svg";
@@ -235,6 +236,7 @@ class App extends React.Component {
         <PatternsSection />
         <TemplateSection setupTransition={this.setupTransition} />
         <RomantisationSection />
+        <RenunciationSection />
         <section className={styles.nextSection}>Hey!</section>
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />

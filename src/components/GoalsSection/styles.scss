@@ -34,29 +34,6 @@
   transform: translateY(-8vh);
 }
 
-.GoalsSection .TopGradient {
-  // A smoother gradient than the default one with no easing.
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.008) 13%,
-    rgba(0, 0, 0, 0.024) 20%,
-    rgba(0, 0, 0, 0.051) 27%,
-    rgba(0, 0, 0, 0.086) 33%,
-    rgba(0, 0, 0, 0.181) 44%,
-    rgba(0, 0, 0, 0.302) 55%,
-    rgba(0, 0, 0, 0.404) 62%,
-    rgba(0, 0, 0, 0.737) 82%,
-    rgba(0, 0, 0, 0.878) 91%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  position: absolute;
-  bottom: 99%;
-  left: 0px;
-  width: 100%;
-  height: 70%;
-}
-
 .Stickman {
   width: 89.42px;
   height: 136px;
