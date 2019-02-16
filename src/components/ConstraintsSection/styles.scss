@@ -42,15 +42,18 @@ $scene-height: 550px;
 // }
 
 // Small equilibrium to improve layout for extreme ratio.
-$font-size-part1: calc(6.3vw - 0.3vh);
+$font-size-part1: calc(7vw - 0.4vh);
 // Proportionnal to the height, to fill until ~the bottom of the screen.
-$font-size-part2: 11vh;
+$font-size-part2: 12vh;
 
 .Stickman {
   position: absolute;
   bottom: 0px;
   right: calc(#{$font-size-part2} * 0.8);
-  max-height: 70%;
+  max-height: 70vh;
+  // Make sure width follow height, because that will be used to calculate
+  // the stickman scaling transition.
+  width: auto;
 }
 
 .TruthPart1,
