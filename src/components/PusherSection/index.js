@@ -5,6 +5,7 @@ import { TweenMax, Power3 } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
+import sStyles from "../../shared-styles/styles.scss";
 import Stickman from "../../images/default-stickman.inline.svg";
 import Hat from "../../images/construction-hat.inline.svg";
 import Pixels from "../../images/pixels.inline.svg";
@@ -77,7 +78,9 @@ class PusherSection extends React.Component {
             <Hat id={this.hatId} className={styles.Hat} />
           </div>
           <div className={styles.Padder}>
-            <div className={styles.Title}>Pixel pushers.</div>
+            <div className={`${sStyles.NameTitle} ${styles.Title}`}>
+              Pixel pushers.
+            </div>
           </div>
         </div>
       </section>

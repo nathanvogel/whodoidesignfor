@@ -29,15 +29,8 @@
   bottom: 217px;
 }
 
-.Title {
-  width: 100%;
+div.Title {
   text-align: right;
-  font-family: $font-family-typewriter;
-  color: white;
-  font-size: $font-size-name-title;
-  // Set a positionning to appear above other positionned elements
-  // (in the DOM order)
-  position: relative;
 }
 
 .Hat {

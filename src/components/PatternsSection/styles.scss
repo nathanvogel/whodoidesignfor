@@ -17,17 +17,6 @@
   margin-bottom: 10vh;
 }
 
-.Title {
-  width: 100%;
-  text-align: left;
-  font-family: $font-family-typewriter;
-  color: white;
-  font-size: $font-size-name-title;
-  // Set a positionning to appear above other positionned elements
-  // (in the DOM order)
-  position: relative;
-}
-
 .PatternRow {
   white-space: nowrap;
   // overflow: hidden;

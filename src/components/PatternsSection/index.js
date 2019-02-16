@@ -6,6 +6,7 @@ import { TweenMax, Linear } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
+import sStyles from "../../shared-styles/styles.scss";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
 import words from "./words.json";
 
@@ -47,6 +48,9 @@ class PatternsSection extends React.Component {
     return (
       <section ref={this.ref_pin_container}>
         <div className={styles.PatternsSection} ref={this.ref_pin_content}>
+          <div className={styles.Padder}>
+            <div className={sStyles.NameTitle}>Pattern pickers.</div>
+          </div>
           {words.map((row, rIndex) => (
             <div
               id={`${ROW_ID_PREFIX}${rIndex}`}
@@ -60,9 +64,6 @@ class PatternsSection extends React.Component {
               ))}
             </div>
           ))}
-          <div className={styles.Padder}>
-            <div className={styles.Title}>Pattern pickers.</div>
-          </div>
         </div>
       </section>
     );

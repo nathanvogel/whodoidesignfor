@@ -5,6 +5,7 @@ import { TweenMax, Power3 } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
+import sStyles from "../../shared-styles/styles.scss";
 import Stickman from "../../images/default-stickman.inline.svg";
 import Template from "../../images/template-template.inline.svg";
 import { linkSceneToOffset } from "../../utils/SceneResponsiveness";
@@ -46,8 +47,10 @@ class TemplateSection extends React.Component {
       <section ref={this.ref_pin_container}>
         <div className={styles.TemplateSection} ref={this.ref_pin_content}>
           <div className={styles.Padder}>
+            <div className={`${styles.Title} ${sStyles.NameTitle}`}>
+              Template fillers.
+            </div>
             <Template className={styles.Template} />
-            <div className={styles.Title}>Template fillers.</div>
             <Stickman id={this.stickmanId} className={styles.Stickman} />
           </div>
         </div>
