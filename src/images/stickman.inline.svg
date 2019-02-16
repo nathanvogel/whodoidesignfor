@@ -31,8 +31,8 @@
 <path id="head_pusher" d="M87 48C87 62.3594 76.031 74 62.5 74C48.969 74 38 62.3594 38 48C38 33.6406 48.969 22 62.5 22C76.031 22 87 33.6406 87 48Z" fill="#C0C0C0"/>
 </g>
 <g id="template">
-<path id="legs_template" d="M16.1428 253.553L78.2965 238.053L133.499 248.553L74.5 267.553L16.142 285.442" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_template" d="M137.184 248.799L227.385 242.616L247.956 243.665" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="legs_template" d="M16.1431 253.553L70.5 251L132.5 253.553L75.5 275L16.1423 285.442" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_template" d="M132.5 253.5L227.385 242.616L247.956 243.665" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="arms_template" d="M214 206.053L182.683 217.659L217.294 230.07L227.932 243.592L218.614 258.539L239.002 281.305L283.5 281.305" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="head_template" d="M265.258 261.286C250.914 261.951 238.886 253.865 238.393 243.225C237.9 232.586 249.128 223.422 263.472 222.757C277.816 222.092 289.844 230.178 290.337 240.818C290.83 251.457 279.602 260.622 265.258 261.286Z" fill="#C0C0C0"/>
 </g>
