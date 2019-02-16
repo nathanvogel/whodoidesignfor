@@ -1,5 +1,7 @@
 @import "../../shared-styles/variables";
 
+$separation-height: 30vh;
+
 .RomantisationSection {
   background-color: #fff;
   width: 100%;
@@ -20,17 +22,31 @@
 
 .AndWith {
   margin-top: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: $breakpoint-handheld) {
   .AndWith {
     margin-top: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 }
 
-$separation-height: 30vh;
+.AndIll {
+  font-weight: 700;
+}
+
+.TakeBack {
+  font-size: 15vw;
+  text-align: center;
+  font-weight: 700;
+  padding-top: $separation-height;
+  padding-bottom: $separation-height;
+  color: #000;
+  background-color: #fff;
+}
+
+// Videos
 
 .WebComVideo {
   margin-top: 10vh;

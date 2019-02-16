@@ -2,7 +2,7 @@
 
 import React from "react";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, Linear } from "gsap";
+import { TweenMax, Linear, TimelineLite } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
@@ -18,6 +18,8 @@ class RomantisationSection extends React.Component {
     this.ref_video_webcom = React.createRef();
     this.ref_video_strikethrough = React.createRef();
     this.ref_video_people = React.createRef();
+
+    this.ref_take_back = React.createRef();
   }
 
   componentDidMount() {
@@ -66,6 +68,34 @@ class RomantisationSection extends React.Component {
         if (!duration) return;
         this.ref_video_people.current.currentTime = event.progress * duration;
       });
+
+    const tl = new TimelineLite();
+    tl.fromTo(
+      this.ref_take_back.current,
+      1,
+      { color: "#000", backgroundColor: "#fff" },
+      {
+        color: "#fff",
+        backgroundColor: "#000",
+        repeat: 10,
+        ease: Linear.easeNone,
+        yoyo: false,
+      },
+      0
+    );
+    tl.to(this.ref_take_back.current, 1, {
+      color: "#000",
+      backgroundColor: "#fff",
+      ease: Linear.easeNone,
+    });
+    new ScrollMagic.Scene({
+      triggerElement: this.ref_take_back.current,
+      triggerHook: 0,
+      duration: "30%",
+    })
+      .setTween(tl)
+      // .addIndicators({ name: "take back" })
+      .addTo(window.controller);
   }
 
   render() {
@@ -134,7 +164,17 @@ class RomantisationSection extends React.Component {
               <br /> And with GDPR.
               <br /> And with business goals.
             </p>
-            <p className={sStyles.UtopianText}>And I’ll fucking go wild.</p>
+            <p className={`${sStyles.UtopianText} ${styles.AndIll}`}>
+              And I’ll fucking go wild.
+            </p>
+          </div>
+          <div
+            className={`${styles.TakeBack} ${sStyles.UtopianText}`}
+            ref={this.ref_take_back}
+          >
+            TAKE
+            <br /> WEBDESIGN
+            <br /> BACK
           </div>
         </div>
       </section>
