@@ -1,10 +1,22 @@
 <svg width="192" height="292" viewBox="0 0 192 292" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="default-stickman.inline">
-<g id="default">
+<g id="default" filter="url(#filter0_i)">>
 <path id="legs" d="M64.5 279.5L70 217L92.1224 156.891L118 217L124 279.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="trunk" d="M93 156.891V65V46" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="arms" d="M57.5 147L64 110L78 76L92 66L106.5 76L119.5 110L126 147" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="head" d="M117 28C117 42.3594 106.031 54 92.5 54C78.969 54 68 42.3594 68 28C68 13.6406 78.969 2 92.5 2C106.031 2 117 13.6406 117 28Z" fill="#C0C0C0"/>
 </g>
 </g>
+<defs>
+<filter id="filter0_i" x="0" y="0" width="292" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="-4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+</defs>
 </svg>

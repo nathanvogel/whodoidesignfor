@@ -1,46 +1,46 @@
-<svg width="292" height="294" viewBox="0 0 292 294" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="291" height="294" viewBox="0 0 291 294" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="stickman.inline">
 <g id="goals">
-<path id="legs_goals" d="M53.4833 238.19L53.4834 180.874L26.3691 137.902L95.6275 165.702L99.5 220.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_goals" d="M26 138.058L35.5 66.5L39 43" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms_goals" d="M61.321 127.772L21.1325 112.239L12 78.5242L34.9702 65.3496L50.5 66.5L73.4907 98.904L110 105.696" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head_goals" d="M60.9992 30.1906C60.9992 43.5507 51.3256 54.3812 39.3926 54.3812C27.4597 54.3812 17.7861 43.5507 17.7861 30.1906C17.7861 16.8305 27.4597 6 39.3926 6C51.3256 6 60.9992 16.8305 60.9992 30.1906Z" fill="#C0C0C0"/>
+<path id="legs_goals" d="M53.4833 238.19L53.4834 180.874L26.3691 137.902L95.6275 165.702L99.5 220.5" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_goals" d="M26 138.058L35.5 66.5L39 43" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_goals" d="M61.321 127.772L21.1325 112.239L12 78.5242L34.9702 65.3496L50.5 66.5L73.4907 98.904L110 105.696" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_goals" d="M60.9992 30.1906C60.9992 43.5507 51.3256 54.3812 39.3926 54.3812C27.4597 54.3812 17.7861 43.5507 17.7861 30.1906C17.7861 16.8305 27.4597 6 39.3926 6C51.3256 6 60.9992 16.8305 60.9992 30.1906Z" fill="#CECECE"/>
 </g>
 <g id="shareholders">
-<path id="legs_shareholders" d="M59 249.5L62.5 177L95.1224 156.891L131 177L140 249.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_shareholders" d="M96 156.891L97 66L96 46" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms_shareholders" d="M71.5 45.5L55.5 115.5L81 69.75L95 66L115 69.75L136.5 115.5L117.5 43" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head_shareholders" d="M119 38C119 51.8071 108.479 63 95.5 63C82.5213 63 72 51.8071 72 38C72 24.1929 82.5213 13 95.5 13C108.479 13 119 24.1929 119 38Z" fill="#C0C0C0"/>
+<path id="legs_shareholders" d="M59 249.5L62.5 177L95.1224 156.891L131 177L140 249.5" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_shareholders" d="M96 156.891L97 66L96 46" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_shareholders" d="M71.5 45.5L55.5 115.5L81 69.75L95 66L115 69.75L136.5 115.5L117.5 43" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_shareholders" d="M119 38C119 51.8071 108.479 63 95.5 63C82.5213 63 72 51.8071 72 38C72 24.1929 82.5213 13 95.5 13C108.479 13 119 24.1929 119 38Z" fill="#CECECE"/>
 </g>
 <g id="default">
-<path id="legs" d="M67.5 279.5L73 217L95.1224 156.891L121 217L127 279.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk" d="M96 156.891L94 66.5L96 46" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms" d="M60.5 147L67 110L81 76L95 66L109.5 76L122.5 110L129 147" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head" d="M120 28C120 42.3594 109.031 54 95.5 54C81.969 54 71 42.3594 71 28C71 13.6406 81.969 2 95.5 2C109.031 2 120 13.6406 120 28Z" fill="#C0C0C0"/>
+<path id="legs" d="M67.5 279.5L73 217L95.1224 156.891L121 217L127 279.5" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk" d="M96 156.891L94 66.5L96 46" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms" d="M60.5 147L67 110L81 76L95 66L109.5 76L122.5 110L129 147" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head" d="M120 28C120 42.3594 109.031 54 95.5 54C81.969 54 71 42.3594 71 28C71 13.6406 81.969 2 95.5 2C109.031 2 120 13.6406 120 28Z" fill="#CECECE"/>
 </g>
 <g id="constraints">
-<path id="legs_constraints" d="M14 289L53 238L77.6225 174L82.5 234.109L48.5 289" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_constraints" d="M78 173.5L86.5 91L96 68" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms_constraints" d="M190 101L135 108.5L81 98L87.5 88L99 81L145.5 85.5L190 61" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head_constraints" d="M130.359 57.8651C124.448 70.9515 109.66 77.045 97.3285 71.4752C84.997 65.9054 79.792 50.7815 85.7028 37.6951C91.6136 24.6087 106.402 18.5152 118.733 24.085C131.065 29.6548 136.27 44.7786 130.359 57.8651Z" fill="#C0C0C0"/>
+<path id="legs_constraints" d="M14 289L53 238L77.6225 174L82.5 234.109L48.5 289" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_constraints" d="M78 173.5L86.5 91L96 68" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_constraints" d="M190 101L135 108.5L81 98L87.5 88L99 81L145.5 85.5L190 61" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_constraints" d="M130.359 57.8651C124.448 70.9515 109.66 77.045 97.3285 71.4752C84.997 65.9054 79.792 50.7815 85.7028 37.6951C91.6136 24.6087 106.402 18.5152 118.733 24.085C131.065 29.6548 136.27 44.7786 130.359 57.8651Z" fill="#CECECE"/>
 </g>
 <g id="pusher">
-<path id="legs_pusher" d="M89.5 289L98.5 223L77 166.5L69.5 228.5L111 289" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_pusher" d="M77 165.5L68.5 89.5L65.5 67.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms_pusher" d="M89.5 42.5L118 66.5L89.5 92.5L69 90.5L47 92.5L5 99.5L33 141.5" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head_pusher" d="M87 48C87 62.3594 76.031 74 62.5 74C48.969 74 38 62.3594 38 48C38 33.6406 48.969 22 62.5 22C76.031 22 87 33.6406 87 48Z" fill="#C0C0C0"/>
+<path id="legs_pusher" d="M89.5 289L98.5 223L77 166.5L69.5 228.5L111 289" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_pusher" d="M77 165.5L68.5 89.5L65.5 67.5" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_pusher" d="M89.5 42.5L118 66.5L89.5 92.5L69 90.5L47 92.5L5 99.5L33 141.5" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_pusher" d="M87 48C87 62.3594 76.031 74 62.5 74C48.969 74 38 62.3594 38 48C38 33.6406 48.969 22 62.5 22C76.031 22 87 33.6406 87 48Z" fill="#CECECE"/>
 </g>
 <g id="template">
-<path id="legs_template" d="M16.1431 253.553L70.5 251L132.5 253.553L75.5 275L16.1423 285.442" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_template" d="M132.5 253.5L227.385 242.616L247.956 243.665" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms_template" d="M214 206.053L182.683 217.659L217.294 230.07L227.932 243.592L218.614 258.539L239.002 281.305L283.5 281.305" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head_template" d="M265.258 261.286C250.914 261.951 238.886 253.865 238.393 243.225C237.9 232.586 249.128 223.422 263.472 222.757C277.816 222.092 289.844 230.178 290.337 240.818C290.83 251.457 279.602 260.622 265.258 261.286Z" fill="#C0C0C0"/>
+<path id="legs_template" d="M16.1431 253.553L70.5 251L132.5 253.553L75.5 275L16.1423 285.442" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_template" d="M132.5 253.5L227.385 242.616L247.956 243.665" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_template" d="M214 206.053L182.683 217.659L217.294 230.07L227.932 243.592L218.614 258.539L239.002 281.305L283.5 281.305" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_template" d="M265.258 261.286C250.914 261.951 238.886 253.865 238.393 243.225C237.9 232.586 249.128 223.422 263.472 222.757C277.816 222.092 289.844 230.178 290.337 240.818C290.83 251.457 279.602 260.622 265.258 261.286Z" fill="#CECECE"/>
 </g>
 <g id="template_falling">
-<path id="legs_template_falling" d="M10 224.053L81.4992 222.053L135.999 236.053L78.4992 262.553L16.1437 276.553" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="trunk_template_falling" d="M135.592 235.685L225.793 229.502L246.364 230.551" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="arms_template_falling" d="M213.999 208.053L182.999 219.053L215.58 219.623L226.218 233.145L216.9 248.092L238.5 277.053L284.5 278.053" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="head_template_falling" d="M265.258 250.286C250.914 250.951 238.886 242.865 238.393 232.225C237.9 221.586 249.128 212.422 263.472 211.757C277.816 211.092 289.844 219.178 290.337 229.818C290.83 240.457 279.602 249.622 265.258 250.286Z" fill="#C0C0C0"/>
+<path id="legs_template_falling" d="M10 224.053L81.4992 222.053L135.999 236.053L78.4992 262.553L16.1437 276.553" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="trunk_template_falling" d="M135.592 235.685L225.793 229.502L246.364 230.551" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="arms_template_falling" d="M213.999 208.053L182.999 219.053L215.58 219.623L226.218 233.145L216.9 248.092L238.5 277.053L284.5 278.053" stroke="#CECECE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="head_template_falling" d="M265.258 250.286C250.914 250.951 238.886 242.865 238.393 232.225C237.9 221.586 249.128 212.422 263.472 211.757C277.816 211.092 289.844 219.178 290.337 229.818C290.83 240.457 279.602 249.622 265.258 250.286Z" fill="#CECECE"/>
 </g>
 </g>
 </svg>

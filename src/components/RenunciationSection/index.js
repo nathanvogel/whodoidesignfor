@@ -113,15 +113,6 @@ class RenunciationSection extends React.Component {
     // Fade in out the images.
     for (let i = 0; i < this.refs_imgs.length; i += 1) {
       const img = this.refs_imgs[i].current;
-      // const tl = new TimelineLite();
-      //
-      // tl.fromTo(
-      //   img,
-      //   0.5,
-      //   { opacity: 0.7 },
-      //   { opacity: 1, ease: Power3.easeIn }
-      // );
-      // tl.to(img, 0.5, { opacity: 0.7, ease: Power3.easeOut });
       new ScrollMagic.Scene({
         triggerElement: img,
         triggerHook: 0.5,
@@ -135,7 +126,7 @@ class RenunciationSection extends React.Component {
             { opacity: 1, ease: Power3.easeIn }
           )
         )
-        .addIndicators()
+        // .addIndicators()
         .addTo(window.controller);
     }
   }
