@@ -3,7 +3,7 @@
 
 import React from "react";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, Linear, TimelineLite } from "gsap";
+import { TweenMax, TimelineLite, Power3 } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import { debounce } from "lodash";
@@ -40,6 +40,10 @@ class RenunciationSection extends React.Component {
     this.refs_lines = [];
     for (let i = 0; i < lines.length; i += 1) {
       this.refs_lines.push(React.createRef());
+    }
+    this.refs_imgs = [];
+    for (let i = 0; i < 3; i += 1) {
+      this.refs_imgs.push(React.createRef());
     }
 
     this.scenesIn = [];
@@ -105,6 +109,35 @@ class RenunciationSection extends React.Component {
         }
       }, 120)
     );
+
+    // Fade in out the images.
+    for (let i = 0; i < this.refs_imgs.length; i += 1) {
+      const img = this.refs_imgs[i].current;
+      // const tl = new TimelineLite();
+      //
+      // tl.fromTo(
+      //   img,
+      //   0.5,
+      //   { opacity: 0.7 },
+      //   { opacity: 1, ease: Power3.easeIn }
+      // );
+      // tl.to(img, 0.5, { opacity: 0.7, ease: Power3.easeOut });
+      new ScrollMagic.Scene({
+        triggerElement: img,
+        triggerHook: 0.5,
+        duration: 120,
+      })
+        .setTween(
+          TweenMax.fromTo(
+            img,
+            1,
+            { opacity: 0.7 },
+            { opacity: 1, ease: Power3.easeIn }
+          )
+        )
+        .addIndicators()
+        .addTo(window.controller);
+    }
   }
 
   render() {
@@ -155,16 +188,19 @@ class RenunciationSection extends React.Component {
           <div className={styles.ImageGroup}>
             <img
               className={styles.CommentImage}
+              ref={this.refs_imgs[0]}
               src="imgs/did-not-respond-amazon.png"
               alt="Amazon did not respond to a request for comment."
             />
             <img
               className={styles.CommentImage}
+              ref={this.refs_imgs[1]}
               src="imgs/did-not-respond-google.png"
               alt="Google did not respond to a request for comment."
             />
             <img
               className={styles.CommentImage}
+              ref={this.refs_imgs[2]}
               src="imgs/did-not-respond-facebook.png"
               alt="Facebook did not respond to a request for comment."
             />

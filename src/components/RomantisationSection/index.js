@@ -2,7 +2,7 @@
 
 import React from "react";
 import ScrollMagic from "scrollmagic";
-import { TweenMax, Linear, TimelineLite } from "gsap";
+import { TweenMax, Linear, Power3, TimelineLite } from "gsap";
 import "animation.gsap";
 import "debug.addIndicators";
 import styles from "./styles.scss";
@@ -16,6 +16,7 @@ class RomantisationSection extends React.Component {
     this.ref_video_webcom = React.createRef();
     this.ref_video_strikethrough = React.createRef();
     this.ref_video_people = React.createRef();
+    this.ref_go_wild = React.createRef();
     this.ref_take_back = React.createRef();
   }
 
@@ -65,6 +66,20 @@ class RomantisationSection extends React.Component {
         if (!duration) return;
         this.ref_video_people.current.currentTime = event.progress * duration;
       });
+
+    new ScrollMagic.Scene({
+      triggerElement: this.ref_go_wild.current,
+      triggerHook: 0.5,
+    })
+      .setTween(
+        TweenMax.fromTo(
+          this.ref_go_wild.current,
+          0.5,
+          { opacity: 0 },
+          { opacity: 1, ease: Power3.easeIn }
+        )
+      )
+      .addTo(window.controller);
 
     const tl = new TimelineLite();
     tl.fromTo(
@@ -173,7 +188,10 @@ class RomantisationSection extends React.Component {
             <br /> And with GDPR.
             <br /> And with business goals.
           </p>
-          <p className={`${sStyles.UtopianText} ${styles.AndIll}`}>
+          <p
+            className={`${sStyles.UtopianText} ${styles.AndIll}`}
+            ref={this.ref_go_wild}
+          >
             And I’ll fucking go wild.
           </p>
         </div>
