@@ -45,6 +45,14 @@ class SecondPart extends React.Component {
             d’auto-réflexion et dans l’espoir de peut-être éclaircir le chemin
             d’autres designers qui partageraient ma confusion.
           </p>
+          <div className={sStyles.PullLeft}>
+            <h5>Design, mais lequel ?</h5>
+            <p>
+              J’entend un domaine très large couvrant la plupart des sens dans
+              lequel il est utilisé : design thinking, speculative design, web
+              design, corporate design, etc.
+            </p>
+          </div>
           <p>
             La première partie de cette page web, que vous avez déjà pu
             parcourir, est une illustration interactive de la rage qui
@@ -89,8 +97,10 @@ class SecondPart extends React.Component {
             phrases provocantes ce que je percevais comme hypocrite dans le
             monde du design. J’ai divisé ce processus en 5 phases :
           </p>
-
-          <p />
+          <p>
+            ______________________________________________________________ - The
+            end -
+          </p>
         </div>
       </section>
     );
