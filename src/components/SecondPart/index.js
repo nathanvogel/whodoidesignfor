@@ -115,8 +115,8 @@ class SecondPart extends React.Component {
             légal de maximiser les profits pour les actionnaires, cet objectif
             semble être de plus en plus profondément ancré dans la culture des
             entreprises, souvent encouragé voir délibérément mis en place par
-            les actionnaires [XX, YY]. La réponse logique m’a donc semblé être
-            que je designais en réalité avant tout pour des actionnaires.
+            les actionnaires. La réponse logique m’a donc semblé être que je
+            designais en réalité avant tout pour des actionnaires.
           </p>
           <p>
             De son côté, l’immense champs des possibles offerts par le digital
@@ -175,6 +175,57 @@ class SecondPart extends React.Component {
             qui me brûlait et continuer plus loin pour en comprendre les
             racines. Grâce à cela, j’ai pu m’apaiser et comprendre, non pas
             seulement intellectuellement, mais aussi émotionnellement.
+          </p>
+          <div className={sStyles.ParagraphSpacer} />
+          <div className={sStyles.ParagraphSpacer} />
+          <div className={sStyles.ParagraphSpacer} />
+        </div>
+        <div className={sStyles.RightBigColumnPadder}>
+          <div className={`${sStyles.PullLeft} ${sStyles.PullDown100}`}>
+            <h5>Designer ?</h5>
+            <p>
+              Sauf indication contraire, j’utilise le mot designer au sens de
+              designer d’interaction, qui est pour moi un terme qui regroupe
+              aussi des mots comme UI designer, user experience designer, etc.
+            </p>
+          </div>
+          <p>
+            Lorsque j’ai obtenu ma Maturité, j’ai peu à peu commencé à percevoir
+            le design comme une solution totale de vie dans notre société.
+            Solution totale, car objectivement « <i>bonne</i> » pour «{" "}
+            <i>la société </i>» et moi, « <i>l’individu</i> ». De plus, j’ai
+            toujours chéri mon indépendance et ma liberté de créer, donc le
+            moment venu de choisir mes études, le design s’est proposé comme une
+            solution adaptée, qui avait un sens, puisque le design me promettait
+            liberté et créativité. Or, 4 ans plus tard, je réalise que ce n’est
+            pas parce que je fais du design que je peux créer librement. En
+            étant frontalement honnête avec moi-même, j’ai pu casser certains
+            mythes et formuler clairement une nouvelle position :
+          </p>
+          <ul>
+            <li>Le design n’est pas créativité.</li>
+            <li>Le design n’est pas spécial. </li>
+            <li>Le design est soumis au contexte. </li>
+          </ul>
+          <p>
+            Si un individu considère par défaut que son travail serait quelque
+            chose de forcément « <i>bon</i> », ou du moins inoffensif, alors il
+            n’est jamais à l’abri de l’impact négatif de ses créations.
+          </p>
+        </div>
+        <div className={sStyles.LeftBigColumnPadder}>
+          <p>
+            <strong>
+              Une manière de regarder le cœur de mon problème, c’est de voir que
+              j’ai été nourris par l’idée que le design a quelque chose
+              d’intrinsèque qui dépasse le travail commercial.
+            </strong>{" "}
+            J’ai toujours inconsciemment cru que d’une certaine manière, par son
+            aspect créatif, ou conceptuel, ou riche en éducation ou encore
+            simplement interdisciplinaire, le design s’affranchissait des purs
+            résultats objectifs, de la logique de libre-marché, des enjeux
+            éthiques ou philosophiques et de la compétition des valeurs
+            humaines.
           </p>
           <p>
             ______________________________________________________________ - The
