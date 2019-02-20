@@ -1,0 +1,55 @@
+@import "../../shared-styles/variables";
+
+$margin-p: 29px;
+$margin-p-s: 21px;
+$margin-p-x2: 58px;
+
+.SecondPart {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.SecondPart p,
+.SecondPart h1,
+.SecondPart h2,
+.SecondPart h3,
+.SecondPart h4,
+.SecondPart h5,
+.SecondPart h6 {
+  font-family: $font-family-regular;
+}
+
+.SecondPart p {
+  font-size: $font-size-regular-small;
+  margin-top: $margin-p;
+}
+
+@media screen and (max-width: $breakpoint-handheld) {
+  .SecondPart p {
+    font-size: $font-size-regular-small-s;
+    margin-top: $margin-p-s;
+  }
+}
+
+.SecondPart q {
+  font-style: italic;
+}
+
+.Subtitle {
+  margin-bottom: $margin-p-x2;
+}
+
+blockquote {
+  font-family: $font-family-quote;
+  font-style: italic;
+}
+blockquote cite {
+  font-family: $font-family-regular;
+  font-style: normal;
+  text-align: right;
+  margin-top: $padding;
+  margin-bottom: $padding;
+}

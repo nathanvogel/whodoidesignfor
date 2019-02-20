@@ -12,8 +12,16 @@ $separation-height: 30vh;
 
 .Quote {
   font-family: $font-family-quote;
+  font-size: $font-size-regular-small;
+  font-style: italic;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: $breakpoint-handheld) {
+  .Quote {
+    font-size: $font-size-regular-small-s;
+  }
 }
 
 .QuoteSignature {
