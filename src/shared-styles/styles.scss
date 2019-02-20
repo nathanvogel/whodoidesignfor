@@ -49,7 +49,8 @@
 }
 
 .PullLeft {
-  max-width: 45%;
+  min-width: 170px;
+  width: 55%;
   border: 6px solid #222;
   padding: $padding-s;
   margin: $padding;
@@ -88,20 +89,26 @@
 
 // === TEXT STYLES ===
 
-p {
+.TypewriterText {
   font-size: $font-size-small;
   line-height: 1.9;
   font-family: $font-family-typewriter;
 }
 
+.UtopianText {
+  font-size: $font-size-small;
+  line-height: 1.9;
+  font-family: $font-family-utopia;
+}
+
 @media screen and (max-width: $breakpoint-handheld) {
-  p {
+  .TypewriterText {
     font-size: $font-size-small-s;
   }
 }
 
-.UtopianText {
-  font-family: $font-family-utopia;
+.ParagraphSpacer {
+  height: $padding;
 }
 
 // === GRADIENTS ===

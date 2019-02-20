@@ -128,10 +128,10 @@ class RomantisationSection extends React.Component {
     return (
       <section className={styles.RomantisationSection} ref={this.ref_section}>
         <div className={sStyles.Padder}>
-          <p>
+          <div className={sStyles.TypewriterText}>
             I don’t want trendy brutalist side projects.
             <br />I want brutal design on https://www.web.com
-          </p>
+          </div>
 
           <video
             id="video"
@@ -170,30 +170,32 @@ class RomantisationSection extends React.Component {
           </video>
         </div>
         <div className={sStyles.LeftBigColumnPadder}>
-          <p className={styles.Quote}>
+          <div className={`${styles.Quote}`}>
             “Getting wild with digital design in 2018 means getting wild in 2018
             with responsive design that’s agnostic to the kind of device you’re
             rocking. That’s doable, probably, but it’s really, really hard.”
-          </p>
-          <p className={styles.QuoteSignature}>
+          </div>
+          <div className={`${styles.QuoteSignature} ${sStyles.TypewriterText}`}>
             - Tim Carmody,{" "}
             <a href="https://kottke.org/18/01/foreclosing-on-the-future-of-the-book">
               Jan 12, 2018 on kottke.org
             </a>
-          </p>
-          <p className={styles.AndWith}>
+          </div>
+          <div className={`${styles.AndWith} ${sStyles.TypewriterText}`}>
             And it means getting wild with accessibility.
             <br /> And with performances.
             <br /> And with engineering costs.
             <br /> And with GDPR.
             <br /> And with business goals.
-          </p>
-          <p
-            className={`${sStyles.UtopianText} ${styles.AndIll}`}
+          </div>
+          <div
+            className={`${`${sStyles.UtopianText} ${styles.AndIll}` + " "}${
+              sStyles.TypewriterText
+            }`}
             ref={this.ref_go_wild}
           >
             And I’ll fucking go wild.
-          </p>
+          </div>
         </div>
         <div
           className={`${styles.TakeBack} ${sStyles.UtopianText}`}
@@ -206,10 +208,10 @@ class RomantisationSection extends React.Component {
           </span>
         </div>
         <div className={sStyles.LeftBigColumnPadder}>
-          <p className={`${sStyles.UtopianText}`}>
+          <div className={`${sStyles.UtopianText}`}>
             Take control of the awesome and unique properties of the digital
             medium. It’s generative! It’s in motion! It’s unique for every user!
-          </p>
+          </div>
         </div>
       </section>
     );

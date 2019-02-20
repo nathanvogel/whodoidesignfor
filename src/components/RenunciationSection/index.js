@@ -136,46 +136,46 @@ class RenunciationSection extends React.Component {
       <section className={styles.RenunciationSection} ref={this.ref_section}>
         <div className={sStyles.TopGradient} />
         <div className={sStyles.LeftBigColumnPadder}>
-          <p className={`${sStyles.UtopianText} ${styles.EvenThat}`}>
+          <div className={`${sStyles.UtopianText} ${styles.EvenThat}`}>
             But in the end, even putting people at the center of the design
             process and mastering the digital medium doesn’t matter, simply
             because:
-          </p>
+          </div>
           <div className={styles.LineGroup}>
             {lines.map((line, index) => (
-              <p
+              <div
                 key={`line-${index}`}
                 ref={this.refs_lines[index]}
                 className={`${sStyles.UtopianText}`}
               >
                 {line}
-              </p>
+              </div>
             ))}
           </div>
         </div>
         <div className={sStyles.RightBigColumnPadder}>
-          <p className={`${sStyles.UtopianText}`}>
+          <div className={`${sStyles.UtopianText}`}>
             Fortunately, I see hope. Some designers are willingly selling out
             and to me, that means freedom. Because selling out means finally
             deconstructing the narrative they built for themselves when they got
             into design. Here’s an inspiring compilation of people discussing
             their liberating sellouts, compiled by Mitch Goldstein on Are.na:
-          </p>
-          <p className={`${sStyles.UtopianText}`}>
+          </div>
+          <div className={`${sStyles.UtopianText}`}>
             <a href="https://www.are.na/mitch-goldstein/sell-out-with-me">
               Sell Out With Me
             </a>
-          </p>
+          </div>
           <iframe
             title="Sell Out With Me"
             src="https://www.are.na/mitch-goldstein/sell-out-with-me"
           />
-          <p className={`${sStyles.UtopianText}`}>
+          <div className={`${sStyles.UtopianText}`}>
             I hereby ask every designer of the digital era to earnestly ask
             themselves questions. Who am I designing for? Which numbers am I
             optimizing for? Which metrics are being tracked? Does it actually
             correspond the vision I have of my values?
-          </p>
+          </div>
           <div className={styles.ImageGroup}>
             <img
               className={styles.CommentImage}
@@ -198,13 +198,13 @@ class RenunciationSection extends React.Component {
           </div>
         </div>
         <div className={sStyles.LeftBigColumnPadder}>
-          <p className={`${sStyles.UtopianText}`}>
+          <div className={`${sStyles.UtopianText}`}>
             This is not a plea for action.
             <br /> This is a plea for honesty with oneself.
             <br />
             <br /> I’m just as guilty as any guilty designer.
             <br /> We simply need to know it.
-          </p>
+          </div>
         </div>
       </section>
     );

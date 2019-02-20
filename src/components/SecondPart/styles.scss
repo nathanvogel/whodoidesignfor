@@ -12,34 +12,47 @@ $margin-p-x2: 58px;
   padding-bottom: $section-padding;
 }
 
-.SecondPart p,
-.SecondPart h1,
-.SecondPart h2,
-.SecondPart h3,
-.SecondPart h4,
-.SecondPart h5,
-.SecondPart h6 {
-  font-family: $font-family-regular;
+.Subtitle {
+  margin-bottom: $margin-p-x2;
 }
 
-.SecondPart p {
+// Texts and titles
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-regular;
+  line-height: 1.9;
+}
+
+p,
+h4 {
   font-size: $font-size-regular-small;
   margin-top: $margin-p;
 }
 
+h4 + p {
+  margin-top: 12px;
+}
+
 @media screen and (max-width: $breakpoint-handheld) {
-  .SecondPart p {
+  p,
+  h4 {
     font-size: $font-size-regular-small-s;
     margin-top: $margin-p-s;
   }
 }
 
-.SecondPart q {
-  font-style: italic;
+h4 {
+  font-weight: 600;
 }
 
-.Subtitle {
-  margin-bottom: $margin-p-x2;
+// Quotes
+q {
+  font-style: italic;
 }
 
 blockquote {
