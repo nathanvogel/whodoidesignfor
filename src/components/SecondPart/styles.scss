@@ -19,6 +19,7 @@ $margin-p-x2: 58px;
 // Texts and titles
 p,
 ul,
+h3,
 h4 {
   font-family: $font-family-regular;
   font-size: $font-size-regular-small;
@@ -26,10 +27,12 @@ h4 {
 }
 
 p,
+h3,
 h4 {
   margin-top: $margin-p;
 }
 
+h3 + p,
 h4 + p {
   margin-top: 12px;
 }
@@ -44,10 +47,21 @@ ul + p {
   h4 {
     font-size: $font-size-regular-small-s;
   }
+
   p,
+  h3,
   h4 {
     margin-top: $margin-p-s;
   }
+
+  h3 {
+    font-size: $font-size-regular-big-s;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: $font-size-regular-big;
 }
 
 h4 {
