@@ -229,6 +229,16 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.MainRootContent}>
+        <TitleSection />
+        <ThoughtsSection />
+        <GoalsSection setupTransition={this.setupTransition} />
+        <ShareholdersSection setupTransition={this.setupTransition} />
+        <ConstraintsSection setupTransition={this.setupTransition} />
+        <PusherSection setupTransition={this.setupTransition} />
+        <PatternsSection />
+        <TemplateSection setupTransition={this.setupTransition} />
+        <RomantisationSection />
+        <RenunciationSection />
         <SecondPart />
         <BibliographySection />
         <Stickman id="stickman-poses" style={{ display: "none" }} />

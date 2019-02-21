@@ -565,7 +565,7 @@ class SecondPart extends React.Component {
             <cite>
               <p>
                 <span className={sStyles.Citation}>
-                  <a href="#src1">1</a> (Sagmeister & Walsch, Answers)
+                  Sagmeister & Walsch, Answers <a href="#src1">1</a>
                 </span>
               </p>
             </cite>

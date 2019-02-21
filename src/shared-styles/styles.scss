@@ -112,13 +112,13 @@
 
 .TypewriterText {
   font-size: $font-size-small;
-  line-height: 1.9;
+  line-height: $line-height;
   font-family: $font-family-typewriter;
 }
 
 .UtopianText {
   font-size: $font-size-small;
-  line-height: 1.9;
+  line-height: $line-height;
   font-family: $font-family-utopia;
 }
 
