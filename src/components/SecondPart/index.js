@@ -227,7 +227,7 @@ class SecondPart extends React.Component {
             éthiques ou philosophiques et de la compétition des valeurs
             humaines.
           </p>
-          <h4>Ce que le problème n'est pas</h4>
+          <h4>Ce que le problème n’est pas</h4>
           <p>
             Ceci dit, mon premier but n’est pas de critiquer une quelconque
             pratique du design, mais d’appeler les designers à se poser des
@@ -251,7 +251,7 @@ class SecondPart extends React.Component {
             une influence sur notre travail qu’on le veuille ou non, et surtout,
             qu’on en ait conscience ou non.
           </p>
-          <h4>Ce que le problème n'est pas</h4>
+          <h4>Ce que le problème est</h4>
           <p>
             Mon problème était que j’avais attribué une valeur intrinsèque au
             design : « <em>Je fais du design, donc c’est bien</em> », «{" "}
@@ -599,6 +599,271 @@ class SecondPart extends React.Component {
             Bref, si je suis sûr d’une chose maintenant, c’est qu’il m’est
             difficile de tirer un sens du design, puisque le design n’est pas
             spécial.
+          </p>
+        </div>
+        <div className={sStyles.ParagraphSpacer} />
+        <div className={sStyles.ParagraphSpacer} />
+        <div className={sStyles.ParagraphSpacer} />
+        <div className={sStyles.LeftBigColumnPadder}>
+          <h3>Pourquoi le design est-il spécial ?</h3>
+          <p>
+            Remontons un instant aux origines de cet discipline. Le design
+            industriel naît avec la révolution industrielle et le design
+            d’interaction avec la révolution numérique, deux environnements
+            principalement guidés par les forces du marché. Si l’on suit la
+            logique capitaliste dominante, le design a émergé pour combler un
+            besoin, une demande, et y proposant une offre complémentaire : avoir
+            des produits bien pensés, tant du point de vue du producteur que du
+            consommateur. Dans ce cas, le design, pur produit du marché, n’a pas
+            de responsabilité morale spécifique à <em>priori</em>, autre que de
+            combler les besoins de ceux qui payent le designer, directement ou
+            indirectement. Cependant, l’arrivée de ces objets, puis de ces
+            technologies, implique des changements d’ordre sociétal, car elle
+            change la vie quotidienne des gens. Ces changements doivent être
+            considérés, mesurés, <em>pensés</em>, dans toutes leurs
+            ramifications. A qui revient ce rôle ?
+          </p>
+          <p>
+            Bien sûr, les ingénieurs, product managers, responsables marketing,
+            exécutifs, etc. ont tous un pouvoir de décision, souvent plus
+            important que celui du designer, mais leur loyauté première réside
+            en général envers l’optimisation technique ou l’optimisation
+            financière, ce qu’ils font en général avec différents degrés de
+            présomption que ces optimisations amèneront en second lieu
+            l’optimisation du bonheur, du « <em>bien</em> ». Bill Moggridge,
+            père fondateur du design d’interaction, nous dit{" "}
+          </p>
+          <blockquote>
+            <p>
+              « Les designers de produits issus des technologies numériques ne
+              considèrent plus leur travail comme consistant à faire le design
+              d’un objet physique — beau ou utile — mais comme consistant à
+              faire le design des interactions avec lui. »
+            </p>
+            <cite>
+              <p>[Bill Moggridge, Designing Interactions]</p>
+            </cite>
+          </blockquote>
+          <p>
+            Le designer est donc celui qui s’occupe des relations entre les
+            humains et les machines. C’est là le cœur de son sujet, sa loyauté
+            sociale première.
+          </p>
+          <p>
+            On peut donner une première responsabilité aux designers, basée sur
+            l’impact que nous avons. Nous prenons des décisions, donc nous avons
+            un pouvoir, donc nous avons une responsabilité.
+          </p>
+          <p>
+            Au-delà de cette vision encore limitée par la perception que peut
+            avoir un designer de son pouvoir dans une structure hiérarchique,
+            nous avons une responsabilité basée sur le privilège de la
+            connaissance. Notre profession est de comprendre et déterminer la
+            relation entre humains et technologies, nous avons une culture et
+            des connaissances qui recoupent plusieurs domaines et tout cela nous
+            place dans une unique position pour comprendre les enjeux et les
+            impacts de ces technologies. Nous avons une responsabilité de
+            traduire nos connaissances et analyses en préconisations morales et
+            en actions éthiques.
+          </p>
+          <p>
+            Dès lors que nous savons ou que nous pouvons savoir, toute action ou
+            inaction est une décision morale que nous prenons. Comme le dit Mike
+            Monteiro en s’inspirant de Victor Papanek : «{" "}
+            <q>
+              J’ai commencé à regarder le design, non seulement comme l’acte de
+              création, mais plus comme l’acte de choisir quoi créer.
+            </q>{" "}
+            » [Mike Monteiro, How Designers Destroyed the World] Il donne
+            ensuite l’exemple de Facebook Graph Search qui laisse les gens
+            chercher « men interested in men in Teheran » et dit à 9 minutes 23
+            :
+          </p>
+          <blockquote>
+            <p>
+              « This is irresponsible design. And you may be thinking: ‘Oh no no
+              no! That’s a business decision!’ Bullshit! It may have started out
+              life as a business decision, but to get on the interface, to be
+              live, to get to where people can interact with it, it goes through
+              design. And when a designer lets a bad business decision through,
+              that’s a decision as well. »
+            </p>
+          </blockquote>
+          <p>
+            Certains avanceront qu’expliciter et imposer un devoir moral n’est
+            pas nécessaire, soit parce que la responsabilité individuelle exigée
+            de tout individu suffit à ce qu’il soit responsable d’utiliser son
+            pouvoir à bon escient, soit parce que la logique du marché suffit à
+            inclure ces valeurs, du moment qu’elles sont demandées. Sous
+            suffisamment de pression publique ou par simplement par crainte pour
+            sa réputation, l’offre changera pour s’aligner sur les valeurs de la
+            société. Et il est vrai que le capitalisme est un outil terriblement
+            efficace pour rendre ce type de changements possibles. On pourrait
+            citer à juste titre les exemples d’Apple et Google, ayant tous deux
+            fait des récents efforts dans leurs OS mobiles respectifs pour la
+            réduction du temps passé en face d’un écran. Cependant, croire que
+            c’est la meilleure manière de tout faire, qu’elle va tout le temps
+            fonctionner et qu’elle ne détruit pas de valeurs morales au passage
+            relève à mon sens d’une croyance. Quand bien même cette croyance
+            serait vraie, ce mécanisme d’équilibre a un problème : l’équilibre
+            prend souvent du temps et arrive parfois trop tard. Deux exemples :{" "}
+          </p>
+          <ul>
+            <li>
+              YouTube vient d’effectuer un changement historique à son
+              algorithme [Guillaume Chaslot,{" "}
+              <a href="https://twitter.com/gchaslot/status/1094359564559044610">
+                https://twitter.com/gchaslot/status/1094359564559044610
+              </a>
+              ], lequel va (à priori) faire baisser ses profits : la plateforme
+              va cesser de recommander des vidéos jugées complotistes et
+              diminuer l’agressivité avec laquelle son algorithme de
+              recommandations optimise le « watch time » afin d’éviter que la
+              plateforme ne soit radicalisante. Cette démarche intervient{" "}
+              <em>après</em>
+              que des dizaines de milliers de personnes aient été radicalisées,
+              que des personnes soient mortes et que des élections aient été
+              votées.
+            </li>
+            <li>
+              Les dégâts des activités humaines sur la biodiversité continuent
+              malgré les multiples sonnettes d’alarmes et une pression publique
+              considérable sur les entreprises. Je choisis ici la biodiversité
+              comme exemple, car dans ce domaine, tout impact qu’on y fait est à
+              l’évidence totalement irréversible.
+            </li>
+          </ul>
+          <p>
+            J’en déduis alors qu’une morale supra-capitaliste doit exister et
+            être explicite, ne serait-ce que pour accélérer le processus
+            d’équilibration. Les gens s’attachent tellement à la logique
+            libérale justement parce qu’elle leur évite de se sentir
+            responsables.
+          </p>
+          <p>
+            Je pense que le design a d’importantes différences avec d’autres
+            formes de création. Dans le cas des beaux-arts ou de l’architecture
+            par exemple, il y a longtemps que ces disciplines existent et ont
+            été institutionnalisé. Cela s’est fait dans des sociétés
+            non-capitalistes qui lui ont conféré un rôle et une responsabilité
+            explicite. Même si l’on peut argumenter que celle-ci se perd, avec
+            la marchandisation de l’art par exemple, une tradition forte et
+            ancienne existe dans ces domaines. En demandant à des étudiants en
+            design d’interaction et en architecture leurs avis respectifs sur la
+            question de leur responsabilité envers la société, j’ai vu le sujet
+            était assez largement moins naturel du côté des designers, qui
+            montraient beaucoup d’incertitudes.
+          </p>
+          <p>
+            Si l’on prend le cadre de l’artisanat en opposition au design
+            industriel ou au design d’interaction par exemple, il opère par
+            définition à sa propre échelle. Le jugement des producteurs et
+            consommateurs suffit donc à l’artisan comme cadre moral. La
+            communauté peut décider et contrôler les valeurs éthiques inscrites
+            dans cette pratique. Dans un monde de design globalisé, ce n’est
+            plus vrai, car l’échelle dépasse les individus et les communautés.
+          </p>
+          <p>
+            En admettant cette responsabilité du designer parce qu’il est
+            individuellement uniquement positionné pour avoir des connaissances,
+            une capacité de compréhension et un impact, alors on peut lui
+            imposer un devoir moral à l’échelle de la société. Ce poids moral
+            rend le design spécial, au sens où la société <em>compte</em> sur le
+            designer. Une conséquence de cette attente est que le design peut
+            être perçu comme spécial, mais en réalité c’est la responsabilité
+            morale de penser notre relation aux technologies qui est spéciale et
+            celle-ci est posée sur le designer, et non le design lui-même. Comme
+            discuté plus haut, c’est pour moi absurde de compter sur l’essence
+            d’une discipline pour respecter des valeurs morales. Je vais
+            reprendre une de mes phrases préférées d’Alain Barreau sur la
+            science [Alain Barreau, interview par Thinkerview : Quand la Science
+            appelle à l’aide pour l’humanité ?], mais pour parler du design :
+          </p>
+          <blockquote>
+            <p>
+              « Il n’y a pas un passage nécessaire du [design] à l’éthique. Ça,
+              ça dépend de nous. »
+            </p>
+          </blockquote>
+        </div>
+        <div className={sStyles.ParagraphSpacer} />
+        <div className={sStyles.ParagraphSpacer} />
+        <div className={sStyles.ParagraphSpacer} />
+        <div className={sStyles.RightBigColumnPadder}>
+          <p>
+            Du discours implicite dominant sur le design et sa « spécialité »,
+            ce que j’en perçois en tant que consommateur d’articles et vidéos
+            sur internet et en tant qu’étudiant dans une école d’arts et design,
+            est :
+          </p>
+          <blockquote>
+            <p>« Vous êtes designer, donc vous êtes spécial. »</p>
+          </blockquote>
+          <p>Alors qu’à mon sens, une version plus correcte serait :</p>
+          <blockquote>
+            <p>
+              « Vous êtes designer, donc la société vous a incombé la
+              responsabilité spéciale de penser notre relation aux technologies
+              ».
+            </p>
+          </blockquote>
+          <p>
+            Ce raccourci de langage provient potentiellement tout autant de
+            celui qui le dit que de celui qui le lit. Certains auront
+            naturellement compris la deuxième variante. Ce ne fut pas mon cas.
+            Ma perception ressemblait plutôt à «{" "}
+            <em>
+              Vous êtes designer, donc vous êtes spécial, donc vous avez la
+              possibilité de penser le monde.
+            </em>{" "}
+            », une version autrement plus présomptueuse. Cette confusion
+            générale sur les valeurs et responsabilités propres à chaque
+            discipline fait à mon avis bien des ravages, et pas seulement dans
+            les domaines créatifs.
+          </p>
+          <p>
+            J’ai rapidement interrogé quelques-uns de mes camarades, afin de
+            voir comment ils percevaient le rôle et la responsabilité du
+            designer pour la société. Il me serait difficile de résumer avec
+            précision leurs mots, donc je me contenterais d’un constat
+            personnel. Les réponses tendent vers une éthique possible et une
+            responsabilité à assumer, mais toujours avec des réserves et une
+            certaine confusion.
+          </p>
+          <p>
+            Que Tristan Harris, un ingénieur de formation, ait besoin de devenir
+            Design Ethicist et de créer le Center for Humane Technology montre
+            que quelque part, les designers d’interaction n’ont toujours pas
+            assumé cette responsabilité qui est la leur.
+          </p>
+
+          <blockquote>
+            <p>
+              « Imagine a world where the CEO and the marketing director are
+              sitting in a conference room and they’re sweating bullets because
+              they’re thinking « We’re never going to be able to talk the
+              designers into doing this. » That is a fucking beautiful world. »
+            </p>
+            <cite>
+              <p>[Mike Monteiro, How Designers Destroyed the World, 32:17]</p>
+            </cite>
+          </blockquote>
+          <p>
+            Il est hélas trop facile de se cacher derrière les « bells and
+            whistles » de la nouveauté et l’innovation, de renoncer face à un
+            monde insaisissable qui bouge trop vite. Les structures corporates
+            sont peut-être le plus grand obstacle à la prise de responsabilité
+            des designers, mais nous nous devons d’exercer notre droit de vote
+            sur ce qui se crée et ce qui ne verra pas le jour. Le Center for
+            Humane Technology{" "}
+            <a href="http://humanetech.com/designers">en appelle</a> aux «
+            architectes du digital » à designer un monde aligné sur nos valeurs
+            et je ne pense pas que l’utilisation de ce mot, « architecte », soit
+            un hasard. Même si elle ne le fait pas forcément, cette ancienne
+            discipline a une histoire dans laquelle elle peut puiser des trésors
+            d’éthiques et de principes rigoureux. Il nous revient le devoir de
+            trouver dans l’histoire ou construire dans le présent une force
+            morale similaire pour designer le futur.
           </p>
         </div>
       </section>
