@@ -20,7 +20,9 @@ class BibliographySection extends React.Component {
 
           <div className="csl-bib-body">
             <div className="csl-entry">
-              <div className="csl-left-margin">1. </div>
+              <a id="src1">
+                <div className="csl-left-margin">1. </div>
+              </a>
               <div className="csl-right-inline">
                 SAGMEISTER, Stefan. Answers – Sagmeister &amp; Walsh.
                 [en&nbsp;ligne].
@@ -36,7 +38,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Answers%20%E2%80%93%20Sagmeister%20%26%20Walsh&amp;rft.identifier=http%3A%2F%2Fsagmeisterwalsh.com%2Fanswers%2F&amp;rft.aufirst=Stefan&amp;rft.aulast=Sagmeister&amp;rft.au=Stefan%20Sagmeister"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">2. </div>
+              <a id="src2">
+                <div className="csl-left-margin">2. </div>
+              </a>
               <div className="csl-right-inline">
                 PEREZ-GOMEZ, Alberto.{" "}
                 <i>
@@ -88,7 +92,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Built%20upon%20Love%3A%20Architectural%20Longing%20after%20Ethics%20and%20Aesthetics&amp;rft.publisher=The%20MIT%20Press&amp;rft.aufirst=Alberto&amp;rft.aulast=Perez-Gomez&amp;rft.au=Alberto%20Perez-Gomez&amp;rft.date=2008&amp;rft.tpages=260&amp;rft.language=Anglais"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">3. </div>
+              <a id="src3">
+                <div className="csl-left-margin">3. </div>
+              </a>
               <div className="csl-right-inline">
                 PAPANEK, Victor.{" "}
                 <i>
@@ -113,7 +119,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-89733-153-1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Design%20for%20the%20Real%20World%3A%20Human%20Ecology%20and%20Social%20Change&amp;rft.place=Chicago%2C%20Ill&amp;rft.publisher=Chicago%20Review%20Press&amp;rft.edition=Revised%20edition&amp;rft.aufirst=Victor&amp;rft.aulast=Papanek&amp;rft.au=Victor%20Papanek&amp;rft.date=2005-08-30&amp;rft.tpages=416&amp;rft.isbn=978-0-89733-153-1&amp;rft.language=English"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">4. </div>
+              <a id="src4">
+                <div className="csl-left-margin">4. </div>
+              </a>
               <div className="csl-right-inline">
                 MONTEIRO, Mike. Design’s Lost Generation. <i>Mike Monteiro</i>{" "}
                 [en&nbsp;ligne]. 19 février 2018.
@@ -134,7 +142,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Design%E2%80%99s%20Lost%20Generation&amp;rft.description=A%20year%20ago%20I%20was%20in%20the%20audience%20at%20a%20gathering%20of%20designers%20in%20San%20Francisco.%20There%20were%20four%20designers%20on%20stage%2C%20and%20two%20of%20them%20worked%E2%80%A6&amp;rft.identifier=https%3A%2F%2Fmedium.com%2F%40monteiro%2Fdesigns-lost-generation-ac7289549017&amp;rft.aufirst=Mike&amp;rft.aulast=Monteiro&amp;rft.au=Mike%20Monteiro&amp;rft.date=2018-02-19"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">5. </div>
+              <a id="src5">
+                <div className="csl-left-margin">5. </div>
+              </a>
               <div className="csl-right-inline">
                 MOGGRIDGE, Bill. <i>Designing Interactions</i>. 1 edition.
                 Cambridge, Mass&nbsp;: The MIT Press, 2007.
@@ -194,7 +204,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-262-13474-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Designing%20Interactions&amp;rft.place=Cambridge%2C%20Mass&amp;rft.publisher=The%20MIT%20Press&amp;rft.edition=1%20edition&amp;rft.aufirst=Bill&amp;rft.aulast=Moggridge&amp;rft.au=Bill%20Moggridge&amp;rft.date=2007-10-01&amp;rft.tpages=766&amp;rft.isbn=978-0-262-13474-3&amp;rft.language=English"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">6. </div>
+              <a id="src6">
+                <div className="csl-left-margin">6. </div>
+              </a>
               <div className="csl-right-inline">
                 KALMAN, Tibor. Fuck Committees. [en&nbsp;ligne]. juin 1998.
                 [Consulté&nbsp;le&nbsp;20&nbsp;février&nbsp;2019]. Disponible à
@@ -209,7 +221,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Fuck%20Committees%20%E2%86%92%20Manifesto%20ProjectManifesto%20Project&amp;rft.identifier=http%3A%2F%2Fwww.manifestoproject.it%2Ffuck-committees%2F&amp;rft.aufirst=Tibor&amp;rft.aulast=Kaman&amp;rft.au=Tibor%20Kaman&amp;rft.date=1998-06&amp;rft.language=en-US"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">7. </div>
+              <a id="src7">
+                <div className="csl-left-margin">7. </div>
+              </a>
               <div className="csl-right-inline">
                 CENTER FOR HUMANE TECHNOLOGY. How to Design.{" "}
                 <i>Center for Humane Technology</i> [en&nbsp;ligne].
@@ -225,7 +239,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=How%20to%20Design&amp;rft.identifier=http%3A%2F%2Fhumanetech.com%2Fdesigners&amp;rft.aulast=Center%20for%20Humane%20Technology&amp;rft.au=Center%20for%20Humane%20Technology&amp;rft.language=en-US"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">8. </div>
+              <a id="src8">
+                <div className="csl-left-margin">8. </div>
+              </a>
               <div className="csl-right-inline">
                 GORDON, Jeremy. Is Everything Wrestling?{" "}
                 <i>The New York Times</i> [en&nbsp;ligne]. 21 décembre 2017.
@@ -246,7 +262,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=newspaperArticle&amp;rft.title=Is%20Everything%20Wrestling%3F&amp;rft.source=The%20New%20York%20Times&amp;rft.description=The%20fake%20%E2%80%9Creality%E2%80%9D%20of%20professional%20wrestling%20has%20become%20the%20new%20norm%20%E2%80%94%20from%20entertainment%20to%20politics%2C%20and%20everywhere%20in%20between.&amp;rft.identifier=https%3A%2F%2Fwww.nytimes.com%2F2016%2F05%2F27%2Fmagazine%2Fis-everything-wrestling.html&amp;rft.aufirst=Jeremy&amp;rft.aulast=Gordon&amp;rft.au=Jeremy%20Gordon&amp;rft.date=2017-12-21&amp;rft.issn=0362-4331&amp;rft.language=en-US"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">9. </div>
+              <a id="src9">
+                <div className="csl-left-margin">9. </div>
+              </a>
               <div className="csl-right-inline">
                 LYOTARD, Jean-François.{" "}
                 <i>LA CONDITION POSTMODERNE. : Rapport sur le savoir</i>.
@@ -259,7 +277,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-2-7073-0276-2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LA%20CONDITION%20POSTMODERNE.%20%3A%20Rapport%20sur%20le%20savoir&amp;rft.place=Paris&amp;rft.publisher=Editions%20de%20Minuit&amp;rft.aufirst=Jean-Fran%C3%A7ois&amp;rft.aulast=Lyotard&amp;rft.au=Jean-Fran%C3%A7ois%20Lyotard&amp;rft.date=1979-09-01&amp;rft.tpages=109&amp;rft.isbn=978-2-7073-0276-2&amp;rft.language=Fran%C3%A7ais"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">10. </div>
+              <a id="src10">
+                <div className="csl-left-margin">10. </div>
+              </a>
               <div className="csl-right-inline">
                 LEIPOLD, Jimmy. <i>Propaganda: La fabrique du consentement</i>{" "}
                 [en&nbsp;ligne]. 2017.
@@ -280,7 +300,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=film&amp;rft.title=Propaganda%3A%20La%20fabrique%20du%20consentement&amp;rft.description=Directed%20by%20Jimmy%20Leipold.%20%20With%20Ann%20Bernays%2C%20Edward%20Bernays%2C%20Charles%20Chaplin%2C%20Noam%20Chomsky.&amp;rft.identifier=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt8480438%2F&amp;rft.aufirst=Jimmy&amp;rft.aulast=Leipold&amp;rft.au=Jimmy%20Leipold&amp;rft.date=2017"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">11. </div>
+              <a id="src11">
+                <div className="csl-left-margin">11. </div>
+              </a>
               <div className="csl-right-inline">
                 THINKERVIEW.{" "}
                 <i>
@@ -300,7 +322,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=videoRecording&amp;rft.title=Quand%20la%20Science%20appelle%20%C3%A0%20l'aide%20pour%20l'humanit%C3%A9%20%3F%20Aur%C3%A9lien%20Barrau%2C%20Astrophysicien%20%5BEN%20DIRECT%5D&amp;rft.identifier=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXO4q9oVrWWw%26t%3D3067&amp;rft.au=undefined"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">12. </div>
+              <a id="src12">
+                <div className="csl-left-margin">12. </div>
+              </a>
               <div className="csl-right-inline">
                 KLEON, Austin.{" "}
                 <i>
@@ -336,7 +360,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-7611-6925-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Steal%20Like%20an%20Artist%3A%2010%20Things%20Nobody%20Told%20You%20About%20Being%20Creative&amp;rft.place=New%20York&amp;rft.publisher=Workman%20Publishing&amp;rft.edition=1%20edition&amp;rft.aufirst=Austin&amp;rft.aulast=Kleon&amp;rft.au=Austin%20Kleon&amp;rft.date=2012-02-28&amp;rft.tpages=160&amp;rft.isbn=978-0-7611-6925-3&amp;rft.language=English"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">13. </div>
+              <a id="src13">
+                <div className="csl-left-margin">13. </div>
+              </a>
               <div className="csl-right-inline">
                 SALMON, Christian.{" "}
                 <i>
@@ -352,7 +378,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-2-7071-4955-8&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Storytelling%20%3A%20La%20machine%20%C3%A0%20fabriquer%20des%20histoires%20et%20%C3%A0%20formater%20les%20esprits&amp;rft.place=Paris&amp;rft.publisher=Editions%20La%20D%C3%A9couverte&amp;rft.aufirst=Christian&amp;rft.aulast=Salmon&amp;rft.au=Christian%20Salmon&amp;rft.date=2007&amp;rft.tpages=239&amp;rft.isbn=978-2-7071-4955-8&amp;rft.language=Fran%C3%A7ais"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">14. </div>
+              <a id="src14">
+                <div className="csl-left-margin">14. </div>
+              </a>
               <div className="csl-right-inline">
                 DAVIS, Erik et THACKER, Eugene.{" "}
                 <i>
@@ -384,7 +412,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-1-58394-930-6&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=TechGnosis%3A%20Myth%2C%20Magic%2C%20and%20Mysticism%20in%20the%20Age%20of%20Information&amp;rft.place=Berkeley%2C%20California&amp;rft.publisher=North%20Atlantic%20Books&amp;rft.edition=Reprint%20edition&amp;rft.aufirst=Erik&amp;rft.aulast=Davis&amp;rft.au=Erik%20Davis&amp;rft.au=Eugene%20Thacker&amp;rft.date=2015-03-17&amp;rft.tpages=456&amp;rft.isbn=978-1-58394-930-6&amp;rft.language=English"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">15. </div>
+              <a id="src15">
+                <div className="csl-left-margin">15. </div>
+              </a>
               <div className="csl-right-inline">
                 MONTEIRO, Mike.{" "}
                 <i>
@@ -409,7 +439,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=videoRecording&amp;rft.title=Webstock%202013%3A%20Mike%20Monteiro%20-%20How%20Designers%20Destroyed%20the%20World&amp;rft.description=You%20are%20directly%20responsible%20for%20what%20you%20put%20into%20the%20world.%20Yet%20every%20day%20designers%20all%20over%20the%20world%20work%20on%20projects%20without%20giving%20any%20thought%20or%20consideration%26hellip%3B&amp;rft.identifier=https%3A%2F%2Fvimeo.com%2F68470326&amp;rft.aufirst=Mike&amp;rft.aulast=Monteiro&amp;rft.au=Mike%20Monteiro&amp;rft.date=2013-06-16"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">16. </div>
+              <a id="src16">
+                <div className="csl-left-margin">16. </div>
+              </a>
               <div className="csl-right-inline">
                 MÜLLER, Boris. Why Do All Websites Look the Same? – Member
                 Feature Stories. <i>Medium</i> [en&nbsp;ligne]. 15 septembre
@@ -429,7 +461,9 @@ class BibliographySection extends React.Component {
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Why%20Do%20All%20Websites%20Look%20the%20Same%3F%20%E2%80%93%20Member%20Feature%20Stories&amp;rft.description=The%20internet%20suffers%20from%20a%20lack%20of%20imagination%2C%20so%20I%20asked%20my%20students%20to%20redesign%20it&amp;rft.identifier=https%3A%2F%2Fmedium.com%2Fs%2Fstory%2Fon-the-visual-weariness-of-the-web-8af1c969ce73&amp;rft.aufirst=Boris&amp;rft.aulast=M%C3%BCller&amp;rft.au=Boris%20M%C3%BCller&amp;rft.date=2018-09-15"
             />
             <div className="csl-entry">
-              <div className="csl-left-margin">17. </div>
+              <a id="src17">
+                <div className="csl-left-margin">17. </div>
+              </a>
               <div className="csl-right-inline">
                 CHASLOT, Guillaume. YouTube announced they will stop
                 recommending some conspiracy theories such as flat earth. I

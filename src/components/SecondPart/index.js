@@ -1,3 +1,5 @@
+/* eslint-disable no-irregular-whitespace */
+
 import React from "react";
 import myStyles from "./styles.scss";
 import styles from "../../shared-styles/styles-second-part.scss";
@@ -283,8 +285,11 @@ class SecondPart extends React.Component {
             Bernays constate que le terme « propagande » a une mauvaise
             réputation, il continue d’utiliser exactement les mêmes méthodes,
             mais simplement inventant un nouveau mot pour son travail : non plus
-            « propaganda », mais « public relations ». [Jimmy Leipold,
-            Propaganda: La fabrique du consentement]
+            « propaganda », mais « public relations ».{" "}
+            <span className={sStyles.Citation}>
+              <a href="#src10">10</a> (Jimmy Leipold, Propaganda: La fabrique du
+              consentement)
+            </span>
           </p>
           <p>
             Les mots sont puissants et nous devrions nous en méfier. Placer une
@@ -433,13 +438,18 @@ class SecondPart extends React.Component {
             qu’aux exigences. Je fais aussi l’hypothèque qu’à cause de sa
             jeunesse et de son lien aux nouvelles technologies de communication,
             le numérique est un terrain plus propice aux nombreuses formes de
-            storytelling devenues si communes au 21ème siècle. [Christian
-            Salmon, Storytelling] Depuis la nuit des temps, les développements
-            technologiques ont alimenté toutes sortes de mythes y compris des
-            religions entières et c’est particulièrement vrai des technologies
-            de communication. [Erik Davis, TechGnosis] Les mythes du progrès
-            alimentent sans aucun doute des illusions sur la nature du design
-            comme celles qui étaient les miennes.
+            storytelling devenues si communes au 21ème siècle.{" "}
+            <span className={sStyles.Citation}>
+              <a href="#src13">13</a> (Christian Salmon, Storytelling)
+            </span>{" "}
+            Depuis la nuit des temps, les développements technologiques ont
+            alimenté toutes sortes de mythes y compris des religions entières et
+            c’est particulièrement vrai des technologies de communication.{" "}
+            <span className={sStyles.Citation}>
+              <a href="#src14">14</a> (Erik Davis, TechGnosis)
+            </span>{" "}
+            Les mythes du progrès alimentent sans aucun doute des illusions sur
+            la nature du design comme celles qui étaient les miennes.
           </p>
           <h4>UI/UX</h4>
           <p>
@@ -465,13 +475,19 @@ class SecondPart extends React.Component {
             Experience Designer », ils sont de plus en plus étroitement liés aux
             structures corporates. On connaît bien sûr les critiques de
             l’influence du monde corporate sur la culture et la créativité.
-            [Tibor Kalman, Fuck Committees], mais ces hiérarchies rendent
-            difficile l’une des tâches du design : être un gatekeeper [Victor
-            Papanek, Design for the Real World], être un rempart face au design
-            sans éthique. Cette dépendance structurelle aux grandes entreprises
-            s’oppose pour moi avec le modèle du studio indépendant ou du bureau
-            d’architecture par exemple, foyers d’une créativité plus
-            indépendante et d’une responsabilité plus large.
+            <span className={sStyles.Citation}>
+              <a href="#src6">6</a> (Tibor Kalman, Fuck Committees)
+            </span>
+            , mais ces hiérarchies rendent difficile l’une des tâches du
+            design : être un gatekeeper{" "}
+            <span className={sStyles.Citation}>
+              <a href="#src3">3</a> (Victor Papanek, Design for the Real World)
+            </span>
+            , être un rempart face au design sans éthique. Cette dépendance
+            structurelle aux grandes entreprises s’oppose pour moi avec le
+            modèle du studio indépendant ou du bureau d’architecture par
+            exemple, foyers d’une créativité plus indépendante et d’une
+            responsabilité plus large.
           </p>
           <h4>Optimisme</h4>
           <p>
@@ -547,7 +563,11 @@ class SecondPart extends React.Component {
               agree. »
             </p>
             <cite>
-              <p>[Sagmeister & Walsch, Answers]</p>
+              <p>
+                <span className={sStyles.Citation}>
+                  <a href="#src1">1</a> (Sagmeister & Walsch, Answers)
+                </span>
+              </p>
             </cite>
           </blockquote>
           <h4>Maxime Büchi</h4>
@@ -562,19 +582,21 @@ class SecondPart extends React.Component {
           <h4>Alberto Pérez-Gómez </h4>
           <p>
             Cet architecte évoque l’essentialité de l’amour dans son livre,{" "}
-            <i>Built upon Love</i>, que je n’ai pas encore lu :
+            <i>Built upon Love</i>
+            <span className={sStyles.Citation}>
+              {" "}
+              <a href="#src2">2</a>
+            </span>
+            , que je n’ai pas encore lu :
           </p>
           <blockquote>
             <p>
-              « In Built upon Love Pérez-Gómez uncovers the relationship between
-              love and architecture in order to find the points of contact
-              between poetics and ethics—between the architect’s wish to design
-              a beautiful world and architecture’s imperative to provide a
-              better place for society. »
+              « In <i>Built upon Love</i> Pérez-Gómez uncovers the relationship
+              between love and architecture in order to find the points of
+              contact between poetics and ethics—between the architect’s wish to
+              design a beautiful world and architecture’s imperative to provide
+              a better place for society. »
             </p>
-            <cite>
-              <p>[Alberto Pérez-Gómez, Build upon Love]</p>
-            </cite>
           </blockquote>
         </div>
         <div className={sStyles.ParagraphSpacer} />
@@ -635,7 +657,7 @@ class SecondPart extends React.Component {
             financière, ce qu’ils font en général avec différents degrés de
             présomption que ces optimisations amèneront en second lieu
             l’optimisation du bonheur, du « <em>bien</em> ». Bill Moggridge,
-            père fondateur du design d’interaction, nous dit{" "}
+            père fondateur du design d’interaction, nous dit :
           </p>
           <blockquote>
             <p>
@@ -645,7 +667,11 @@ class SecondPart extends React.Component {
               faire le design des interactions avec lui. »
             </p>
             <cite>
-              <p>[Bill Moggridge, Designing Interactions]</p>
+              <p>
+                <span className={sStyles.Citation}>
+                  Bill Moggridge, Designing Interactions <a href="#src5">5</a>
+                </span>
+              </p>
             </cite>
           </blockquote>
           <p>
@@ -678,10 +704,14 @@ class SecondPart extends React.Component {
               J’ai commencé à regarder le design, non seulement comme l’acte de
               création, mais plus comme l’acte de choisir quoi créer.
             </q>{" "}
-             » [Mike Monteiro, How Designers Destroyed the World] Il donne
-            ensuite l’exemple de Facebook Graph Search qui laisse les gens
-            chercher « men interested in men in Teheran » et dit à 9 minutes 23
-             :
+             »{" "}
+            <span className={sStyles.Citation}>
+              <a href="#src15">15</a> (Mike Monteiro, How Designers Destroyed
+              the World)
+            </span>{" "}
+            Il donne ensuite l’exemple de Facebook Graph Search qui laisse les
+            gens chercher « men interested in men in Teheran » et dit à 9
+            minutes 23  :
           </p>
           <blockquote>
             <p>
@@ -715,11 +745,15 @@ class SecondPart extends React.Component {
           <ul>
             <li>
               YouTube vient d’effectuer un changement historique à son
-              algorithme [Guillaume Chaslot,{" "}
-              <a href="https://twitter.com/gchaslot/status/1094359564559044610">
-                https://twitter.com/gchaslot/status/1094359564559044610
-              </a>
-              ], lequel va (à priori) faire baisser ses profits : la plateforme
+              algorithme{" "}
+              <span className={sStyles.Citation}>
+                <a href="#src17">17</a> (Guillaume Chaslot,{" "}
+                <a href="https://twitter.com/gchaslot/status/1094359564559044610">
+                  https://twitter.com/gchaslot/status/1094359564559044610
+                </a>
+                )
+              </span>
+              , lequel va (à priori) faire baisser ses profits : la plateforme
               va cesser de recommander des vidéos jugées complotistes et
               diminuer l’agressivité avec laquelle son algorithme de
               recommandations optimise le « watch time » afin d’éviter que la
@@ -780,8 +814,12 @@ class SecondPart extends React.Component {
             discuté plus haut, c’est pour moi absurde de compter sur l’essence
             d’une discipline pour respecter des valeurs morales. Je vais
             reprendre une de mes phrases préférées d’Alain Barreau sur la
-            science [Alain Barreau, interview par Thinkerview : Quand la Science
-            appelle à l’aide pour l’humanité ?], mais pour parler du design :
+            science{" "}
+            <span className={sStyles.Citation}>
+              <a href="#src11">11</a> (Alain Barreau, interview par
+              Thinkerview : Quand la Science appelle à l’aide pour l’humanité ?)
+            </span>
+            , mais pour parler du design :
           </p>
           <blockquote>
             <p>
@@ -819,7 +857,7 @@ class SecondPart extends React.Component {
             <em>
               Vous êtes designer, donc vous êtes spécial, donc vous avez la
               possibilité de penser le monde.
-            </em>{" "}
+            </em>
              », une version autrement plus présomptueuse. Cette confusion
             générale sur les valeurs et responsabilités propres à chaque
             discipline fait à mon avis bien des ravages, et pas seulement dans
@@ -849,7 +887,11 @@ class SecondPart extends React.Component {
               designers into doing this. » That is a fucking beautiful world. »
             </p>
             <cite>
-              <p>[Mike Monteiro, How Designers Destroyed the World, 32:17]</p>
+              <p>
+                <span className={sStyles.Citation}>
+                  Mike Monteiro <a href="#src15">15 à 32:17</a>
+                </span>
+              </p>
             </cite>
           </blockquote>
           <p>

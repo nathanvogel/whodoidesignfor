@@ -99,6 +99,11 @@ blockquote cite {
   margin-bottom: $padding;
 }
 
+blockquote i,
+blockquote em {
+  font-style: normal;
+}
+
 // Special styles
 div.DigitalZone {
   background-color: lightpink;

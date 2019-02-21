@@ -132,6 +132,23 @@
   height: $padding;
 }
 
+.Citation,
+blockquote .Citation a {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+blockquote .Citation {
+  font-size: 100%;
+  // line-height: 0;
+  // position: relative;
+  vertical-align: baseline;
+  // top: -0.5em;
+}
+
 // === GRADIENTS ===
 
 .TopGradient {
