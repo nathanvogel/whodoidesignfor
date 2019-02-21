@@ -13,7 +13,7 @@
   position: relative;
 }
 
-@media screen and (max-width: $breakpoint-handheld) {
+@media (max-width: $breakpoint-handheld) {
   .NameTitle {
     font-size: $font-size-name-title-s;
   }
@@ -39,7 +39,7 @@
   margin: $padding auto;
 }
 
-@media screen and (max-width: $breakpoint-handheld) {
+@media (max-width: $breakpoint-handheld) {
   .RightBigColumnPadder {
     padding: 0px $padding 0px $padding;
   }
@@ -79,7 +79,7 @@
   font-weight: 600;
 }
 
-@media screen and (min-width: $breakpoint-handheld) {
+@media (min-width: $breakpoint-handheld) {
   .PullLeft {
     max-width: 230px;
     padding: $padding;
@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-large) {
+@media (min-width: $breakpoint-large) {
   .PullLeft {
     margin-left: -262px;
   }
@@ -122,7 +122,7 @@
   font-family: $font-family-utopia;
 }
 
-@media screen and (max-width: $breakpoint-handheld) {
+@media (max-width: $breakpoint-handheld) {
   .TypewriterText {
     font-size: $font-size-small-s;
   }

@@ -63,13 +63,13 @@ div.Title {
 // Medium devices (tablets, 768px and up)
 // Large devices (desktops, 992px and up)
 // Extra large devices (large desktops, 1200px and up)
-@media screen and (max-width: $breakpoint-handheld),
+@media (max-width: $breakpoint-handheld),
   screen and (max-height: 900px) {
   .GraphicsWrapper {
     transform: scale(0.75);
   }
 }
-@media screen and (max-width: 576px), screen and (max-height: 700px) {
+@media (max-width: 576px), screen and (max-height: 700px) {
   .GraphicsWrapper {
     transform: scale(0.5);
   }

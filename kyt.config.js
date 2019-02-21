@@ -4,8 +4,8 @@ const path = require("path");
 module.exports = {
   reactHotLoader: true,
   // clientURL: "http://172.22.22.54:3001",
-  // clientURL: "http://localhost:3001",
-  clientURL: "http://192.168.1.129:3001",
+  clientURL: "http://localhost:3001",
+  // clientURL: "http://192.168.1.129:3001",
   debug: false,
   hasServer: false,
   modifyWebpackConfig: (config, options) => {

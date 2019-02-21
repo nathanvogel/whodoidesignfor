@@ -37,7 +37,7 @@ ul + p {
   margin-top: 0px;
 }
 
-@media screen and (max-width: $breakpoint-handheld) {
+@media (max-width: $breakpoint-handheld) {
   p,
   ul,
   h4 {

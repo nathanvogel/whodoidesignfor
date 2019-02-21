@@ -19,7 +19,7 @@ $separation-height: 30vh;
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: $breakpoint-handheld) {
+@media (max-width: $breakpoint-handheld) {
   .Quote {
     font-size: $font-size-regular-small-s;
   }
