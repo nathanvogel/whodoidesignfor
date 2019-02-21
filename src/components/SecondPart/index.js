@@ -11,23 +11,6 @@ class SecondPart extends React.Component {
   componentDidMount() {}
 
   render() {
-    // <blockquote>
-    //   <p>
-    //     “Getting wild with digital design in 2018 means getting wild in
-    //     2018 with responsive design that’s agnostic to the kind of device
-    //     you’re rocking. That’s doable, probably, but it’s really, really
-    //     hard.”
-    //   </p>
-    //   <cite>
-    //     <p>
-    //       Tim Carmody,{" "}
-    //       <a href="https://kottke.org/18/01/foreclosing-on-the-future-of-the-book">
-    //         Jan 12, 2018 on kottke.org
-    //       </a>
-    //     </p>
-    //   </cite>
-    // </blockquote>
-
     return (
       <section className={styles.SecondPart} ref={this.ref_section}>
         <div className={sStyles.RightBigColumnPadder}>
@@ -145,16 +128,17 @@ class SecondPart extends React.Component {
           </p>
           <h4>Renonciation</h4>
           <p>
-            Cependant, même en ayant ces idéaux, quelque chose clochait. Je me
-            suis peu à peu rendu compte que mon enthousiasme ne suffirait pas.
-            C’est une bonne chose que de vouloir libérer son potentiel créateur,
-            mais en réalité, le facteur qui prime c’est : pour qui, ou pour
-            quoi, je designe ? Comment concilier salaire et créativité ? Et même
-            lorsque je crée « pour le plaisir », mon égo n’entre-t-il pas aussi
-            en jeu ? Je sens cette question incontournable échapper à ma
-            volonté. Le monde parfait n’existe pas. Un « sellout » de mon âme
-            créatrice est inévitable. Un secret que les grandes entreprises du
-            design se gardent bien de révéler.
+            Cependant, même en ayant ces idéaux, même en reconstruisant de
+            nouveaux meilleurs récits, quelque chose clochait. Je me suis peu à
+            peu rendu compte que mon enthousiasme ne suffirait pas. C’est une
+            bonne chose que de vouloir libérer son potentiel créateur, mais en
+            réalité, le facteur qui prime c’est : pour qui, ou pour quoi, je
+            designe ? Comment concilier salaire et créativité ? Et même lorsque
+            je crée « pour le plaisir », mon égo n’entre-t-il pas aussi en jeu ?
+            Je sens cette question incontournable échapper à ma volonté. Le
+            monde parfait n’existe pas. Un « sellout » de mon âme créatrice est
+            inévitable. Un secret que les grandes entreprises du design se
+            gardent bien de révéler.
           </p>
           <h4>Appel</h4>
           <p>
@@ -220,12 +204,12 @@ class SecondPart extends React.Component {
               j’ai été nourris par l’idée que le design a quelque chose
               d’intrinsèque qui dépasse le travail commercial.
             </strong>{" "}
-            J’ai toujours inconsciemment cru que d’une certaine manière, par son
-            aspect créatif, ou conceptuel, ou riche en éducation ou encore
-            simplement interdisciplinaire, le design s’affranchissait des purs
-            résultats objectifs, de la logique de libre-marché, des enjeux
-            éthiques ou philosophiques et de la compétition des valeurs
-            humaines.
+            A travers des récits construits, j’ai toujours inconsciemment cru
+            que d’une certaine manière, par son aspect créatif, ou conceptuel,
+            ou riche en éducation ou encore simplement interdisciplinaire, le
+            design s’affranchissait des purs résultats objectifs, de la logique
+            de libre-marché, des enjeux éthiques ou philosophiques et de la
+            compétition des valeurs humaines.
           </p>
           <h4>Ce que le problème n’est pas</h4>
           <p>
@@ -399,7 +383,7 @@ class SecondPart extends React.Component {
             construit de moi-même, et du type de design que moi, Nathan Vogel,
             suis supposé produire ? N’ai-je pas plusieurs images de moi-même ?{" "}
           </p>
-          <h3>Quelle est ma part de créativité ? </h3>
+          <h3>Quelle est ma part de créativité ?</h3>
           <p>
             Cette question m’invite à me demander si je suis vraiment en train
             de créer comme j’ai toujours supposé que je le faisais. Ai-je
@@ -411,7 +395,7 @@ class SecondPart extends React.Component {
             doctrine ?
           </p>
         </div>
-        <div className={sStyles.LeftBigColumnPadder}>
+        <div className={`${sStyles.LeftBigColumnPadder} ${styles.DigitalZone}`}>
           <p>
             Cette question de la créativité et de l’expressivité me semble
             particulièrement importante dans le monde numérique et c’est à ce
@@ -487,7 +471,8 @@ class SecondPart extends React.Component {
             des domaines qui ne sont pas traditionnellement associés à la
             créativité.
           </p>
-          <div className={sStyles.ParagraphSpacer} />
+        </div>
+        <div className={sStyles.LeftBigColumnPadder}>
           <p>
             Ces deux questions, « <q>Pour qui est-ce que je designe ?</q> » et «{" "}
             <q>Quelle est ma part de créativité ?</q> » sont mes outils à moi
@@ -528,7 +513,7 @@ class SecondPart extends React.Component {
             <q>
               Is it possible to have both, making money and doing good work?
             </q>{" "}
-            » en disant:
+            » par ces mots :
             <blockquote>
               <p>
                 « I remember a sentence in a Minale Tattersfield book that said:

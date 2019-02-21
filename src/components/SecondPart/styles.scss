@@ -17,6 +17,10 @@ $margin-p-x2: 58px;
 }
 
 // Texts and titles
+h1 {
+  font-size: 40px;
+}
+
 p,
 ul,
 h3,
@@ -65,7 +69,10 @@ h3 {
 }
 
 h4 {
-  font-weight: 600;
+  font-weight: 200;
+  font-family: $font-family-subtitle;
+  text-transform: uppercase;
+  transform: translateX(-20px);
 }
 
 ul {
@@ -89,4 +96,12 @@ blockquote cite {
   text-align: right;
   margin-top: $padding;
   margin-bottom: $padding;
+}
+
+// Special styles
+.DigitalZone {
+  background-color: lightpink;
+  color: darkblue;
+  padding-top: $padding;
+  padding-bottom: $padding;
 }

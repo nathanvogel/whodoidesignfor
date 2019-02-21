@@ -239,7 +239,6 @@ class App extends React.Component {
         <RomantisationSection />
         <RenunciationSection />
         <SecondPart />
-        <section className={styles.nextSection}>Hey!</section>
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />
       </div>
