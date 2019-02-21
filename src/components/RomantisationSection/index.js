@@ -128,7 +128,7 @@ class RomantisationSection extends React.Component {
     return (
       <section className={styles.RomantisationSection} ref={this.ref_section}>
         <div className={sStyles.Padder}>
-          <div className={sStyles.TypewriterText}>
+          <div className={sStyles.UtopianText}>
             I don’t want trendy brutalist side projects.
             <br />I want brutal design on https://www.web.com
           </div>
@@ -175,13 +175,13 @@ class RomantisationSection extends React.Component {
             with responsive design that’s agnostic to the kind of device you’re
             rocking. That’s doable, probably, but it’s really, really hard.”
           </div>
-          <div className={`${styles.QuoteSignature} ${sStyles.TypewriterText}`}>
-            - Tim Carmody,{" "}
+          <div className={`${styles.QuoteSignature} ${sStyles.UtopianText}`}>
+            Tim Carmody,{" "}
             <a href="https://kottke.org/18/01/foreclosing-on-the-future-of-the-book">
               Jan 12, 2018 on kottke.org
             </a>
           </div>
-          <div className={`${styles.AndWith} ${sStyles.TypewriterText}`}>
+          <div className={`${styles.AndWith} ${sStyles.UtopianText}`}>
             And it means getting wild with accessibility.
             <br /> And with performances.
             <br /> And with engineering costs.
@@ -189,9 +189,7 @@ class RomantisationSection extends React.Component {
             <br /> And with business goals.
           </div>
           <div
-            className={`${sStyles.UtopianText} ${styles.AndIll} ${
-              sStyles.TypewriterText
-            }`}
+            className={`${sStyles.UtopianText} ${styles.AndIll}`}
             ref={this.ref_go_wild}
           >
             And I’ll fucking go wild.

@@ -30,19 +30,12 @@ $separation-height: 30vh;
 }
 
 .AndWith {
-  margin-top: 55px;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: $breakpoint-handheld) {
-  .AndWith {
-    margin-top: 32px;
-    margin-bottom: 8px;
-  }
+  margin-top: 21px;
 }
 
 .AndIll {
   font-weight: 600;
+  font-size: 28px;
 }
 
 div.TakeBack {

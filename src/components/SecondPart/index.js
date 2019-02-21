@@ -275,7 +275,7 @@ class SecondPart extends React.Component {
             attribuer une valeur intrinsèque au mot design lorsqu’il est
             corruptible ?
           </p>
-          <h4>Le danger des mots</h4>
+          <h4>Des mots dangereux</h4>
           <p>
             Les mots qui désignent des disciplines sont des simplifications à la
             merci de l’opinion publique et ils peuvent entretenir une perception
