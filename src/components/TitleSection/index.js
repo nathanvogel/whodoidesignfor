@@ -16,8 +16,8 @@ class TitleSection extends React.Component {
     this.titles = [
       "Who do I design for?",
       "Who do you design for?",
-      "Who does he design for?",
       "Who does she design for?",
+      "Who does he design for?",
       "Who do we design for?",
       "Who do they design for?",
     ];
