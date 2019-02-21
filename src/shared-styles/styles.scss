@@ -51,23 +51,30 @@
 .PullLeft {
   min-width: 170px;
   width: 55%;
+}
+.PullRight {
+  min-width: 170px;
+  width: 55%;
+}
+
+.InfoBox {
   border: 6px solid #222;
   padding: $padding-s;
   margin: $padding;
 }
 
-.PullLeft p,
-.PullLeft h5 {
+.InfoBox p,
+.InfoBox h5 {
   line-height: 1.35;
   font-family: $font-family-utopia;
 }
 
-.PullLeft p {
+.InfoBox p {
   font-size: 14px;
   margin-top: 12px;
 }
 
-.PullLeft h5 {
+.InfoBox h5 {
   font-size: 15px;
   font-weight: 600;
 }
@@ -80,14 +87,24 @@
     margin-left: -180px;
   }
 
+  .PullRight {
+    max-width: 230px;
+    padding: $padding;
+    float: right;
+    margin-right: -180px;
+  }
+
   .PullDown100 {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
 @media screen and (min-width: $breakpoint-large) {
   .PullLeft {
     margin-left: -262px;
+  }
+  .PullRight {
+    margin-right: -262px;
   }
 }
 

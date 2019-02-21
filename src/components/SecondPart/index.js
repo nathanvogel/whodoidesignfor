@@ -28,7 +28,7 @@ class SecondPart extends React.Component {
             d’autoréflexion et dans l’espoir de peut-être éclaircir le chemin
             d’autres designers qui partageraient ma confusion.
           </p>
-          <div className={sStyles.PullLeft}>
+          <div className={`${sStyles.InfoBox} ${sStyles.PullLeft}`}>
             <h5>Design, mais lequel ?</h5>
             <p>
               J’entends un domaine très large couvrant la plupart des sens dans
@@ -127,6 +127,17 @@ class SecondPart extends React.Component {
             dans mon portfolio, mais des vrais sites en production.
           </p>
           <h4>Renonciation</h4>
+          <div className={`${sStyles.InfoBox} ${sStyles.PullRight}`}>
+            <h5>Récit ?</h5>
+            <p>
+              J’utilise ici le mot récit comme Lyotard l’utilise lorsqu’il
+              décrit les métarécits autour desquels se sont construits les
+              sociétés modernes jusqu’à la postmodernité. Il s’agit ici de
+              schémas narratifs que je déconstruis à mon échelle ou à celle du
+              design. On peut comprendre « récit » comme le mot anglais «
+              narrative ».
+            </p>
+          </div>
           <p>
             Cependant, même en ayant ces idéaux, même en reconstruisant de
             nouveaux meilleurs récits, quelque chose clochait. Je me suis peu à
@@ -165,7 +176,11 @@ class SecondPart extends React.Component {
           <div className={sStyles.ParagraphSpacer} />
         </div>
         <div className={sStyles.RightBigColumnPadder}>
-          <div className={`${sStyles.PullLeft} ${sStyles.PullDown100}`}>
+          <div
+            className={`${sStyles.InfoBox} ${sStyles.PullLeft} ${
+              sStyles.PullDown100
+            }`}
+          >
             <h5>Designer ?</h5>
             <p>
               Sauf indication contraire, j’utilise le mot designer au sens de

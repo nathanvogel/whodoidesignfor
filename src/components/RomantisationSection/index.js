@@ -189,7 +189,7 @@ class RomantisationSection extends React.Component {
             <br /> And with business goals.
           </div>
           <div
-            className={`${`${sStyles.UtopianText} ${styles.AndIll}` + " "}${
+            className={`${sStyles.UtopianText} ${styles.AndIll} ${
               sStyles.TypewriterText
             }`}
             ref={this.ref_go_wild}
@@ -198,7 +198,7 @@ class RomantisationSection extends React.Component {
           </div>
         </div>
         <div
-          className={`${styles.TakeBack} ${sStyles.UtopianText}`}
+          className={`${sStyles.UtopianText} ${styles.TakeBack}`}
           ref={this.ref_take_back}
         >
           <span>
