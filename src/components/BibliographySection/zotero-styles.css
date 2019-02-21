@@ -44,6 +44,7 @@
 .Z3988 {
 }
 
+.csl-entry .csl-right-inline:nth-child(2),
 .csl-entry .csl-right-inline:nth-child(3) {
   display: none;
 }
