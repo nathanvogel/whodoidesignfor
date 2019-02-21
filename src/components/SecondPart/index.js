@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./styles.scss";
+import myStyles from "./styles.scss";
+import styles from "../../shared-styles/styles-second-part.scss";
 import sStyles from "../../shared-styles/styles.scss";
 
 class SecondPart extends React.Component {
@@ -12,7 +13,7 @@ class SecondPart extends React.Component {
 
   render() {
     return (
-      <section className={styles.SecondPart} ref={this.ref_section}>
+      <section className={myStyles.SecondPart} ref={this.ref_section}>
         <div className={sStyles.RightBigColumnPadder}>
           <h1>Who do I design for?</h1>
           <p className={styles.Subtitle}>
@@ -532,23 +533,23 @@ class SecondPart extends React.Component {
               Is it possible to have both, making money and doing good work?
             </q>{" "}
              » par ces mots :
-            <blockquote>
-              <p>
-                « I remember a sentence in a Minale Tattersfield book that said:
-                “In my experience, every designer whose prime aim in going into
-                business was to make money while at the same time producing good
-                design, failed on both counts. I believe that designing is
-                something you have to do for love. If you are committed first
-                and foremost to producing good design then you’ll make money as
-                a by-product because good design is something people are willing
-                to pay for. But that financial reward will be a bonus, a gift.”
-                I agree. »
-              </p>
-              <cite>
-                <p>[Sagmeister & Walsch, Answers]</p>
-              </cite>
-            </blockquote>
           </p>
+          <blockquote>
+            <p>
+              « I remember a sentence in a Minale Tattersfield book that said:
+              “In my experience, every designer whose prime aim in going into
+              business was to make money while at the same time producing good
+              design, failed on both counts. I believe that designing is
+              something you have to do for love. If you are committed first and
+              foremost to producing good design then you’ll make money as a
+              by-product because good design is something people are willing to
+              pay for. But that financial reward will be a bonus, a gift.” I
+              agree. »
+            </p>
+            <cite>
+              <p>[Sagmeister & Walsch, Answers]</p>
+            </cite>
+          </blockquote>
           <h4>Maxime Büchi</h4>
           <p>
             Lors d’une conférence sur son travail pour Swiss Typefaces, il a été

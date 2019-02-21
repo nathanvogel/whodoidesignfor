@@ -1,0 +1,49 @@
+/* DEFAULT STYLES */
+
+.csl-bib-body {
+  line-height: 1.35;
+}
+.csl-entry {
+  clear: left;
+  margin-bottom: 1em;
+}
+.csl-left-margin {
+  float: left;
+  padding-right: 0.5em;
+}
+.csl-right-inline {
+  clear: left;
+  margin-bottom: 1em;
+}
+.Z3988 {
+}
+
+/* MY STYLE OVERRIDES */
+
+.csl-bib-body div {
+  line-height: 1.8;
+  font-family: "SangBleu Republic", "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.csl-entry {
+  clear: left;
+  margin-bottom: 1em;
+}
+
+.csl-left-margin {
+  float: left;
+  padding-right: 0.5em;
+}
+
+.csl-right-inline {
+  clear: left;
+  margin-bottom: 1em;
+}
+
+.Z3988 {
+}
+
+.csl-entry .csl-right-inline:nth-child(3) {
+  display: none;
+}

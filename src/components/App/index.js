@@ -16,6 +16,7 @@ import TemplateSection from "../TemplateSection";
 import RomantisationSection from "../RomantisationSection";
 import RenunciationSection from "../RenunciationSection";
 import SecondPart from "../SecondPart";
+import BibliographySection from "../BibliographySection";
 import Stickman from "../../images/stickman.inline.svg";
 import AnimatedStickman from "../../images/default-stickman.inline.svg";
 import { getStickmanTimeline } from "../../utils/get-svg";
@@ -239,6 +240,7 @@ class App extends React.Component {
         <RomantisationSection />
         <RenunciationSection />
         <SecondPart />
+        <BibliographySection />
         <Stickman id="stickman-poses" style={{ display: "none" }} />
         <AnimatedStickman id="main-stickman" className={styles.MainStickman} />
       </div>

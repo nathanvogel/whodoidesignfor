@@ -1,0 +1,108 @@
+@import "./variables";
+
+$margin-p: 29px;
+$margin-p-s: 21px;
+$margin-p-x2: 58px;
+
+.Subtitle {
+  margin-bottom: $margin-p-x2;
+}
+
+// Texts and titles
+h1 {
+  font-size: 40px;
+}
+
+p,
+ul,
+h3,
+h4 {
+  font-family: $font-family-regular;
+  font-size: $font-size-regular-small;
+  line-height: 1.8;
+}
+
+p,
+h3,
+h4 {
+  margin-top: $margin-p;
+}
+
+h3 + p,
+h4 + p {
+  margin-top: 12px;
+}
+
+ul + p {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: $breakpoint-handheld) {
+  p,
+  ul,
+  h4 {
+    font-size: $font-size-regular-small-s;
+  }
+
+  p,
+  h3,
+  h4 {
+    margin-top: $margin-p-s;
+  }
+
+  h3 {
+    font-size: $font-size-regular-big-s;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: $font-size-regular-big;
+}
+
+h4 {
+  font-weight: 200;
+  font-family: $font-family-subtitle;
+  text-transform: uppercase;
+  transform: translateX(-20px);
+}
+
+ul {
+  list-style: circle;
+  margin-left: 32px;
+}
+
+// My style reset after the meyer-reset.css
+i {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+}
+
+// Quotes
+q {
+  font-style: italic;
+}
+
+blockquote {
+  font-family: $font-family-quote;
+  font-style: italic;
+}
+
+blockquote cite {
+  font-family: $font-family-regular;
+  font-style: normal;
+  text-align: right;
+  margin-top: $padding;
+  margin-bottom: $padding;
+}
+
+// Special styles
+div.DigitalZone {
+  background-color: lightpink;
+  color: darkblue;
+  padding-top: $padding;
+  padding-bottom: $padding;
+}

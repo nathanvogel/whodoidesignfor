@@ -61,6 +61,12 @@ module.exports = {
       ),
     };
 
+    // Keep CSS class (but still segment SASS classes)
+    const rules = config.module.rules;
+    const cssRule = rules.find(rule => String(rule.test) === String(/\.css$/));
+    Reflect.deleteProperty(cssRule, "loader");
+    cssRule.use = ["style-loader", "css-loader"];
+
     // Inline SVG support found here:
     // https://github.com/NYTimes/kyt/issues/432#issuecomment-285034437
     // Config copied from here:
