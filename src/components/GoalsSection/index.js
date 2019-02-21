@@ -24,7 +24,7 @@ class GoalsSection extends React.Component {
 
     // A unique ID so that GSAP can find it and its children
     this.stickmanId = "GoalsSectionStickman";
-    this.sectionDuration = 60;
+    this.sectionDuration = 48;
   }
 
   componentDidMount() {
@@ -67,19 +67,19 @@ class GoalsSection extends React.Component {
     linkSceneToOffset(truthAppearScene, 10);
 
     // Q4 target text appear
-    const targetTextTween = TweenMax.from("#goals-q4-text\\.inline", 0.3, {
-      y: -150,
-      ease: Back.easeOut,
-    });
-    const targetTextScene = new ScrollMagic.Scene({
-      triggerElement: this.ref_pin_container.current,
-      triggerHook: 0.0,
-      duration: 0,
-    })
-      .setTween(targetTextTween)
-      // .addIndicators({ name: "Target Text" })
-      .addTo(window.controller);
-    linkSceneToOffset(targetTextScene, 35);
+    // const targetTextTween = TweenMax.from("#goals-q4-text\\.inline", 0.3, {
+    //   y: -150,
+    //   ease: Back.easeOut,
+    // });
+    // const targetTextScene = new ScrollMagic.Scene({
+    //   triggerElement: this.ref_pin_container.current,
+    //   triggerHook: 0.0,
+    //   duration: 0,
+    // })
+    //   .setTween(targetTextTween)
+    //   // .addIndicators({ name: "Target Text" })
+    //   .addTo(window.controller);
+    // linkSceneToOffset(targetTextScene, 35);
 
     // Stickman transition
     setStickmanPose(this.stickmanId, "goals");
@@ -96,13 +96,13 @@ class GoalsSection extends React.Component {
   transitionStickmanToNext() {}
 
   render() {
+    // <TargetText className={styles.TargetText} />
     return (
       <section ref={this.ref_pin_container}>
         <div className={styles.GoalsSection} ref={this.ref_pin_content}>
           <div className={sStyles.TopGradient} />
           <div className={styles.Padder}>
             <div className={styles.GoalsScene}>
-              <TargetText className={styles.TargetText} />
               <Target className={styles.Target} />
               <div className={styles.ViewLine}>
                 <ViewLine />
