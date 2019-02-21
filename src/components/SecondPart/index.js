@@ -29,10 +29,10 @@ class SecondPart extends React.Component {
             d’autres designers qui partageraient ma confusion.
           </p>
           <div className={`${sStyles.InfoBox} ${sStyles.PullLeft}`}>
-            <h5>Design, mais lequel ?</h5>
+            <h5>Design, mais lequel ?</h5>
             <p>
               J’entends un domaine très large couvrant la plupart des sens dans
-              lequel il est utilisé : design thinking, speculative design, web
+              lequel il est utilisé : design thinking, speculative design, web
               design, corporate design, etc.
             </p>
           </div>
@@ -51,7 +51,7 @@ class SecondPart extends React.Component {
         <div className={sStyles.LeftBigColumnPadder}>
           <p>
             J’étais fracturé en deux. Lorsque mon professeur m’a dit{" "}
-            <q>« Mais oui, c’est mieux quand ça passe derrière le texte ! »</q>,
+            <q>« Mais oui, c’est mieux quand ça passe derrière le texte ! »</q>,
             une partie de moi ne l’a juste pas cru, alors que l’autre moitié me
             disait que oui, évidemment, c’était plus intéressant. Et ça m’a
             pétrifié, j’étais incapable de lui répondre. Un conflit interne bien
@@ -78,22 +78,23 @@ class SecondPart extends React.Component {
             design ont provoqué un éclat de colère. C’est dans cet état de
             frustration que j’ai commencé à manifester à travers des courtes
             phrases provocantes ce que je percevais comme hypocrite dans le
-            monde du design. J’ai divisé ce processus en 5 phases :
+            monde du design. J’ai divisé ce processus en 5 phases :
           </p>
           <h4>Idéalisation</h4>
           <p>
             Ma première réalisation a été de me rendre compte de certains de mes
             idéaux liés à la culture du design à l’ère digital. Premièrement,
-            celui issu de la rhétorique du user-centered design. «{" "}
-            <q>I thought my role was to delight users.</q> » (En français : «{" "}
-            <q>Je croyais que mon rôle était de ravir les utilisateurs</q> »).
+            celui issu de la rhétorique du user-centered design. «{" "}
+            <q>I thought my role was to delight users.</q> » (En français : «
+            {" "}
+            <q>Je croyais que mon rôle était de ravir les utilisateurs</q> »).
             Deuxièmement, l’idée que le design digital offre par sa nature plus
             de liberté (on pourrait demander ce qu’est la liberté d’ailleurs).
           </p>
           <h4>Désillusion</h4>
           <p>
-            Il s’agit maintenant d’expliciter la face sombre de ces constats :
-            si je ne designe pas pour des utilisateurs, alors pour qui ? Même si
+            Il s’agit maintenant d’expliciter la face sombre de ces constats :
+            si je ne designe pas pour des utilisateurs, alors pour qui ? Même si
             les entreprises et leurs exécutifs n’ont pas forcément l’impératif
             légal de maximiser les profits pour les actionnaires, cet objectif
             semble être de plus en plus profondément ancré dans la culture des
@@ -107,12 +108,12 @@ class SecondPart extends React.Component {
             réaliser pleinement. Les idées les plus simples peuvent demander des
             efforts d’ingénierie inviables. Sauf dans les rares cas où le
             dispositif final d’affichage est fixé à l’avance, l’impératif
-            d’adaptabilité, de « responsiveness », requiert un travail souvent
+            d’adaptabilité, de « responsiveness », requiert un travail souvent
             perçu comme un fardeau contraignant, autant sur la forme, le design
             lui-même, que sur sa réalisation technique. Ces difficultés ont
             menées à l’établissement d’un tas de solutions pré-faites, comme des
-            « UX patterns », des schémas connus d’utilisation, voir des «
-            templates », des modèles entiers de produits finis. Offrant un repli
+            « UX patterns », des schémas connus d’utilisation, voir des «{" "}
+            templates », des modèles entiers de produits finis. Offrant un repli
             face aux difficultés techniques et culturelles, car le designer
             d’interaction est grandement dépendant des interactions avec
             lesquelles son utilisateur est familier, ces standards suppriment
@@ -128,14 +129,14 @@ class SecondPart extends React.Component {
           </p>
           <h4>Renonciation</h4>
           <div className={`${sStyles.InfoBox} ${sStyles.PullRight}`}>
-            <h5>Récit ?</h5>
+            <h5>Récit ?</h5>
             <p>
               J’utilise ici le mot récit comme Lyotard l’utilise lorsqu’il
               décrit les métarécits autour desquels se sont construits les
               sociétés modernes jusqu’à la postmodernité. Il s’agit ici de
               schémas narratifs que je déconstruis à mon échelle ou à celle du
-              design. On peut comprendre « récit » comme le mot anglais «
-              narrative ».
+              design. On peut comprendre « récit » comme le mot anglais «{" "}
+              narrative ».
             </p>
           </div>
           <p>
@@ -143,18 +144,18 @@ class SecondPart extends React.Component {
             nouveaux meilleurs récits, quelque chose clochait. Je me suis peu à
             peu rendu compte que mon enthousiasme ne suffirait pas. C’est une
             bonne chose que de vouloir libérer son potentiel créateur, mais en
-            réalité, le facteur qui prime c’est : pour qui, ou pour quoi, je
-            designe ? Comment concilier salaire et créativité ? Et même lorsque
-            je crée « pour le plaisir », mon égo n’entre-t-il pas aussi en jeu ?
+            réalité, le facteur qui prime c’est : pour qui, ou pour quoi, je
+            designe ? Comment concilier salaire et créativité ? Et même lorsque
+            je crée « pour le plaisir », mon égo n’entre-t-il pas aussi en jeu ?
             Je sens cette question incontournable échapper à ma volonté. Le
-            monde parfait n’existe pas. Un « sellout » de mon âme créatrice est
+            monde parfait n’existe pas. Un « sellout » de mon âme créatrice est
             inévitable. Un secret que les grandes entreprises du design se
             gardent bien de révéler.
           </p>
           <h4>Appel</h4>
           <p>
             Me revoici en quelque sorte au point de départ. Malgré cela, je peux
-            être optimiste. Oui je designe pour les actionnaires, et alors ? Au
+            être optimiste. Oui je designe pour les actionnaires, et alors ? Au
             moins maintenant, je ne me mens plus à moi-même. Je ne risque plus
             de ne pas comprendre ce que je crée. Et cette pleine compréhension
             pragmatique des enjeux me permet même de mieux y répondre. J’appelle
@@ -181,7 +182,7 @@ class SecondPart extends React.Component {
               sStyles.PullDown100
             }`}
           >
-            <h5>Designer ?</h5>
+            <h5>Designer ?</h5>
             <p>
               Sauf indication contraire, j’utilise le mot designer au sens de
               designer d’interaction, qui est pour moi un terme qui regroupe
@@ -191,15 +192,15 @@ class SecondPart extends React.Component {
           <p>
             Lorsque j’ai obtenu ma Maturité, j’ai peu à peu commencé à percevoir
             le design comme une solution totale de vie dans notre société.
-            Solution totale, car objectivement « <i>bonne</i> » pour «{" "}
-            <i>la société </i>» et moi, « <i>l’individu</i> ». De plus, j’ai
+            Solution totale, car objectivement « <i>bonne</i> » pour «{" "}
+            <i>la société </i>» et moi, « <i>l’individu</i> ». De plus, j’ai
             toujours chéri mon indépendance et ma liberté de créer, donc le
             moment venu de choisir mes études, le design s’est proposé comme une
             solution adaptée, qui avait un sens, puisque le design me promettait
             liberté et créativité. Or, 4 ans plus tard, je réalise que ce n’est
             pas parce que je fais du design que je peux créer librement. En
             étant frontalement honnête avec moi-même, j’ai pu casser certains
-            mythes et formuler clairement une nouvelle position :
+            mythes et formuler clairement une nouvelle position :
           </p>
           <ul>
             <li>Le design n’est pas créativité.</li>
@@ -208,7 +209,7 @@ class SecondPart extends React.Component {
           </ul>
           <p>
             Si un individu considère par défaut que son travail serait quelque
-            chose de forcément « <i>bon</i> », ou du moins inoffensif, alors il
+            chose de forcément « <i>bon</i> », ou du moins inoffensif, alors il
             n’est jamais à l’abri de l’impact négatif de ses créations.
           </p>
         </div>
@@ -231,10 +232,10 @@ class SecondPart extends React.Component {
             Ceci dit, mon premier but n’est pas de critiquer une quelconque
             pratique du design, mais d’appeler les designers à se poser des
             honnêtes questions sur leur travail afin qu’ils ne se mentent pas à
-            eux-mêmes. C’est ce que j’ai moi-même fait, en me plaçant du « bon
-            côté inoffensif » du design. Cela m’a fait du mal et m’a coupé la
-            possibilité de me remettre en question, moi directement ou mon
-            travail. C’est justement à ce moment-là que de profondes
+            eux-mêmes. C’est ce que j’ai moi-même fait, en me plaçant du « 
+            <em>bon côté inoffensif</em> » du design. Cela m’a fait du mal et
+            m’a coupé la possibilité de me remettre en question, moi directement
+            ou mon travail. C’est justement à ce moment-là que de profondes
             frustrations peuvent apparaître, que les designs peuvent devenir
             malicieux, que des designers se demandent ce qu’ils ont réellement
             créé quelques millions d’utilisateurs plus tard… Il y a donc en
@@ -253,40 +254,40 @@ class SecondPart extends React.Component {
           <h4>Ce que le problème est</h4>
           <p>
             Mon problème était que j’avais attribué une valeur intrinsèque au
-            design : « <em>Je fais du design, donc c’est bien</em> », «{" "}
-            <em>bien</em> » au sens «{" "}
-            <em>bien pour moi et bien pour la société</em> ». Cette attribution
+            design : « <em>Je fais du design, donc c’est bien</em> », «{" "}
+            <em>bien</em> » au sens «{" "}
+            <em>bien pour moi et bien pour la société</em> ». Cette attribution
             de valeur inconditionnelle, je l’ai faite notamment en vertu du
-            discours qui entoure le mot design : un discours de créativité, de
+            discours qui entoure le mot design : un discours de créativité, de
             concepts, de philosophie par l’action, de <em>savoir-faire</em>, de{" "}
             <em>bien-vivre</em>... bref un discours élitiste.
           </p>
           <p>
-            C’est un discours qui revendique effectivement que «{" "}
-            <em>le design, c’est bien</em> ». Or, je doute que le design des
-            chambres à gaz et incinérateurs d’Auschwitz soit « <em>bien</em> ».
+            C’est un discours qui revendique effectivement que «{" "}
+            <em>le design, c’est bien</em> ». Or, je doute que le design des
+            chambres à gaz et incinérateurs d’Auschwitz soit « <em>bien</em> ».
             Ou alors peut-être qu’il est bien sur le plan purement technique des
             critères <em>user-centered</em> du design et qu’il facilitait
-            effectivement la difficile tâche du soldat allemand ? Est-ce ça, le
-            design « <em>bien</em> » ? Pourtant je suis certain que ce n’est pas
+            effectivement la difficile tâche du soldat allemand ? Est-ce ça, le
+            design « <em>bien</em> » ? Pourtant je suis certain que ce n’est pas
             du design bien pour le designer et pour la société. Comment donc
             attribuer une valeur intrinsèque au mot design lorsqu’il est
-            corruptible ?
+            corruptible ?
           </p>
           <h4>Le danger des mots</h4>
           <p>
             Les mots qui désignent des disciplines sont des simplifications à la
             merci de l’opinion publique et ils peuvent entretenir une perception
             erronée ou limitée des valeurs qui y sont associées. Lorsqu’Edward
-            Bernays constate que le terme « propagande » a une mauvaise
+            Bernays constate que le terme « propagande » a une mauvaise
             réputation, il continue d’utiliser exactement les mêmes méthodes,
-            mais simplement inventant un nouveau mot pour son travail : non plus
-            « propaganda », mais « public relations ». [Jimmy Leipold,
+            mais simplement inventant un nouveau mot pour son travail : non plus
+            « propaganda », mais « public relations ». [Jimmy Leipold,
             Propaganda: La fabrique du consentement]
           </p>
           <p>
             Les mots sont puissants et nous devrions nous en méfier. Placer une
-            valeur intrinsèque dans le mot « design », c’est promouvoir une
+            valeur intrinsèque dans le mot « design », c’est promouvoir une
             confusion. Lorsque les élites intellectuelles parlent du cinéma, du
             design, de l’architecture, de l’art, etc. et font leur promotion
             globale à partir certains cas issus de la discipline (des films du
@@ -298,8 +299,9 @@ class SecondPart extends React.Component {
           <p>
             On est toujours choqué de voir les jolies peintures d’Hitler, non
             pas parce qu’Hitler a fait des jolies peintures (qu’est-ce qui l’en
-            empêcherait ?), mais parce que toute la société a sacralisé le mot «
-            art ». Cette attribution d’une valeur intrinsèque aux termes enlève
+            empêcherait ?), mais parce que toute la société a sacralisé le mot «
+            {" "}
+            art ». Cette attribution d’une valeur intrinsèque aux termes enlève
             la possibilité d’avoir un regard critique par tous et chacun sur les
             acteurs et les produits d’une discipline.
           </p>
@@ -307,7 +309,7 @@ class SecondPart extends React.Component {
             Cela pourrait même ressembler à un mécanisme d’auto-défense des
             élites. Cependant, même les pratiquants les plus chevronnés peinent
             à mettre des mots sur cette distinction, car nombre d’exemples
-            floutent les limites entre « <em>bon</em> » design et design au sens
+            floutent les limites entre « <em>bon</em> » design et design au sens
             large.
           </p>
           <div className={sStyles.ParagraphSpacer} />
@@ -322,7 +324,7 @@ class SecondPart extends React.Component {
             Cependant, ce sont des valeurs potentielles qu’il a au même titre
             qu’une quantité d’autres disciplines comme la littérature, le
             cinéma, etc., chacune ayant un certain nombre d’avantages pratiques
-            (par exemple :{" "}
+            (par exemple :{" "}
             <i>un design peut s’insérer dans la vie quotidienne</i>, ou encore:{" "}
             <i>un design n’a pas l’impératif d’être lu pour être compris</i>).
             C’est donc à l’acteur de chaque discipline d’être un penseur,
@@ -336,7 +338,7 @@ class SecondPart extends React.Component {
             l’expressivité. Mais justement, le besoin d’y mettre du sien, de se
             réaliser à travers son design, de rendre ses idéaux de beauté et de
             société tangibles se place pour moi très souvent en opposition avec
-            la notion de « répondre à ». Lorsqu’un client, un devoir ou une
+            la notion de « répondre à ». Lorsqu’un client, un devoir ou une
             envie me prend, y répondre semble un acte naturel et approprié.
             Cependant, il se peut que je me dérobe au passage de ce qui m’avait
             amené à faire du design en premier lieu.
@@ -356,11 +358,11 @@ class SecondPart extends React.Component {
           <p>
             Maintenant que j’ai fait cette prise de conscience, deux questions
             sont devenues centrales pour moi lorsque j’approche un processus
-            créatif :
+            créatif :
           </p>
           <ul>
-            <li>Pour qui est-ce que je designe ?</li>
-            <li>Quelle est ma part de créativité ?</li>
+            <li>Pour qui est-ce que je designe ?</li>
+            <li>Quelle est ma part de créativité ?</li>
           </ul>
           <p>
             Me poser ces questions honnêtement m’apaisent, parce qu’elles me
@@ -370,44 +372,44 @@ class SecondPart extends React.Component {
           </p>
         </div>
         <div className={sStyles.RightBigColumnPadder}>
-          <h3>Pour qui est-ce que je designe ?</h3>
+          <h3>Pour qui est-ce que je designe ?</h3>
           <p>
             Si je designe pour les utilisateurs d’un produit, ne suis-je pas en
-            train de designer pour mon entreprise plutôt ? Le but de mon design
+            train de designer pour mon entreprise plutôt ? Le but de mon design
             ne serait-il pas qu’elle atteigne ses objectifs financiers à la fin
-            du trimestre ? Ou simplement pour cette augmentation que j’attends ?
+            du trimestre ? Ou simplement pour cette augmentation que j’attends ?
           </p>
           <p>
             Si je designe pour une consigne d’école, ne suis-je pas en train de
-            designer pour mon collège de professeurs ? Ne suis-je pas en train
-            de faire une quantité d’hypothèses hasardeuses sur leurs attentes ?
+            designer pour mon collège de professeurs ? Ne suis-je pas en train
+            de faire une quantité d’hypothèses hasardeuses sur leurs attentes ?
             Ne suis-je pas en train d’essayer d’émuler d’autres projets dont je
-            connais leur appréciation ?
+            connais leur appréciation ?
           </p>
           <p>
             Si je designe pour moi-même, mais que je publie régulièrement
             certains de ces designs personnels sur Instagram, ne-suis-je pas en
-            train de designer pour mes followers plutôt ? Ou même plutôt pour
-            les followers que je pourrais acquérir ? Pour les hashtags que je
-            pourrais ajouter à mon prochain post ? Ne-suis-je pas en train de
-            designer pour mon égo ?
+            train de designer pour mes followers plutôt ? Ou même plutôt pour
+            les followers que je pourrais acquérir ? Pour les hashtags que je
+            pourrais ajouter à mon prochain post ? Ne-suis-je pas en train de
+            designer pour mon égo ?
           </p>
           <p>
             Si je designe pour moi-même, est-ce que je suis en train de
             contraindre ce design à des attentes, une image que je me suis
             construit de moi-même, et du type de design que moi, Nathan Vogel,
-            suis supposé produire ? N’ai-je pas plusieurs images de moi-même ?{" "}
+            suis supposé produire ? N’ai-je pas plusieurs images de moi-même ?{" "}
           </p>
-          <h3>Quelle est ma part de créativité ?</h3>
+          <h3>Quelle est ma part de créativité ?</h3>
           <p>
             Cette question m’invite à me demander si je suis vraiment en train
             de créer comme j’ai toujours supposé que je le faisais. Ai-je
             simplement suivi les exigences du problème à leur conclusion logique
-            ? Sans même remettre en question le problème ? Et là où il me
+             ? Sans même remettre en question le problème ? Et là où il me
             restait une marge de manœuvre créative, en ai-je profité pour
             explorer les possibilités ou y ai-je simplement substitué une
             solution copiée d’un autre projet, voir prédéterminée par la
-            doctrine ?
+            doctrine ?
           </p>
         </div>
         <div className={`${sStyles.LeftBigColumnPadder} ${styles.DigitalZone}`}>
@@ -458,12 +460,12 @@ class SecondPart extends React.Component {
             Les multiples statuts de ceux qui designent ces nouvelles
             technologies changent aussi très rapidement. Une multitude de termes
             vaguement définis se succèdent pour décrire ces professions et bien
-            que ces termes deviennent de plus en plus holistiques comme « User
-            Experience Designer », ils sont de plus en plus étroitement liés aux
+            que ces termes deviennent de plus en plus holistiques comme « User
+            Experience Designer », ils sont de plus en plus étroitement liés aux
             structures corporates. On connaît bien sûr les critiques de
             l’influence du monde corporate sur la culture et la créativité.
             [Tibor Kalman, Fuck Committees], mais ces hiérarchies rendent
-            difficile l’une des tâches du design : être un gatekeeper [Victor
+            difficile l’une des tâches du design : être un gatekeeper [Victor
             Papanek, Design for the Real World], être un rempart face au design
             sans éthique. Cette dépendance structurelle aux grandes entreprises
             s’oppose pour moi avec le modèle du studio indépendant ou du bureau
@@ -489,8 +491,9 @@ class SecondPart extends React.Component {
         </div>
         <div className={sStyles.LeftBigColumnPadder}>
           <p>
-            Ces deux questions, « <q>Pour qui est-ce que je designe ?</q> » et «{" "}
-            <q>Quelle est ma part de créativité ?</q> » sont mes outils à moi
+            Ces deux questions, « <q>Pour qui est-ce que je designe ?</q> » et «
+            {" "}
+            <q>Quelle est ma part de créativité ?</q> » sont mes outils à moi
             pour rendre compte de ma relation à ma pratique de designer dans les
             contextes de tous les jours. Si elles sont honnêtes, les réponses
             qui émergent de cette interrogation interne me permettent de prendre
@@ -512,8 +515,8 @@ class SecondPart extends React.Component {
           </p>
           <h4>Christiane de Muralt Vogel</h4>
           <p>
-            Ma mère est architecte et a cette belle formulation : elle dit
-            tenter de « <q>reconnaître lorsque je suis guidée par la peur.</q> »
+            Ma mère est architecte et a cette belle formulation : elle dit
+            tenter de « <q>reconnaître lorsque je suis guidée par la peur.</q> »
           </p>
           <h4>Christophe Guignard</h4>
           <p>
@@ -524,14 +527,14 @@ class SecondPart extends React.Component {
           </p>
           <h4>Stefan Sagmeister</h4>
           <p>
-            Designer, il répond à la question : «{" "}
+            Designer, il répond à la question : «{" "}
             <q>
               Is it possible to have both, making money and doing good work?
             </q>{" "}
-            » par ces mots :
+             » par ces mots :
             <blockquote>
               <p>
-                « I remember a sentence in a Minale Tattersfield book that said:
+                « I remember a sentence in a Minale Tattersfield book that said:
                 “In my experience, every designer whose prime aim in going into
                 business was to make money while at the same time producing good
                 design, failed on both counts. I believe that designing is
@@ -539,7 +542,7 @@ class SecondPart extends React.Component {
                 and foremost to producing good design then you’ll make money as
                 a by-product because good design is something people are willing
                 to pay for. But that financial reward will be a bonus, a gift.”
-                I agree. »
+                I agree. »
               </p>
               <cite>
                 <p>[Sagmeister & Walsch, Answers]</p>
@@ -552,21 +555,21 @@ class SecondPart extends React.Component {
             interrogé sur sa capacité à travailler pour des grandes corporations
             tout en préservant son potentiel créatif et répond en évoquant
             l’importance de comprendre ces structures corporates et dit qu’il
-            est absolument vital de contrôler le processus de décision («
-            decision-making ») et le récit (« the narrative »).
+            est absolument vital de contrôler le processus de décision («{" "}
+            decision-making ») et le récit (« the narrative »).
           </p>
           <h4>Alberto Pérez-Gómez </h4>
           <p>
             Cet architecte évoque l’essentialité de l’amour dans son livre,{" "}
-            <i>Built upon Love</i>, que je n’ai pas encore lu :
+            <i>Built upon Love</i>, que je n’ai pas encore lu :
           </p>
           <blockquote>
             <p>
-              « In Built upon Love Pérez-Gómez uncovers the relationship between
+              « In Built upon Love Pérez-Gómez uncovers the relationship between
               love and architecture in order to find the points of contact
               between poetics and ethics—between the architect’s wish to design
               a beautiful world and architecture’s imperative to provide a
-              better place for society. »
+              better place for society. »
             </p>
             <cite>
               <p>[Alberto Pérez-Gómez, Build upon Love]</p>
@@ -578,9 +581,9 @@ class SecondPart extends React.Component {
           <p>
             Toutes ces réflexions m’arrivent dessus à une période où j’attribue
             une nouvelle importance à la notion de sens de la vie. La question
-            se pose donc pour moi : Comment faire du design qui ait un sens ?
-            Ai-je envie de tirer un sens de ma pratique de designer ? Est-ce
-            possible ? Si oui, comment ?
+            se pose donc pour moi : Comment faire du design qui ait un sens ?
+            Ai-je envie de tirer un sens de ma pratique de designer ? Est-ce
+            possible ? Si oui, comment ?
           </p>
           <p>
             Je pense qu’il y a encore beaucoup de travail à faire pour
@@ -592,7 +595,7 @@ class SecondPart extends React.Component {
             discipline. L’idée d’expression créative ne me suffit d’ailleurs
             plus, puisqu’elle a une possible valeur pour l’individu, mais pas
             vraiment pour la société. Se tromper d’exutoire ne serait-il pas
-            d’ailleurs tragique pour l’individu ? Tout exutoire, même pour la
+            d’ailleurs tragique pour l’individu ? Tout exutoire, même pour la
             créativité n’est pas forcément bon à prendre.
           </p>
           <p>
@@ -605,14 +608,14 @@ class SecondPart extends React.Component {
         <div className={sStyles.ParagraphSpacer} />
         <div className={sStyles.ParagraphSpacer} />
         <div className={sStyles.LeftBigColumnPadder}>
-          <h3>Pourquoi le design est-il spécial ?</h3>
+          <h3>Pourquoi le design est-il spécial ?</h3>
           <p>
             Remontons un instant aux origines de cet discipline. Le design
             industriel naît avec la révolution industrielle et le design
             d’interaction avec la révolution numérique, deux environnements
             principalement guidés par les forces du marché. Si l’on suit la
             logique capitaliste dominante, le design a émergé pour combler un
-            besoin, une demande, et y proposant une offre complémentaire : avoir
+            besoin, une demande, et y proposant une offre complémentaire : avoir
             des produits bien pensés, tant du point de vue du producteur que du
             consommateur. Dans ce cas, le design, pur produit du marché, n’a pas
             de responsabilité morale spécifique à <em>priori</em>, autre que de
@@ -621,7 +624,7 @@ class SecondPart extends React.Component {
             technologies, implique des changements d’ordre sociétal, car elle
             change la vie quotidienne des gens. Ces changements doivent être
             considérés, mesurés, <em>pensés</em>, dans toutes leurs
-            ramifications. A qui revient ce rôle ?
+            ramifications. A qui revient ce rôle ?
           </p>
           <p>
             Bien sûr, les ingénieurs, product managers, responsables marketing,
@@ -630,15 +633,15 @@ class SecondPart extends React.Component {
             en général envers l’optimisation technique ou l’optimisation
             financière, ce qu’ils font en général avec différents degrés de
             présomption que ces optimisations amèneront en second lieu
-            l’optimisation du bonheur, du « <em>bien</em> ». Bill Moggridge,
+            l’optimisation du bonheur, du « <em>bien</em> ». Bill Moggridge,
             père fondateur du design d’interaction, nous dit{" "}
           </p>
           <blockquote>
             <p>
-              « Les designers de produits issus des technologies numériques ne
+              « Les designers de produits issus des technologies numériques ne
               considèrent plus leur travail comme consistant à faire le design
               d’un objet physique — beau ou utile — mais comme consistant à
-              faire le design des interactions avec lui. »
+              faire le design des interactions avec lui. »
             </p>
             <cite>
               <p>[Bill Moggridge, Designing Interactions]</p>
@@ -669,24 +672,24 @@ class SecondPart extends React.Component {
           <p>
             Dès lors que nous savons ou que nous pouvons savoir, toute action ou
             inaction est une décision morale que nous prenons. Comme le dit Mike
-            Monteiro en s’inspirant de Victor Papanek : «{" "}
+            Monteiro en s’inspirant de Victor Papanek : «{" "}
             <q>
               J’ai commencé à regarder le design, non seulement comme l’acte de
               création, mais plus comme l’acte de choisir quoi créer.
             </q>{" "}
-            » [Mike Monteiro, How Designers Destroyed the World] Il donne
+             » [Mike Monteiro, How Designers Destroyed the World] Il donne
             ensuite l’exemple de Facebook Graph Search qui laisse les gens
-            chercher « men interested in men in Teheran » et dit à 9 minutes 23
-            :
+            chercher « men interested in men in Teheran » et dit à 9 minutes 23
+             :
           </p>
           <blockquote>
             <p>
-              « This is irresponsible design. And you may be thinking: ‘Oh no no
+              « This is irresponsible design. And you may be thinking: ‘Oh no no
               no! That’s a business decision!’ Bullshit! It may have started out
               life as a business decision, but to get on the interface, to be
               live, to get to where people can interact with it, it goes through
               design. And when a designer lets a bad business decision through,
-              that’s a decision as well. »
+              that’s a decision as well. »
             </p>
           </blockquote>
           <p>
@@ -705,8 +708,8 @@ class SecondPart extends React.Component {
             c’est la meilleure manière de tout faire, qu’elle va tout le temps
             fonctionner et qu’elle ne détruit pas de valeurs morales au passage
             relève à mon sens d’une croyance. Quand bien même cette croyance
-            serait vraie, ce mécanisme d’équilibre a un problème : l’équilibre
-            prend souvent du temps et arrive parfois trop tard. Deux exemples :{" "}
+            serait vraie, ce mécanisme d’équilibre a un problème : l’équilibre
+            prend souvent du temps et arrive parfois trop tard. Deux exemples :{" "}
           </p>
           <ul>
             <li>
@@ -715,10 +718,10 @@ class SecondPart extends React.Component {
               <a href="https://twitter.com/gchaslot/status/1094359564559044610">
                 https://twitter.com/gchaslot/status/1094359564559044610
               </a>
-              ], lequel va (à priori) faire baisser ses profits : la plateforme
+              ], lequel va (à priori) faire baisser ses profits : la plateforme
               va cesser de recommander des vidéos jugées complotistes et
               diminuer l’agressivité avec laquelle son algorithme de
-              recommandations optimise le « watch time » afin d’éviter que la
+              recommandations optimise le « watch time » afin d’éviter que la
               plateforme ne soit radicalisante. Cette démarche intervient{" "}
               <em>après</em>
               que des dizaines de milliers de personnes aient été radicalisées,
@@ -776,13 +779,13 @@ class SecondPart extends React.Component {
             discuté plus haut, c’est pour moi absurde de compter sur l’essence
             d’une discipline pour respecter des valeurs morales. Je vais
             reprendre une de mes phrases préférées d’Alain Barreau sur la
-            science [Alain Barreau, interview par Thinkerview : Quand la Science
-            appelle à l’aide pour l’humanité ?], mais pour parler du design :
+            science [Alain Barreau, interview par Thinkerview : Quand la Science
+            appelle à l’aide pour l’humanité ?], mais pour parler du design :
           </p>
           <blockquote>
             <p>
-              « Il n’y a pas un passage nécessaire du [design] à l’éthique. Ça,
-              ça dépend de nous. »
+              « Il n’y a pas un passage nécessaire du [design] à l’éthique. Ça,
+              ça dépend de nous. »
             </p>
           </blockquote>
         </div>
@@ -791,32 +794,32 @@ class SecondPart extends React.Component {
         <div className={sStyles.ParagraphSpacer} />
         <div className={sStyles.RightBigColumnPadder}>
           <p>
-            Du discours implicite dominant sur le design et sa « spécialité »,
+            Du discours implicite dominant sur le design et sa « spécialité »,
             ce que j’en perçois en tant que consommateur d’articles et vidéos
             sur internet et en tant qu’étudiant dans une école d’arts et design,
-            est :
+            est :
           </p>
           <blockquote>
-            <p>« Vous êtes designer, donc vous êtes spécial. »</p>
+            <p>« Vous êtes designer, donc vous êtes spécial. »</p>
           </blockquote>
-          <p>Alors qu’à mon sens, une version plus correcte serait :</p>
+          <p>Alors qu’à mon sens, une version plus correcte serait :</p>
           <blockquote>
             <p>
-              « Vous êtes designer, donc la société vous a incombé la
-              responsabilité spéciale de penser notre relation aux technologies
-              ».
+              « Vous êtes designer, donc la société vous a incombé la
+              responsabilité spéciale de penser notre relation aux technologies.
+               »
             </p>
           </blockquote>
           <p>
             Ce raccourci de langage provient potentiellement tout autant de
             celui qui le dit que de celui qui le lit. Certains auront
             naturellement compris la deuxième variante. Ce ne fut pas mon cas.
-            Ma perception ressemblait plutôt à «{" "}
+            Ma perception ressemblait plutôt à «{" "}
             <em>
               Vous êtes designer, donc vous êtes spécial, donc vous avez la
               possibilité de penser le monde.
             </em>{" "}
-            », une version autrement plus présomptueuse. Cette confusion
+             », une version autrement plus présomptueuse. Cette confusion
             générale sur les valeurs et responsabilités propres à chaque
             discipline fait à mon avis bien des ravages, et pas seulement dans
             les domaines créatifs.
@@ -839,26 +842,26 @@ class SecondPart extends React.Component {
 
           <blockquote>
             <p>
-              « Imagine a world where the CEO and the marketing director are
+              « Imagine a world where the CEO and the marketing director are
               sitting in a conference room and they’re sweating bullets because
-              they’re thinking « We’re never going to be able to talk the
-              designers into doing this. » That is a fucking beautiful world. »
+              they’re thinking « We’re never going to be able to talk the
+              designers into doing this. » That is a fucking beautiful world. »
             </p>
             <cite>
               <p>[Mike Monteiro, How Designers Destroyed the World, 32:17]</p>
             </cite>
           </blockquote>
           <p>
-            Il est hélas trop facile de se cacher derrière les « bells and
-            whistles » de la nouveauté et l’innovation, de renoncer face à un
+            Il est hélas trop facile de se cacher derrière les « bells and
+            whistles » de la nouveauté et l’innovation, de renoncer face à un
             monde insaisissable qui bouge trop vite. Les structures corporates
             sont peut-être le plus grand obstacle à la prise de responsabilité
             des designers, mais nous nous devons d’exercer notre droit de vote
             sur ce qui se crée et ce qui ne verra pas le jour. Le Center for
             Humane Technology{" "}
-            <a href="http://humanetech.com/designers">en appelle</a> aux «
-            architectes du digital » à designer un monde aligné sur nos valeurs
-            et je ne pense pas que l’utilisation de ce mot, « architecte », soit
+            <a href="http://humanetech.com/designers">en appelle</a> aux «{" "}
+            architectes du digital » à designer un monde aligné sur nos valeurs
+            et je ne pense pas que l’utilisation de ce mot, « architecte », soit
             un hasard. Même si elle ne le fait pas forcément, cette ancienne
             discipline a une histoire dans laquelle elle peut puiser des trésors
             d’éthiques et de principes rigoureux. Il nous revient le devoir de
