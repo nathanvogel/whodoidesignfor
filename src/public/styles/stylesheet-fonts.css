@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Latin Modern Mono";
+  src: url("lmmono10-regular-webfont.eot");
+  src: url("lmmono10-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("lmmono10-regular-webfont.woff2") format("woff2"),
+    url("lmmono10-regular-webfont.woff") format("woff"),
+    url("lmmono10-regular-webfont.ttf") format("truetype"),
+    url("lmmono10-regular-webfont.svg#latin_modern_mono10_regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Euclid Circular A */
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("EuclidCircularA-Regular-WebS.eot");
+  src: url("EuclidCircularA-Regular-WebS.eot?#iefix")
+      format("embedded-opentype"),
+    url("EuclidCircularA-Regular-WebS.woff2") format("woff2"),
+    url("EuclidCircularA-Regular-WebS.woff") format("woff"),
+    url("EuclidCircularA-Regular-WebS.ttf") format("truetype"),
+    url("EuclidCircularA-Regular-WebS.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("EuclidCircularA-Regular-WebS.eot");
+  src: url("EuclidCircularA-Regular-WebS.eot?#iefix")
+      format("embedded-opentype"),
+    url("EuclidCircularA-Regular-WebS.woff2") format("woff2"),
+    url("EuclidCircularA-Regular-WebS.woff") format("woff"),
+    url("EuclidCircularA-Regular-WebS.ttf") format("truetype"),
+    url("EuclidCircularA-Regular-WebS.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* SangBleu Republic */
+
+@font-face {
+  font-family: "SangBleu Republic";
+  src: url("SangBleuRepublic-Regular-WebS.eot");
+  src: url("SangBleuRepublic-Regular-WebS.eot?#iefix")
+      format("embedded-opentype"),
+    url("SangBleuRepublic-Regular-WebS.woff2") format("woff2"),
+    url("SangBleuRepublic-Regular-WebS.woff") format("woff"),
+    url("SangBleuRepublic-Regular-WebS.ttf") format("truetype"),
+    url("SangBleuRepublic-Regular-WebS.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SangBleu Republic";
+  src: url("SangBleuRepublic-Bold-WebS.eot");
+  src: url("SangBleuRepublic-Bold-WebS.eot?#iefix") format("embedded-opentype"),
+    url("SangBleuRepublic-Bold-WebS.woff2") format("woff2"),
+    url("SangBleuRepublic-Bold-WebS.woff") format("woff"),
+    url("SangBleuRepublic-Bold-WebS.ttf") format("truetype"),
+    url("SangBleuRepublic-Bold-WebS.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SangBleu Republic";
+  src: url("SangBleuRepublic-RegularItalic-WebS.eot");
+  src: url("SangBleuRepublic-RegularItalic-WebS.eot?#iefix")
+      format("embedded-opentype"),
+    url("SangBleuRepublic-RegularItalic-WebS.woff2") format("woff2"),
+    url("SangBleuRepublic-RegularItalic-WebS.woff") format("woff"),
+    url("SangBleuRepublic-RegularItalic-WebS.ttf") format("truetype"),
+    url("SangBleuRepublic-RegularItalic-WebS.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Simplon Norm */
+
+@font-face {
+  font-family: "Simplon Norm";
+  src: url("SimplonNorm-Light-WebS.eot");
+  src: url("SimplonNorm-Light-WebS.eot?#iefix") format("embedded-opentype"),
+    url("SimplonNorm-Light-WebS.woff2") format("woff2"),
+    url("SimplonNorm-Light-WebS.woff") format("woff"),
+    url("SimplonNorm-Light-WebS.ttf") format("truetype"),
+    url("SimplonNorm-Light-WebS.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}

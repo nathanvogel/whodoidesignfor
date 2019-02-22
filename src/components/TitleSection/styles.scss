@@ -2,8 +2,7 @@
 
 .TitleSection {
   height: 100vh;
-  font-family: serif;
-  // text-align: center;
+  font-family: $font-family-regular;
 
   // Use flexbox to center vertically
   display: flex;
@@ -28,7 +27,7 @@
 
 @media (max-width: 576px) {
   .TitleSection h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
