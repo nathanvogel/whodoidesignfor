@@ -406,6 +406,23 @@ class SecondPart extends React.Component {
             construit de moi-même, et du type de design que moi, Nathan Vogel,
             suis supposé produire ? N’ai-je pas plusieurs images de moi-même ?{" "}
           </p>
+          <p>
+            Lorsqu’il remplit sa courte description sur les réseaux sociaux,
+            Edward Snowden se définit lui-même par sa réponse à cette question
+            (au mot “design”/”work” prêt).
+          </p>
+          <blockquote>
+            <p>
+              « I used to work for the government. Now I work for the public. »
+            </p>
+            <cite>
+              <p>
+                <span className={sStyles.Citation}>
+                  Edward Snowden<a href="#src18">18</a>
+                </span>
+              </p>
+            </cite>
+          </blockquote>
           <h3>Quelle est ma part de créativité ?</h3>
           <p>
             Cette question m’invite à me demander si je suis vraiment en train

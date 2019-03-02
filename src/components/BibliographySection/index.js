@@ -481,6 +481,24 @@ class BibliographySection extends React.Component {
               className="Z3988"
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=YouTube%20announced%20they%20will%20stop%20recommending%20some%20conspiracy%20theories%20such%20as%20flat%20earth.%20I%20worked%20on%20the%20AI%20that%20promoted%20them%20by%20the%20*billions*.%20Here%20is%20why%20it%E2%80%99s%20a%20historic%20victory.%20Thread.%201%2Fhttps%3A%2F%2Fbit.ly%2F2MMXNGn&amp;rft.identifier=https%3A%2F%2Ftwitter.com%2Fgchaslot%2Fstatus%2F1094359564559044610&amp;rft.aufirst=Guillaume&amp;rft.aulast=Chaslot&amp;rft.au=Guillaume%20Chaslot&amp;rft.date=2019-02-09&amp;rft.language=en"
             />
+            <div className="csl-entry">
+              <div className="csl-right-inline">
+                <a id="src18">
+                  <div className="csl-left-margin">18. </div>
+                </a>
+                SNOWDEN, Edward. Edward Snowden (@Snowden) | Twitter.{" "}
+                <i>Twitter</i> [en&nbsp;ligne].
+                [Consulté&nbsp;le&nbsp;1&nbsp;mars&nbsp;2019]. Disponible à
+                l’adresse&nbsp;:{" "}
+                <a href="https://twitter.com/Snowden">
+                  https://twitter.com/Snowden
+                </a>
+              </div>
+            </div>
+            <span
+              className="Z3988"
+              title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Edward%20Snowden%20(%40Snowden)%20%7C%20Twitter&amp;rft.description=I%20used%20to%20work%20for%20the%20government.%20Now%20I%20work%20for%20the%20public.%20President%20at%20%40FreedomofPress.&amp;rft.identifier=https%3A%2F%2Ftwitter.com%2FSnowden&amp;rft.aufirst=Edward&amp;rft.aulast=Snowden&amp;rft.au=Edward%20Snowden"
+            />
           </div>
         </div>
       </section>
