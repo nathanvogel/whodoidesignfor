@@ -339,6 +339,18 @@ class SecondPart extends React.Component {
             pour le penseur. <em>Il design è cosa mentale.</em>
           </p>
           <p>
+            Nous avons peut-être une tendance culturelle à attribuer une valeur
+            intrinsèque aux disciplines, car certaines ont su se construire en
+            imposant une responsabilité inéchappable et de stricts principes à
+            leurs pratiquants. Je pense au serment d’Hippocrate notamment, mais
+            aussi au Primum non nocere et aux autres codes de déontologies qui
+            entourent les professions d’avocats, journalistes, psychologues,
+            etc. Si ces codes de déontologies ne sont pas tous inscrits dans la
+            loi, ils peuvent être très présents dans les institutions au point
+            d’en être systématiquement incontournable. Ce n’est absolument pas
+            le cas du design.
+          </p>
+          <p>
             L’une des valeurs intrinsèques qu’on pourrait peut-être tout de même
             attribuer à ces disciplines est celle d’être un exutoire pour
             l’expressivité. Mais justement, le besoin d’y mettre du sien, de se
@@ -550,7 +562,8 @@ class SecondPart extends React.Component {
           <h4>Christiane de Muralt Vogel</h4>
           <p>
             Ma mère est architecte et a cette belle formulation : elle dit
-            tenter de « <q>reconnaître lorsque je suis guidée par la peur.</q> »
+            tenter de « <q>reconnaître [lorsqu’elle est] guidée par la peur.</q>
+             »
           </p>
           <h4>Christophe Guignard</h4>
           <p>
@@ -789,9 +802,19 @@ class SecondPart extends React.Component {
             </li>
           </ul>
           <p>
-            J’en déduis alors qu’une morale supra-capitaliste doit exister et
-            être explicite, ne serait-ce que pour accélérer le processus
-            d’équilibration. Les gens s’attachent tellement à la logique
+            Pour une démonstration plus complète de l’irrationalité de notre
+            système de croissance ainsi que de la substitution de nos valeurs
+            morales par la morale de la consommation, je vous invite à lire{" "}
+            <i>La société de consommation</i> de Jean Baudrillard.
+            <span className={sStyles.Citation}>
+              <a href="#src19">19</a>
+            </span>
+          </p>
+          <p>
+            Je déduis de ces démonstrations d’insuffisance du système qu’une
+            morale supra-capitaliste doit exister et être explicite, ne
+            serait-ce que pour accélérer le processus d’équilibration. Je pense
+            que beaucoup de personnes s’attachent tellement à la logique
             libérale justement parce qu’elle leur évite de se sentir
             responsables.
           </p>
@@ -803,11 +826,21 @@ class SecondPart extends React.Component {
             non-capitalistes qui lui ont conféré un rôle et une responsabilité
             explicite. Même si l’on peut argumenter que celle-ci se perd, avec
             la marchandisation de l’art par exemple, une tradition forte et
-            ancienne existe dans ces domaines. En demandant à des étudiants en
-            design d’interaction et en architecture leurs avis respectifs sur la
-            question de leur responsabilité envers la société, j’ai vu le sujet
-            était assez largement moins naturel du côté des designers, qui
-            montraient beaucoup d’incertitudes.
+            ancienne existe dans ces domaines. De plus, ayant affaire à la
+            matière physique qui nous entoure directement, qui nous est{" "}
+            <em>nécessaire</em>, l’architecte ne peut se détourner de la
+            question du bien-être à long terme, tandis que le designer peut plus
+            facilement à mon sens en rester à la question de la gratification
+            instantanée, qui est par ailleurs accusée d’être le fardeau des «
+            Millenials » par Simon Sinek.
+            <span className={sStyles.Citation}>
+              <a href="#src20">20</a>
+            </span>{" "}
+            En demandant à des étudiants en design d’interaction et en
+            architecture leurs avis respectifs sur la question de leur
+            responsabilité envers la société, j’ai vu le sujet était assez
+            largement moins naturel du côté des designers, qui montraient
+            beaucoup d’incertitudes.
           </p>
           <p>
             Si l’on prend le cadre de l’artisanat en opposition au design
