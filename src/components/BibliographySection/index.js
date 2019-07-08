@@ -499,36 +499,6 @@ class BibliographySection extends React.Component {
               className="Z3988"
               title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Edward%20Snowden%20(%40Snowden)%20%7C%20Twitter&amp;rft.description=I%20used%20to%20work%20for%20the%20government.%20Now%20I%20work%20for%20the%20public.%20President%20at%20%40FreedomofPress.&amp;rft.identifier=https%3A%2F%2Ftwitter.com%2FSnowden&amp;rft.aufirst=Edward&amp;rft.aulast=Snowden&amp;rft.au=Edward%20Snowden"
             />
-            <div className="csl-entry">
-              <div className="csl-right-inline">
-                <a id="src19">
-                  <div className="csl-left-margin">19. </div>
-                </a>
-                BAUDRILLARD, Jean. <i>La société de consommation</i>.
-                Paris&nbsp;: Gallimard, 1996. ISBN&nbsp;978-2-07-032349-4.
-              </div>
-            </div>
-            <span
-              className="Z3988"
-              title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-2-07-032349-4&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=La%20soci%C3%A9t%C3%A9%20de%20consommation&amp;rft.place=Paris&amp;rft.publisher=Gallimard&amp;rft.aufirst=Jean&amp;rft.aulast=Baudrillard&amp;rft.au=Jean%20Baudrillard&amp;rft.date=1996-11-15&amp;rft.tpages=318&amp;rft.isbn=978-2-07-032349-4&amp;rft.language=Fran%C3%A7ais"
-            />
-            <div className="csl-entry">
-              <div className="csl-right-inline">
-                <a id="src20">
-                  <div className="csl-left-margin">20. </div>
-                </a>
-                INSIDE QUEST. <i>Simon Sinek on Millennials in the Workplace</i>{" "}
-                [en&nbsp;ligne]. [Consulté&nbsp;le&nbsp;2&nbsp;mars&nbsp;2019].
-                Disponible à l’adresse&nbsp;:{" "}
-                <a href="https://www.youtube.com/watch?v=hER0Qp6QJNU">
-                  https://www.youtube.com/watch?v=hER0Qp6QJNU
-                </a>
-              </div>
-            </div>
-            <span
-              className="Z3988"
-              title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=videoRecording&amp;rft.title=Simon%20Sinek%20on%20Millennials%20in%20the%20Workplace&amp;rft.identifier=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhER0Qp6QJNU&amp;rft.au=undefined"
-            />
           </div>
         </div>
       </section>
